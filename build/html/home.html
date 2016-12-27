@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>Bookstore</title>
+<link href="../css/style.css" rel="stylesheet"/></head>
+<body>
+<header class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button type="button" data-toggle="collapse" data-target="#navbar" class="navbar-toggle pull-left">
+<span class="sr-only"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button>
+<a class="navbar-brand">Bookstore</a>
+<a href="#" class="shop-link pull-right visible-xs">
+<span class="shop-icon">
+<span class="shop-quantity">3</span></span></a></div>
+<a href="#" class="shop-link pull-right hidden-xs">
+<span class="shop-icon">
+<span class="shop-quantity">3</span></span></a>
+<div id="navbar" aria-expanded="false" class="navbar-collapse collapse pl-30">
+<ul class="nav navbar-nav">
+<li>
+<a href="#">Home</a></li>
+<li class="active dropdown-toggle">
+<a id="dLabel" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+<ul aria-labelledby="dLabel" class="nav dropdown-menu">
+<li>
+<a href="#">Home</a></li>
+<li>
+<a href="#">Shop</a></li>
+<li>
+<a href="#">My account</a></li></ul></li>
+<li role="separator" class="divider"></li>
+<li>
+<a href="#">My account</a></li></ul></div></div></header>
+<main>
+<div class="container">
+<div id="slider" data-ride="carousel" class="carousel slide">
+<ol class="carousel-indicators">
+<li data-target="#slider" data-slide-to="0" class="active"></li>
+<li data-target="#slider" data-slide-to="1"></li></ol>
+<div role="listbox" class="carousel-inner">
+<div class="item active">
+<div class="row">
+<div class="col-sm-5">
+<div class="general-img-wrap">
+<img src="http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg" alt="design-book"/></div></div>
+<div class="col-sm-7">
+<div class="general-caption">
+<h1>Real-Life Responsive Web Design</h1>
+<p class="lead">Smart front-end techniques and design patterns derived from real-life responsive projects</p>
+<p class="lead small">Vitaly Friedman, Daniel Mall,Vitaly Friedman</p>
+<div class="general-align">
+<button class="disabled btn btn-primary">Buy Now</button></div></div></div></div></div>
+<div class="item">
+<div class="row">
+<div class="col-sm-5">
+<div class="general-img-wrap">
+<img src="http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg" alt="design-book"/></div></div>
+<div class="col-sm-7">
+<div class="general-caption">
+<h1>Real-Life Responsive Web Design</h1>
+<p class="lead">Smart front-end techniques and design patterns derived from real-life responsive projects</p>
+<p class="lead small">Vitaly Friedman, Daniel Mall,Vitaly Friedman</p>
+<div class="general-align">
+<button class="btn btn-primary">Buy Now</button></div></div></div></div></div></div>
+<a href="#slider" role="button" data-slide="prev" class="left carousel-control">
+<span aria-hidden="true" class="icon-prev"></span>
+<span class="sr-only">Previous</span></a>
+<a href="#slider" role="button" data-slide="next" class="right carousel-control">
+<span aria-hidden="true" class="icon-next"></span>
+<span class="sr-only">Next</span></a></div></div>
+<div class="container">
+<div class="jumbotron text-center">
+<h2 class="h1">Welcome to our amazing Bookstore!</h2>
+<div class="mb-50">
+<p>We pore through hundreds of new books each month and select the five best we can find to share with our members.</p></div>
+<button class="btn btn-default">Get Started</button></div>
+<div class="mb-35">
+<h3>Best Sellers</h3>
+<div class="row">
+<div class="col-sm-6 col-md-3">
+<div class="thumbnail">
+<img src="http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg" alt="design-book"/>
+<div class="thumb-hover">
+<div class="general-thumb-link-wrap">
+<a href="#" class="thumb-hover-link mr-20">
+<i aria-hidden="true" class="fa fa-eye thumb-icon"></i></a>
+<a href="#" class="thumb-hover-link">
+<i class="fa fa-shopping-cart thumb-icon"></i></a></div></div></div>
+<div class="caption">
+<div class="row">
+<div class="col-xs-9">
+<p class="title pull-left pr-15">Android Programming for Beginners</p></div>
+<div class="col-xs-3">
+<p class="pull-right font-16 in-gold-500">€28.50</p></div></div>
+<span class="divider-custom"></span>
+<p class="lead small">John Horton</p></div></div>
+<div class="col-sm-6 col-md-3">
+<div class="thumbnail disabled">
+<img src="http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg" alt="design-book"/>
+<div class="thumb-hover">
+<div class="general-thumb-link-wrap">
+<a href="#" class="thumb-hover-link mr-20">
+<i aria-hidden="true" class="fa fa-eye thumb-icon"></i></a>
+<a href="#" class="thumb-hover-link">
+<i class="fa fa-shopping-cart thumb-icon"></i></a></div></div></div>
+<div class="caption">
+<div class="row">
+<div class="col-xs-9">
+<p class="title pull-left pr-15">Android Programming for Beginners</p></div>
+<div class="col-xs-3">
+<p class="pull-right font-16 in-gold-500">€28.50</p></div></div>
+<span class="divider-custom"></span>
+<p class="lead small">John Horton</p></div></div>
+<div class="col-sm-6 col-md-3">
+<div class="thumbnail">
+<img src="http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg" alt="design-book"/>
+<div class="thumb-hover">
+<div class="general-thumb-link-wrap">
+<a href="#" class="thumb-hover-link mr-20">
+<i aria-hidden="true" class="fa fa-eye thumb-icon"></i></a>
+<a href="#" class="thumb-hover-link">
+<i class="fa fa-shopping-cart thumb-icon"></i></a></div></div></div>
+<div class="caption">
+<div class="row">
+<div class="col-xs-9">
+<p class="title pull-left pr-15">Android Programming for Beginners</p></div>
+<div class="col-xs-3">
+<p class="pull-right font-16 in-gold-500">€28.50</p></div></div>
+<span class="divider-custom"></span>
+<p class="lead small">John Horton</p></div></div>
+<div class="col-sm-6 col-md-3">
+<div class="thumbnail">
+<img src="http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg" alt="design-book"/>
+<div class="thumb-hover">
+<div class="general-thumb-link-wrap">
+<a href="#" class="thumb-hover-link mr-20">
+<i aria-hidden="true" class="fa fa-eye thumb-icon"></i></a>
+<a href="#" class="thumb-hover-link">
+<i class="fa fa-shopping-cart thumb-icon"></i></a></div></div></div>
+<div class="caption">
+<div class="clearfix">
+<p class="pull-right font-16 in-gold-500">€28.50</p>
+<p class="title">Android Programming for Beginners</p></div>
+<span class="divider-custom"></span>
+<p class="lead small">John Horton</p></div></div></div></div></div></main>
+<footer class="navbar-inverse">
+<div class="container">
+<div class="row">
+<div class="col-sm-9">
+<ul class="list-inline general-align">
+<li>
+<a href="#" class="nav-link">Home</a></li>
+<li>
+<a href="#" class="nav-link">Shop</a></li>
+<li>
+<a href="#" class="nav-link">Orders</a></li>
+<li>
+<a href="#" class="nav-link">Settings</a></li></ul></div>
+<div class="col-sm-3">
+<p class="general-nav-mail">support@bookstore.com</p>
+<p class="general-nav-number">(555)-555-5555</p>
+<ul class="list-inline general-align">
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-facebook"></i></a></li>
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-twitter"></i></a></li>
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-google-plus"></i></a></li>
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-instagram"></i></a></li></ul></div></div></div></footer>
+<script src="../../javascripts/jquery.min.js"></script>
+<script src="../../javascripts/bootstrap.min.js"></script></body></html>

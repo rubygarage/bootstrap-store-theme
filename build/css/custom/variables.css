@@ -1,0 +1,47 @@
+.in-white {
+  color: white !important;
+}
+
+.bg-white {
+  background-color: white !important;
+}
+
+.in-grey-200 {
+  color: #eeeeee !important;
+}
+
+.bg-grey-200 {
+  background-color: #eeeeee !important;
+}
+
+.in-grey-350 {
+  color: #c3c3c3 !important;
+}
+
+.bg-grey-350 {
+  background-color: #c3c3c3 !important;
+}
+
+.in-grey-600 {
+  color: #8c8c8c !important;
+}
+
+.bg-grey-600 {
+  background-color: #8c8c8c !important;
+}
+
+.in-grey-900 {
+  color: #1e1e1c !important;
+}
+
+.bg-grey-900 {
+  background-color: #1e1e1c !important;
+}
+
+.in-gold-500 {
+  color: #c59c71 !important;
+}
+
+.bg-gold-500 {
+  background-color: #c59c71 !important;
+}
