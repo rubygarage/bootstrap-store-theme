@@ -4,15 +4,47 @@
 .pl-30 {
   padding-left: 30px;
 }
+.mr-10 {
+  margin-right: 10px;
+}
 .mr-20 {
   margin-right: 20px;
+}
+.mr-55 {
+  margin-right: 55px;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-25 {
+  margin-bottom: 25px;
 }
 .mb-35 {
   margin-bottom: 35px;
 }
-.general-caption {
+.mb-60 {
   margin-bottom: 60px;
 }
+.mb-120 {
+  margin-bottom: 120px;
+}
+.img-shadow {
+  box-shadow: $carousel-image-shadow;
+}
+.line-heaght-40 {
+  line-height: 40px;
+}
+
+img {
+  max-width: 100%;
+}
+.general-container-xs {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+// .general-caption {
+//   margin-bottom: 60px;
+// }
 .general-img-wrap {
   max-width: 175px;
   padding-top: 70px;
@@ -21,14 +53,20 @@
 .general-align {
   text-align: center;
 }
-.jumbotron {
-  margin-bottom: 0;
+.general-thumb-wrap {
+  max-width: 270px;
+  margin: 0 auto;
+}
+.general-thumbnail {
+  padding: 27% 19%;
+
 }
 .general-thumb-link-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 .general-nav-mail {
   font-size: $font-size-small;
@@ -42,6 +80,18 @@
   color: white;
   text-align: center;
   margin-bottom: 25px;
+}
+.general-badge {
+  position: absolute;
+  top: -4px;
+  left: 100%;
+}
+.general-title-margin {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+.general-thumb-info {
+  margin-bottom: 35px;
 }
 
 @media (min-width: $grid-float-breakpoint) {
@@ -67,7 +117,13 @@
     padding-right: 15px;
     padding-left: 15px;
   }
-  .mb-50 {
+  .general-title-margin {
+    margin-bottom: 60px;
+  }
+  .general-thumb-info {
+    margin-bottom: 45px;
+  }
+  .mb-res-50 {
     margin-bottom: 50px;
   }
 }
@@ -78,7 +134,7 @@
     padding-top: 20px;
     margin-bottom: 30px;
   }
-  .caption {
+  .general-caption {
     padding-right: 0;
     padding-left: 0;
     margin-bottom: 85px;

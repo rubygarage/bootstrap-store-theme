@@ -6,14 +6,7 @@
 .font-16 {
   font-size: 16px;
 }
-// .font-12 {
-//   font-size: 12px;
-// }
 
-img {
-  max-width: 100%;
-  box-shadow: $carousel-image-shadow;
-}
 .navbar-default {
   box-shadow: 0 5px 18px 2px rgba(1, 1, 1, 0.1);
 }
@@ -95,9 +88,7 @@ img {
   color: $grey-600;
 }
 .thumbnail {
-  max-width: 270px;
   position: relative;
-  padding: 60px 45px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -166,8 +157,11 @@ img {
   height: 40px;
   display: inline-block;
   border: 2px solid rgba($grey-200, 0.4);
-  position: relative;
+  // position: relative;
   cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
   &:hover {
     background-color: $grey-200;
     .thumb-icon {
@@ -207,6 +201,44 @@ img {
     padding-left: 0;
   }
 }
+.filter-item {
+  margin-right: 35px;
+}
+.filter-link {
+  font-size: $font-size-base;
+  color: $grey-600;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
+  &:hover {
+    color: $grey-900;
+    text-decoration: none;
+  }
+}
+.img-large {
+  margin-bottom: 20px;
+}
+.images a {
+  max-width: 86px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-bottom: 10px;
+}
+.input-link {
+  font-size: $font-size-base;
+  color: $grey-350;
+  display: inline-block;
+  float: left;
+}
+.quantity-input {
+  max-width: 40px;
+  float: left;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 
 @media (min-width: $grid-float-breakpoint) {
   .navbar-nav {
