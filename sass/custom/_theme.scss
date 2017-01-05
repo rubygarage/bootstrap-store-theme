@@ -4,7 +4,7 @@
 
 //=== Helpers
 .font-16 {
-  font-size: 16px;
+  font-size: $font-size-large;
 }
 
 .navbar-default {
@@ -19,8 +19,37 @@
     width: 17px;
   }
 }
-.navbar-nav .open .dropdown-menu > li > a {
-  padding-left: 30px;
+.navbar-nav .open .dropdown-menu {
+  left: -65px;
+}
+.dropdowns {
+  .dropdown-toggle {
+    width: 100%;
+    border: 1px solid $grey-200;
+    display: inline-block;
+    padding: 10px 15px;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $grey-600;
+    }
+  }
+  .dropdown-icon {
+    font-size: 18px;
+    color: $grey-600;
+  }
+  .dropdown-menu {
+    width: 100%;
+  }
+}
+.dropdown-menu {
+  min-width: 210px;
+  > li > a {
+    font-weight: 300;
+    padding: 8px 30px;
+    white-space: unset;
+    word-break: break-word;
+  }
 }
 .carousel {
   margin-left: -15px;
@@ -53,13 +82,14 @@
   .active {
     box-shadow: none;
   }
+  &.disabled,
+  &[disabled] {
+    color: white;
+    background-color: $grey-600;
+  }
 }
 .btn-primary,
 .btn-default {
-  &.disabled,
-  &[disabled] {
-    background-color: $btn-link-disabled-color;
-  }
   &:focus,
   &.focus,
   &:active,
@@ -112,6 +142,12 @@
   padding-bottom: 20px;
 }
 
+.shop-link {
+  display: inline-block;
+  padding-top: 8px;
+  margin: 23px 15px;
+  position: relative;
+}
 .shop-icon {
   min-width: 22px;
   min-height: 27px;
@@ -157,7 +193,6 @@
   height: 40px;
   display: inline-block;
   border: 2px solid rgba($grey-200, 0.4);
-  // position: relative;
   cursor: pointer;
   margin-left: 10px;
   margin-right: 10px;
@@ -174,17 +209,11 @@
   color: white;
   line-height: 36px;
 }
-.shop-link {
-  display: inline-block;
-  padding-top: 8px;
-  margin: 23px 15px;
-  position: relative;
-}
 .title {
   font-size: $font-size-large;
   word-break: break-word;
 }
-.divider-custom {
+.divider-sm {
   width: 30px;
   height: 2px;
   display: inline-block;
@@ -196,13 +225,11 @@
   color: $grey-600;
   &:hover {
     color: $gold-500;
+    text-decoration: none;
   }
   &:first-child {
     padding-left: 0;
   }
-}
-.filter-item {
-  margin-right: 35px;
 }
 .filter-link {
   font-size: $font-size-base;
@@ -216,28 +243,102 @@
     text-decoration: none;
   }
 }
-.img-large {
-  margin-bottom: 20px;
-}
-.images a {
-  max-width: 86px;
-  display: inline-block;
-  cursor: pointer;
-  margin-right: 8px;
-  margin-bottom: 10px;
-}
 .input-link {
   font-size: $font-size-base;
   color: $grey-350;
   display: inline-block;
   float: left;
+  &:hover,
+  &:focus {
+    color: $grey-350
+  }
 }
 .quantity-input {
   max-width: 40px;
-  float: left;
+  padding: 8px 10px;
   margin-left: 12px;
   margin-right: 12px;
 }
+.logo-size {
+  width: 55px;
+  height: 55px;
+}
+.logo-empty {
+  font-size: $font-size-large;
+  color: white;
+  text-align: center;
+  background-color: $grey-350;
+  line-height: 55px;
+}
+.collapse-link {
+  font-size: $font-size-base;
+  color: $grey-600;
+  font-weight: 300;
+  line-height: 2.2;
+  &:hover {
+    color: $gold-500;
+    text-decoration: none;
+  }
+}
+.message-wrap {
+  padding: 30px 0 25px;
+}
+.message-verified {
+  font-size: $font-size-small;
+  color: $grey-350;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.message-name {
+  font-size: $font-size-base;
+  color: $gold-500;
+  margin-bottom: 10px;
+}
+.message-date {
+  font-size: $font-size-base;
+  color: $grey-600;
+  float: right;
+}
+.rate-star {
+  font-size: 17px;
+  color: $gold-500
+}
+.rate-empty {
+  color: $grey-350;
+}
+.divider-lg {
+  position: relative;
+  &:before {
+    content: '';
+    height: 1px;
+    position: absolute;
+    background-color: $grey-200;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  &:last-child:after {
+    bottom: 0;
+    top: unset;
+    @extend .divider-lg:before;
+  }
+}
+.images {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.img-link {
+  width: calc( (100% - 60px) / 3);
+  float: left;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
 
 
 @media (min-width: $grid-float-breakpoint) {
@@ -273,6 +374,13 @@
     }
     .icon-next {
       right: 15%;
+    }
+  }
+  .divider-lg {
+    &:before,
+    &:last-child:after {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }

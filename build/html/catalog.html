@@ -22,48 +22,97 @@
 <span class="shop-icon">
 <span class="shop-quantity">3</span></span></a>
 <div id="navbar" aria-expanded="false" class="navbar-collapse collapse pl-30">
+<div class="visible-xs">
+<button type="button" aria-label="Close" class="close">
+<span aria-hidden="true">&times;</span></button>
 <ul class="nav navbar-nav">
 <li>
 <a href="#">Home</a></li>
-<li class="active">
+<li>
 <a type="button" data-toggle="collapse" href="#menu" aria-expanded="false" aria-controls="menu">Shop</a>
-<ul id="menu" aria-expanded="false" class="collapse">
+<ul id="menu" aria-expanded="false" class="collapse list-unstyled pl-30 mb-10">
+<li>
+<a href="#" class="collapse-link">Mobile development</a></li>
+<li>
+<a href="#" class="collapse-link">Photo</a></li>
+<li>
+<a href="#" class="collapse-link">Web design</a></li></ul></li>
+<li>
+<a href="#">My account</a></li></ul></div>
+<div class="hidden-xs">
+<ul class="nav navbar-nav">
 <li>
 <a href="#">Home</a></li>
+<li class="dropdown">
+<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Shop</a>
+<ul class="dropdown-menu">
 <li>
-<a href="#">Shop</a></li>
+<a href="#">Mobile development</a></li>
 <li>
-<a href="#">My account</a></li></ul></li>
+<a href="#">Photo</a></li>
+<li>
+<a href="#">Web design</a></li>
 <li role="separator" class="divider"></li>
 <li>
-<a href="#">My account</a></li></ul></div></div></header>
-<main>
-<div class="container">
+<a href="#">Log out</a></li></ul></li>
+<li>
+<a href="#">My account</a></li></ul></div></div></div></header>
+<main class="container">
 <h1 class="general-title-margin">Сatalog</h1>
-<div class="hidden-xs">
-<ul class="list-inline mb-25">
-<li class="filter-item">
+<div class="hidden-xs clearfix">
+<div class="dropdowns pull-right">
+<div class="dropdown width-240">
+<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle lead small">Newest first
+<i class="fa fa-angle-down dropdown-icon pull-right"></i></a>
+<ul class="dropdown-menu">
+<li>
+<a href="#">Newest first</a></li>
+<li>
+<a href="#">Popular first</a></li>
+<li>
+<a href="#">Price: Low to hight</a></li>
+<li>
+<a href="#">Price: Low to hight</a></li></ul></div></div>
+<ul class="list-inline pt-10 mb-25 mr-240">
+<li class="mr-35">
 <a href="#" class="filter-link">All
-<span class="badge">135</span></a></li>
-<li class="filter-item">
+<span class="badge general-badge">135</span></a></li>
+<li class="mr-35">
 <a href="#" class="filter-link">Mobile Development
-<span class="badge">135</span></a></li>
-<li class="filter-item">
+<span class="badge general-badge">135</span></a></li>
+<li class="mr-35">
 <a href="#" class="filter-link">Photo
-<span class="badge">135</span></a></li>
-<li class="filter-item">
+<span class="badge general-badge">135</span></a></li>
+<li class="mr-35">
 <a href="#" class="filter-link">Web Design
-<span class="badge">135</span></a></li></ul></div>
-<div class="dropdown visible-xs">
-<button id="dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="dropdown-toggle">All (135)
-<i class="fa fa-chevron-down"></i></button>
-<ul aria-labelledby="dropdown" class="dropdown-menu">
+<span class="badge general-badge">135</span></a></li></ul></div>
+<div class="dropdowns mb-25 visible-xs">
+<p class="lead small mb-10">Filter by category</p>
+<div class="dropdown">
+<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle lead small">Newest first
+<i class="fa fa-angle-down dropdown-icon pull-right"></i></a>
+<ul class="dropdown-menu">
 <li>
-<a herf="#">Mobile Development (24)</a></li>
+<a href="#">Newest first</a></li>
 <li>
-<a herf="#">Mobile Development (24)</a></li>
+<a href="#">Popular first</a></li>
 <li>
-<a herf="#">Mobile Development (24)</a></li></ul></div>
+<a href="#">Price: Low to hight</a></li>
+<li>
+<a href="#">Price: Low to hight</a></li></ul></div>
+<p class="lead small mb-10">Sort by</p>
+<div class="dropdown">
+<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle lead small">Newest first
+<i class="fa fa-angle-down dropdown-icon pull-right"></i></a>
+<ul class="dropdown-menu">
+<li>
+<a href="#">Newest first</a></li>
+<li>
+<a href="#">Popular first</a></li>
+<li>
+<a href="#">Price: Low to hight</a></li>
+<li>
+<a href="#">Price: Low to hight</a></li></ul></div></div>
 <div class="mb-120">
 <div class="row">
 <div class="col-xs-6 col-sm-3">
@@ -79,7 +128,7 @@
 <div class="general-thumb-info">
 <p class="title">Android Programming for Beginners</p>
 <p class="font-16 in-gold-500">€28.50</p>
-<span class="divider-custom"></span>
+<span class="divider-sm"></span>
 <p class="lead small">John Horton</p></div></div>
 <div class="col-xs-6 col-sm-3">
 <div class="general-thumb-wrap">
@@ -94,7 +143,7 @@
 <div class="general-thumb-info">
 <p class="title">Android Programming for Beginners</p>
 <p class="font-16 in-gold-500">€28.50</p>
-<span class="divider-custom"></span>
+<span class="divider-sm"></span>
 <p class="lead small">Bass Jobsen, David Cochran, Ian Whitley</p></div></div>
 <div class="col-xs-6 col-sm-3">
 <div class="general-thumb-wrap">
@@ -109,7 +158,7 @@
 <div class="general-thumb-info">
 <p class="title">Android Programming for Beginners</p>
 <p class="font-16 in-gold-500">€28.50</p>
-<span class="divider-custom"></span>
+<span class="divider-sm"></span>
 <p class="lead small">Bass Jobsen, David Cochran, Ian Whitley</p></div></div>
 <div class="col-xs-6 col-sm-3">
 <div class="general-thumb-wrap">
@@ -124,7 +173,7 @@
 <div class="general-thumb-info">
 <p class="title">Android Programming for Beginners</p>
 <p class="font-16 in-gold-500">€28.50</p>
-<span class="divider-custom"></span>
+<span class="divider-sm"></span>
 <p class="lead small">Bass Jobsen, David Cochran, Ian Whitley</p></div></div></div>
 <div class="row mb-25">
 <div class="col-xs-6 col-sm-3">
@@ -140,7 +189,7 @@
 <div class="general-thumb-info">
 <p class="title">Android Programming for Beginners</p>
 <p class="font-16 in-gold-500">€28.50</p>
-<span class="divider-custom"></span>
+<span class="divider-sm"></span>
 <p class="lead small">John Horton</p></div></div>
 <div class="col-xs-6 col-sm-3">
 <div class="general-thumb-wrap">
@@ -155,7 +204,7 @@
 <div class="general-thumb-info">
 <p class="title">Android Programming for Beginners</p>
 <p class="font-16 in-gold-500">€28.50</p>
-<span class="divider-custom"></span>
+<span class="divider-sm"></span>
 <p class="lead small">Bass Jobsen, David Cochran, Ian Whitley</p></div></div>
 <div class="col-xs-6 col-sm-3">
 <div class="general-thumb-wrap">
@@ -170,7 +219,7 @@
 <div class="general-thumb-info">
 <p class="title">Android Programming for Beginners</p>
 <p class="font-16 in-gold-500">€28.50</p>
-<span class="divider-custom"></span>
+<span class="divider-sm"></span>
 <p class="lead small">Bass Jobsen, David Cochran, Ian Whitley</p></div></div>
 <div class="col-xs-6 col-sm-3">
 <div class="general-thumb-wrap">
@@ -185,15 +234,15 @@
 <div class="general-thumb-info">
 <p class="title">Android Programming for Beginners</p>
 <p class="font-16 in-gold-500">€28.50</p>
-<span class="divider-custom"></span>
+<span class="divider-sm"></span>
 <p class="lead small">Bass Jobsen, David Cochran, Ian Whitley</p></div></div></div>
 <div class="text-center">
-<button class="btn btn-primary">View More</button></div></div></div></main>
+<button class="btn btn-primary">View More</button></div></div></main>
 <footer class="navbar-inverse">
 <div class="container">
 <div class="row">
 <div class="col-sm-9">
-<ul class="list-inline general-align">
+<ul class="list-inline general-align mb-25">
 <li>
 <a href="#" class="nav-link">Home</a></li>
 <li>

@@ -1,38 +1,45 @@
+.pt-10 {
+  padding-top: 10px;
+}
 .pr-15 {
   padding-right: 15px;
 }
 .pl-30 {
   padding-left: 30px;
 }
-.mr-10 {
-  margin-right: 10px;
-}
-.mr-20 {
-  margin-right: 20px;
-}
-.mr-55 {
-  margin-right: 55px;
-}
-.mb-0 {
-  margin-bottom: 0;
-}
-.mb-25 {
-  margin-bottom: 25px;
-}
-.mb-35 {
-  margin-bottom: 35px;
-}
-.mb-60 {
-  margin-bottom: 60px;
-}
-.mb-120 {
-  margin-bottom: 120px;
-}
 .img-shadow {
   box-shadow: $carousel-image-shadow;
 }
 .line-heaght-40 {
   line-height: 40px;
+}
+.max-240 {
+  max-width: 240px;
+}
+.width-240 {
+  width: 240px;
+}
+.line-height-2 {
+  line-height: 2;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+
+@each $size in (10, 15, 20, 35, 55, 240) {
+  .mr-#{$size} {
+    margin-right: #{$size}px !important;
+  }
+}
+@each $size in (10, 70) {
+  .ml-#{$size} {
+    margin-left: #{$size}px !important;
+  }
+}
+@each $size in (0, 5, 10, 15, 20, 25, 35, 60, 80, 120) {
+  .mb-#{$size} {
+    margin-bottom: #{$size}px !important;
+  }
 }
 
 img {
@@ -42,9 +49,6 @@ img {
   padding-right: 10px;
   padding-left: 10px;
 }
-// .general-caption {
-//   margin-bottom: 60px;
-// }
 .general-img-wrap {
   max-width: 175px;
   padding-top: 70px;
@@ -59,7 +63,6 @@ img {
 }
 .general-thumbnail {
   padding: 27% 19%;
-
 }
 .general-thumb-link-wrap {
   position: absolute;
@@ -72,7 +75,7 @@ img {
   font-size: $font-size-small;
   color: $gold-500;
   text-align: center;
-  padding-top: 10px;
+  // padding-top: 10px;
   margin-bottom: 15px;
 }
 .general-nav-number {
@@ -93,11 +96,25 @@ img {
 .general-thumb-info {
   margin-bottom: 35px;
 }
+.general-info-wrap {
+  padding-top: 20px;
+}
+.general-back-link {
+  font-size: $font-size-base;
+  color: $grey-600;
+  display: inline-block;
+  margin-bottom: 30px;
+  &:hover,
+  &:focus {
+    color: $grey-600;
+  }
+}
+.general-position {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 
 @media (min-width: $grid-float-breakpoint) {
-  .item .btn-wrap {
-    margin-left: 0;
-  }
   .general-caption {
     padding-top: 20px;
     padding-left: 20px;
@@ -118,13 +135,19 @@ img {
     padding-left: 15px;
   }
   .general-title-margin {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   .general-thumb-info {
     margin-bottom: 45px;
   }
+  .general-position {
+    margin-top: 15px;
+  }
   .mb-res-50 {
     margin-bottom: 50px;
+  }
+  .mt-res-0 {
+    margin-top: 0;
   }
 }
 

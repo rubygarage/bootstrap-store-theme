@@ -99,7 +99,7 @@ $btn-default-color:                   white !default;
 $btn-default-bg:                      $grey-900 !default;
 $btn-default-border:                  transparent !default;
 
-$btn-link-disabled-color:             $grey-600 !default;
+$btn-link-disabled-color:             white !default;
 
 $btn-font-weight:                     600 !default;
 $btn-border-radius-base:              0 !default;
@@ -116,7 +116,7 @@ $navbar-default-border:               transparent !default;
 // Navbar links
 
 $navbar-default-link-color:           $grey-600;
-$navbar-default-link-hover-color:     $gold-500;
+$navbar-default-link-hover-color:     $grey-900;
 
 // Navbar toggle
 $navbar-default-toggle-hover-bg:           transparent;
@@ -156,10 +156,11 @@ $nav-link-hover-bg: transparent !default;
 //== Dropdowns
 
 $dropdown-link-color: $grey-600;
-$dropdown-link-hover-color: $gold-500;
+$dropdown-link-hover-color: white;
 $dropdown-border: transparent !default;
 $dropdown-fallback-border: transparent !default;
 $dropdown-divider-bg: $grey-200;
+$dropdown-link-hover-bg: $gold-500;
 
 //== Badges
 

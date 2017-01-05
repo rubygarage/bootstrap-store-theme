@@ -22,51 +22,138 @@
           %span.shop-icon
             %span.shop-quantity 3
         #navbar.navbar-collapse.collapse.pl-30{'aria-expanded': "false"}
-          %ul.nav.navbar-nav
-            %li
-              %a{href: "#"} Home
-            %li.active
-              %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"} Shop
-              %ul#menu.collapse{'aria-expanded': "false"}
-                %li
-                  %a{href: "#"} Home
-                %li
-                  %a{href: "#"} Shop
-                %li
-                  %a{href: "#"} My account
-            %li.divider{role: "separator"}
-            %li
-              %a{href: "#"} My account
-    %main
-      .container
-        .row
-          .col-sm-6
-            .product-gallery
-              .img-large
-                %img{src: "https://www.bramstein.com/static/smashing-book-5-photo-stack.9d5d114e3e.jpg"}
-              .images
-                %a{href: "#"}
-                  %img{src: "https://www.smashingmagazine.com/wp-content/uploads/2015/09/smashing-book-5-2-large.jpg"}
-                %a{href: "#"}
-                  %img{src: "https://www.smashingmagazine.com/wp-content/uploads/2015/09/smashing-book-5-2-large.jpg"}
-                %a{href: "#"}
-                  %img{src: "https://www.smashingmagazine.com/wp-content/uploads/2015/09/smashing-book-5-2-large.jpg"}
-          .col-sm-6
-            %h1 Real-Life Responsive Web Design
-            %p.lead.small Vitaly Friedman, Daniel Mall,Vitaly Friedman
-            %p.h1.in-gold-500 €32.90
-            .input-group
-              %a.input-link{href: "#"}
-                %i.fa.fa-minus.line-heaght-40
-              %input.form-control.quantity-input{type: "number"}
-              %a.input-link{href: "#"}
-                %i.fa.fa-plus.line-heaght-40
-              %button.btn.btn-default.pull-right Add to Cart
+          .visible-xs
+            %button.close{type: "button", 'aria-label': "Close"}
+              %span{'aria-hidden': "true"} &times;
+            %ul.nav.navbar-nav
+              %li
+                %a{href: "#"} Home
+              %li
+                %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"} Shop
+                %ul#menu.collapse.list-unstyled.pl-30.mb-10{'aria-expanded': "false"}
+                  %li
+                    %a.collapse-link{href: "#"} Mobile development
+                  %li
+                    %a.collapse-link{href: "#"} Photo
+                  %li
+                    %a.collapse-link{href: "#"} Web design
+              %li
+                %a{href: "#"} My account
+          .hidden-xs
+            %ul.nav.navbar-nav
+              %li
+                %a{href: "#"} Home
+              %li.dropdown
+                %a.dropdown-toggle{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"} Shop
+                %ul.dropdown-menu
+                  %li
+                    %a{href: "#"} Mobile development
+                  %li
+                    %a{href: "#"} Photo
+                  %li
+                    %a{href: "#"} Web design
+                  %li.divider{role: "separator"}
+                  %li
+                    %a{href: "#"} Log out
+              %li
+                %a{href: "#"} My account
+    %main.container
+      %a.general-back-link{href: "#"}
+        %i.fa.fa-long-arrow-left.mr-15
+        Back to results
+      .row
+        .col-sm-6
+          .product-gallery
+            .mb-20
+              %img.img-responsive{src: "https://www.bramstein.com/static/smashing-book-5-photo-stack.9d5d114e3e.jpg"}
+            .images.clearfix
+              %a.img-link{href: "#"}
+                %img{src: "https://www.smashingmagazine.com/wp-content/uploads/2015/09/smashing-book-5-2-large.jpg"}
+              %a.img-link{href: "#"}
+                %img{src: "https://www.smashingmagazine.com/wp-content/uploads/2015/09/smashing-book-5-2-large.jpg"}
+              %a.img-link{href: "#"}
+                %img{src: "https://www.smashingmagazine.com/wp-content/uploads/2015/09/smashing-book-5-2-large.jpg"}
+        .col-sm-6
+          %h1.mt-res-0 Real-Life Responsive Web Design
+          %p.lead.small Vitaly Friedman, Daniel Mall,Vitaly Friedman
+          %p.h1.in-gold-500.visible-xs.visible-sm €32.90
+          .row
+            .col-xs-0.col-md-4
+              %p.h1.in-gold-500.mt-10.hidden-xs.hidden-sm €32.90
+            .col-xs-5.col-md-3
+              .input-group.general-position
+                %a.input-link{href: "#"}
+                  %i.fa.fa-minus.line-heaght-40
+                %input.form-control.quantity-input{type: "number"}
+                %a.input-link{href: "#"}
+                  %i.fa.fa-plus.line-heaght-40
+            .col-xs-7.col-md-5
+              %button.btn.btn-default.general-position Add to Cart
+          / .clearfix.mb-25
+          /   %p.h1.in-gold-500.pull-left.hidden-xs €32.90
+          /   .input-group.pull-left.mb-5
+          /     %a.input-link{href: "#"}
+          /       %i.fa.fa-minus.line-heaght-40
+          /     %input.form-control.quantity-input{type: "number"}
+          /     %a.input-link{href: "#"}
+          /       %i.fa.fa-plus.line-heaght-40
+          /   %button.btn.btn-default.pull-right.mb-5 Add to Cart
+          .general-info-wrap.divider-lg
+            %p Description
+            %p.lead.small.line-height-2
+              Smashing Book 5: Real-Life Responsive Web Design is our brand new, upcoming book with smart front-end techniques and design patterns derived from real-life responsive projects. With 13 chapters on responsive workflow, SVG, Flexbox, Web fonts, responsive images, responsive email, content strategy, debugging ...
+              %a.in-gold-500.ml-10{href: "#"} Read More
+          .general-info-wrap.divider-lg
+            .clearfix
+              %p.pull-left Year of publication
+              %p.lead.small.pull-right 2016
+          .general-info-wrap.divider-lg
+            .clearfix
+              %p.pull-left Dimensions
+              %p.lead.small.pull-right H:6.4\" x W: 0.9\" x D: 5.0
+          .general-info-wrap.divider-lg
+            .clearfix
+              %p.pull-left Materials
+              %p.lead.small.pull-right Hardcove, glossy paper
+      .mb-80
+        %h3.in-gold-500.mb-25 Reviews (3)
+        .message-wrap.divider-lg
+          .clearfix
+            %img.img-circle.logo-size.inlide-block.pull-left{src: "https://www.smashingmagazine.com/wp-content/uploads/2015/09/smashing-book-5-2-large.jpg"}
+            .ml-70
+              %div
+                .message-date.hidden-xs 11/11/16
+                .max-240
+                  .message-verified Verified Reviewer
+                  .message-name Rita J. Lewis
+              .mb-15
+                %i.fa.fa-star.in-gold-500.font-16
+                %i.fa.fa-star.in-gold-500.font-16
+                %i.fa.fa-star.in-gold-500.font-16
+                %i.fa.fa-star.in-gold-500.font-16
+                %i.fa.fa-star.in-gold-500.font-16
+              %p Thank you BookStore, I was very pleased to receive my order for the Moleskine diary so soon after placing the order.
+        .message-wrap.divider-lg
+          .clearfix
+            %span.img-circle.logo-size.inlide-block.pull-left.logo-empty M
+            .ml-70
+              %div
+                .message-date.hidden-xs 11/11/16
+                .max-240
+                  .message-verified.pull-right Verified Reviewer
+                  .message-name May J. Novoa
+              .mb-15
+                %i.fa.fa-star.rate-star
+                %i.fa.fa-star.rate-star
+                %i.fa.fa-star.rate-star
+                %i.fa.fa-star.rate-star
+                %i.fa.fa-star.rate-star.rate-empty
+              %p If ‘Get a better job’ had landed on my desk a year ago, I might have been dismissive of it. Instead I was prepared to be open-minded. There have been many occasions where I turned to career books with practical activities to look for some inspiration when developing education activities for learners or assessment.
     %footer.navbar-inverse
       .container
         .row
           .col-sm-9
-            %ul.list-inline.general-align
+            %ul.list-inline.general-align.mb-25
               %li
                 %a.nav-link{href: "#"} Home
               %li
