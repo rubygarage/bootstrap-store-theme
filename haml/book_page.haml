@@ -76,28 +76,18 @@
         .col-sm-6
           %h1.mt-res-0 Real-Life Responsive Web Design
           %p.lead.small Vitaly Friedman, Daniel Mall,Vitaly Friedman
-          %p.h1.in-gold-500.visible-xs.visible-sm €32.90
           .row
-            .col-xs-0.col-md-4
-              %p.h1.in-gold-500.mt-10.hidden-xs.hidden-sm €32.90
+            .col-xs-12.col-md-4
+              %p.h1.in-gold-500.mt-10 €32.90
             .col-xs-5.col-md-3
               .input-group.general-position
                 %a.input-link{href: "#"}
                   %i.fa.fa-minus.line-heaght-40
-                %input.form-control.quantity-input{type: "number"}
+                %input.form-control.quantity-input{type: "text"}
                 %a.input-link{href: "#"}
                   %i.fa.fa-plus.line-heaght-40
             .col-xs-7.col-md-5
-              %button.btn.btn-default.general-position Add to Cart
-          / .clearfix.mb-25
-          /   %p.h1.in-gold-500.pull-left.hidden-xs €32.90
-          /   .input-group.pull-left.mb-5
-          /     %a.input-link{href: "#"}
-          /       %i.fa.fa-minus.line-heaght-40
-          /     %input.form-control.quantity-input{type: "number"}
-          /     %a.input-link{href: "#"}
-          /       %i.fa.fa-plus.line-heaght-40
-          /   %button.btn.btn-default.pull-right.mb-5 Add to Cart
+              %button.btn.btn-default.pull-right.general-position Add to Cart
           .general-info-wrap.divider-lg
             %p Description
             %p.lead.small.line-height-2

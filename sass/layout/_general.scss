@@ -7,8 +7,20 @@
 .pl-30 {
   padding-left: 30px;
 }
+.pb-25 {
+  padding-bottom: 25px;
+}
+.font-16 {
+  font-size: $font-size-large;
+}
+.font-18 {
+  font-size: 18px;
+}
 .img-shadow {
   box-shadow: $carousel-image-shadow;
+}
+.cart-img-shadow {
+  box-shadow: 0 5px 27px 3px rgba(14, 26, 52, 0.3);
 }
 .line-heaght-40 {
   line-height: 40px;
@@ -26,7 +38,7 @@
   margin-top: 10px;
 }
 
-@each $size in (10, 15, 20, 35, 55, 240) {
+@each $size in (5, 10, 15, 20, 35, 55, 240) {
   .mr-#{$size} {
     margin-right: #{$size}px !important;
   }
@@ -36,7 +48,7 @@
     margin-left: #{$size}px !important;
   }
 }
-@each $size in (0, 5, 10, 15, 20, 25, 35, 60, 80, 120) {
+@each $size in (0, 5, 10, 15, 20, 25, 30, 35, 60, 80, 120) {
   .mb-#{$size} {
     margin-bottom: #{$size}px !important;
   }
@@ -75,7 +87,6 @@ img {
   font-size: $font-size-small;
   color: $gold-500;
   text-align: center;
-  // padding-top: 10px;
   margin-bottom: 15px;
 }
 .general-nav-number {
@@ -113,6 +124,34 @@ img {
   margin-top: 10px;
   margin-bottom: 30px;
 }
+.general-img-wrap-table {
+  max-width: 140px;
+  margin: 0 auto 25px;
+}
+.general-cart-item {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.general-cart-close {
+  font-size: 28px;
+  transform: translateY(-50%);
+}
+.general-summary-table {
+  width: 100%;
+  max-width: 200px;
+  text-align: left;
+  margin: 0 auto 30px;
+}
+.general-text-align {
+  text-align: center;
+}
+.general-order-wrap {
+  padding-top: 15px;
+  margin-bottom: 60px;
+}
+.general-input-group {
+  margin-bottom: 35px;
+}
 
 @media (min-width: $grid-float-breakpoint) {
   .general-caption {
@@ -143,11 +182,43 @@ img {
   .general-position {
     margin-top: 15px;
   }
+  .general-img-wrap-table {
+    max-width: 80px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .general-cart-close {
+    transform: unset;
+  }
+  .general-summary-table {
+    text-align: right;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .general-order-wrap {
+    margin-bottom: 35px;
+    border-bottom: 1px solid $grey-200;
+  }
+  .general-input-group {
+    margin-bottom: 10px;
+  }
+  .general-text-align {
+    text-align: right;
+  }
   .mb-res-50 {
     margin-bottom: 50px;
   }
   .mt-res-0 {
     margin-top: 0;
+  }
+  .res-mr-200 {
+    margin-right: 200px;
+  }
+  .res-mb-100 {
+    margin-bottom: 100px;
+  }
+  .res-block {
+    display: block;
   }
 }
 

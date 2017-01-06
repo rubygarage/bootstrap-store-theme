@@ -5816,12 +5816,12 @@ th {
   padding: 8px;
   line-height: 1.5;
   vertical-align: top;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid transparent;
 }
 
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid transparent;
 }
 
 .table > caption + thead > tr:first-child > th,
@@ -5834,7 +5834,7 @@ th {
 }
 
 .table > tbody + tbody {
-  border-top: 2px solid #ddd;
+  border-top: 2px solid transparent;
 }
 
 .table .table {
@@ -5851,7 +5851,7 @@ th {
 }
 
 .table-bordered {
-  border: 1px solid #ddd;
+  border: 1px solid transparent;
 }
 
 .table-bordered > thead > tr > th,
@@ -5860,7 +5860,7 @@ th {
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > th,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #ddd;
+  border: 1px solid transparent;
 }
 
 .table-bordered > thead > tr > th,
@@ -5873,7 +5873,7 @@ th {
 }
 
 .table-hover > tbody > tr:hover {
-  background-color: #f5f5f5;
+  background-color: #f7f6f6;
 }
 
 table col[class*="col-"] {
@@ -5901,7 +5901,7 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.active,
 .table > tfoot > tr.active > td,
 .table > tfoot > tr.active > th {
-  background-color: #f5f5f5;
+  background-color: #f7f6f6;
 }
 
 .table-hover > tbody > tr > td.active:hover,
@@ -5909,7 +5909,7 @@ table th[class*="col-"] {
 .table-hover > tbody > tr.active:hover > td,
 .table-hover > tbody > tr:hover > .active,
 .table-hover > tbody > tr.active:hover > th {
-  background-color: #e8e8e8;
+  background-color: #ebe9e9;
 }
 
 .table > thead > tr > td.success,
@@ -6015,7 +6015,7 @@ table th[class*="col-"] {
     margin-bottom: 15.75px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ddd;
+    border: 1px solid transparent;
   }
   .table-responsive > .table {
     margin-bottom: 0;
@@ -9519,7 +9519,7 @@ button.list-group-item-danger.active:focus {
 .panel > .panel-body + .table-responsive,
 .panel > .table + .panel-body,
 .panel > .table-responsive + .panel-body {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid transparent;
 }
 
 .panel > .table > tbody:first-child > tr:first-child th,
@@ -10881,10 +10881,6 @@ button.close {
   background-color: #c59c71 !important;
 }
 
-.font-16 {
-  font-size: 16px;
-}
-
 .navbar-default {
   box-shadow: 0 5px 18px 2px rgba(1, 1, 1, 0.1);
 }
@@ -10967,8 +10963,8 @@ button.close {
 .btn {
   max-width: 100%;
   font-size: 12px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 32px;
+  padding-right: 32px;
   white-space: unset;
 }
 
@@ -11045,6 +11041,20 @@ button.close {
 .navbar-inverse {
   padding-top: 30px;
   padding-bottom: 20px;
+}
+
+.table {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td {
+  vertical-align: middle;
+  padding-left: 0;
 }
 
 .shop-link {
@@ -11262,6 +11272,22 @@ button.close {
   top: unset;
 }
 
+.divider-lg-bottom {
+  position: relative;
+}
+
+.divider-lg-bottom:after {
+  content: '';
+  height: 1px;
+  position: absolute;
+  background-color: #eeeeee;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 .images {
   margin-left: -10px;
   margin-right: -10px;
@@ -11276,6 +11302,12 @@ button.close {
   margin-bottom: 10px;
 }
 
+.input-label {
+  font-size: 14px;
+  color: #1e1e1c;
+  font-weight: 300;
+}
+
 @media (min-width: 768px) {
   .navbar-nav {
     float: right;
@@ -11283,6 +11315,52 @@ button.close {
   h1,
   .h1 {
     font-size: 36px;
+  }
+  .table {
+    table-layout: fixed;
+    border-bottom-color: transparent;
+  }
+  .table > thead > tr > th:first-child,
+  .table > tbody > tr > th:first-child,
+  .table > tfoot > tr > th:first-child {
+    padding-left: 0;
+  }
+  .table > thead > tr > th,
+  .table > thead > tr > td,
+  .table > tbody > tr > th,
+  .table > tbody > tr > td,
+  .table > tfoot > tr > th,
+  .table > tfoot > tr > td {
+    vertical-align: top;
+    padding: 30px 20px;
+  }
+  .table > thead > tr > td,
+  .table > tbody > tr > td,
+  .table > tfoot > tr > td {
+    border-bottom: 1px solid #eeeeee;
+  }
+  .table > thead .no-hover:hover,
+  .table > tbody .no-hover:hover,
+  .table > tfoot .no-hover:hover {
+    background-color: transparent;
+  }
+  .col-pic {
+    width: 11.5%;
+  }
+  .col-title {
+    width: 29.5%;
+  }
+  .col-price {
+    width: 17.5%;
+  }
+  .col-quantity {
+    width: 17.5%;
+  }
+  .col-total {
+    width: 14%;
+  }
+  .col-close {
+    width: 10%;
   }
   .shop-link {
     margin-right: 0;
@@ -11327,8 +11405,24 @@ button.close {
   padding-left: 30px;
 }
 
+.pb-25 {
+  padding-bottom: 25px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
 .img-shadow {
   box-shadow: 14.3px 7.3px 75.2px 4.8px rgba(14, 26, 52, 0.28);
+}
+
+.cart-img-shadow {
+  box-shadow: 0 5px 27px 3px rgba(14, 26, 52, 0.3);
 }
 
 .line-heaght-40 {
@@ -11349,6 +11443,10 @@ button.close {
 
 .mt-10 {
   margin-top: 10px;
+}
+
+.mr-5 {
+  margin-right: 5px !important;
 }
 
 .mr-10 {
@@ -11405,6 +11503,10 @@ button.close {
 
 .mb-25 {
   margin-bottom: 25px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
 }
 
 .mb-35 {
@@ -11508,6 +11610,41 @@ img {
   margin-bottom: 30px;
 }
 
+.general-img-wrap-table {
+  max-width: 140px;
+  margin: 0 auto 25px;
+}
+
+.general-cart-item {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.general-cart-close {
+  font-size: 28px;
+  transform: translateY(-50%);
+}
+
+.general-summary-table {
+  width: 100%;
+  max-width: 200px;
+  text-align: left;
+  margin: 0 auto 30px;
+}
+
+.general-text-align {
+  text-align: center;
+}
+
+.general-order-wrap {
+  padding-top: 15px;
+  margin-bottom: 60px;
+}
+
+.general-input-group {
+  margin-bottom: 35px;
+}
+
 @media (min-width: 768px) {
   .general-caption {
     padding-top: 20px;
@@ -11537,11 +11674,43 @@ img {
   .general-position {
     margin-top: 15px;
   }
+  .general-img-wrap-table {
+    max-width: 80px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .general-cart-close {
+    transform: unset;
+  }
+  .general-summary-table {
+    text-align: right;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .general-order-wrap {
+    margin-bottom: 35px;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .general-input-group {
+    margin-bottom: 10px;
+  }
+  .general-text-align {
+    text-align: right;
+  }
   .mb-res-50 {
     margin-bottom: 50px;
   }
   .mt-res-0 {
     margin-top: 0;
+  }
+  .res-mr-200 {
+    margin-right: 200px;
+  }
+  .res-mb-100 {
+    margin-bottom: 100px;
+  }
+  .res-block {
+    display: block;
   }
 }
 

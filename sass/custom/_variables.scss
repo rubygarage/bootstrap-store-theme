@@ -1,5 +1,6 @@
 //== Colors
 
+$grey-100: #f7f6f6;
 $grey-200: #eeeeee; // #ebebeb, #e8e8e8
 $grey-350: #c3c3c3;
 $grey-600: #8c8c8c;
@@ -168,6 +169,11 @@ $badge-color:                 $gold-500 !default;
 $badge-bg:                    transparent !default;
 $badge-active-color:          $gold-500 !default;
 $badge-font-weight:           300 !default;
+
+//== Tables
+
+$table-border-color:          transparent !default;
+$table-bg-hover:              $grey-100;
 
 //== Shop icon
 
