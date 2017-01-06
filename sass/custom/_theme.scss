@@ -366,7 +366,74 @@
   color: $grey-900;
   font-weight: 300;
 }
-
+.step-number {
+  width: 35px;
+  height: 35px;
+  font-size: $font-size-base;
+  color: $grey-900;
+  font-weight: 600;
+  line-height: 31px;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid $gold-500;
+  border-radius: 50%;
+}
+.step-text {
+  font-size: $font-size-base;
+  color: $grey-600;
+  font-weight: 300;
+  margin-left: 10px;
+}
+.steps .step {
+  position: relative;
+  margin: 0 5px 10px;
+  padding-right: 0;
+  padding-left: 0;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.steps .step-divider {
+  width: 4%;
+  height: 2px;
+  vertical-align: middle;
+  background-color: $grey-200;
+  padding-right: 0;
+  padding-left: 0;
+}
+.active {
+  .step-number {
+    color: white;
+    background-color: $gold-500;
+  }
+  .step-text {
+    color: $grey-900;
+  }
+}
+.checkbox label {
+  min-height: 24px;
+  padding-left: 0;
+  font-weight: 300;
+}
+.checkbox-icon {
+  $size: 24px;
+  width: $size;
+  height: $size;
+  font-size: 10px;
+  color: white;
+  line-height: $size;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid $grey-350;
+  margin-right: 15px;
+}
+.checkbox-input:checked + .checkbox-icon {
+  background-color: $gold-500;
+  border-color: transparent;
+}
 
 
 @media (min-width: $grid-float-breakpoint) {
@@ -451,6 +518,20 @@
     &:last-child:after {
       margin-left: 0;
       margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .step-text {
+    margin-right: 10px;
+  }
+  .steps {
+    .step {
+      margin-left: 10px;
+    }
+    .step-divider {
+      width: 6%;
     }
   }
 }

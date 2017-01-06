@@ -138,30 +138,30 @@ $carousel-control-font-size:          30px !default;
 //== Jumbotron
 
 $jumbotron-bg: white;
-$jumbotron-font-size: $font-size-h3;
+$jumbotron-font-size:          $font-size-h3;
 $jumbotron-heading-font-size:  $font-size-h1-large;
-$jumbotron-padding: 50px;
+$jumbotron-padding:            50px;
 
 //== Thumbnails
 
-$thumbnail-bg: $grey-200;
-$thumbnail-border: transparent;
-$thumbnail-border-radius: 0;
-$thumbnail-hover-bg: $gold-500;
+$thumbnail-bg:               $grey-200;
+$thumbnail-border:           transparent;
+$thumbnail-border-radius:    0;
+$thumbnail-hover-bg:         $gold-500;
 $thumbnail-hover-transition: opacity 0.5s ease-in-out;
 
 //=== Shared nav styles
 
-$nav-link-hover-bg: transparent !default;
+$nav-link-hover-bg:         transparent !default;
 
 //== Dropdowns
 
-$dropdown-link-color: $grey-600;
+$dropdown-link-color:       $grey-600;
 $dropdown-link-hover-color: white;
-$dropdown-border: transparent !default;
-$dropdown-fallback-border: transparent !default;
-$dropdown-divider-bg: $grey-200;
-$dropdown-link-hover-bg: $gold-500;
+$dropdown-border:           transparent !default;
+$dropdown-fallback-border:  transparent !default;
+$dropdown-divider-bg:        $grey-200;
+$dropdown-link-hover-bg:     $gold-500;
 
 //== Badges
 
@@ -175,7 +175,12 @@ $badge-font-weight:           300 !default;
 $table-border-color:          transparent !default;
 $table-bg-hover:              $grey-100;
 
+//== Form states and alerts
+
+$state-danger-text:           red !default;
+
+$input-height-base:           36px;
+
 //== Shop icon
 
-$shop-icon-bg: $gold-500;
-
+$shop-icon-bg:                $gold-500;

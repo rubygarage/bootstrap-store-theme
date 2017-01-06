@@ -48,7 +48,7 @@
     margin-left: #{$size}px !important;
   }
 }
-@each $size in (0, 5, 10, 15, 20, 25, 30, 35, 60, 80, 120) {
+@each $size in (0, 5, 10, 15, 20, 25, 30, 35, 40, 60, 80, 120) {
   .mb-#{$size} {
     margin-bottom: #{$size}px !important;
   }
@@ -152,6 +152,15 @@ img {
 .general-input-group {
   margin-bottom: 35px;
 }
+.general-subtitle {
+  color: $gold-500;
+  font-weight: 400;
+}
+.general-info-text {
+  font-size: $font-size-base;
+  color: $grey-600;
+  font-weight: 300;
+}
 
 @media (min-width: $grid-float-breakpoint) {
   .general-caption {
@@ -191,9 +200,7 @@ img {
     transform: unset;
   }
   .general-summary-table {
-    text-align: right;
-    margin-right: 0;
-    margin-left: auto;
+    margin-left: 0;
   }
   .general-order-wrap {
     margin-bottom: 35px;
@@ -203,7 +210,7 @@ img {
     margin-bottom: 10px;
   }
   .general-text-align {
-    text-align: right;
+    text-align: left;
   }
   .mb-res-50 {
     margin-bottom: 50px;
