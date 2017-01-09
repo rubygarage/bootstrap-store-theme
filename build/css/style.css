@@ -11043,17 +11043,12 @@ button.close {
   padding-bottom: 20px;
 }
 
-.table {
-  border-bottom: 1px solid #eeeeee;
-}
-
 .table > thead > tr > th,
 .table > thead > tr > td,
 .table > tbody > tr > th,
 .table > tbody > tr > td,
 .table > tfoot > tr > th,
 .table > tfoot > tr > td {
-  vertical-align: middle;
   padding-left: 0;
 }
 
@@ -11363,8 +11358,8 @@ button.close {
 
 .checkbox label {
   min-height: 24px;
-  padding-left: 0;
   font-weight: 300;
+  padding-left: 0;
 }
 
 .checkbox-icon {
@@ -11382,6 +11377,48 @@ button.close {
 .checkbox-input:checked + .checkbox-icon {
   background-color: #c59c71;
   border-color: transparent;
+}
+
+.radio label {
+  min-height: 24px;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 0;
+}
+
+.radio-icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #c3c3c3;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.radio-icon:after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #1e1e1c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.radio-input:checked + .radio-icon {
+  background-color: transparent;
+  border-color: #1e1e1c;
+}
+
+.radio-input:checked + .radio-icon:after {
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
@@ -11407,7 +11444,6 @@ button.close {
   .table > tbody > tr > td,
   .table > tfoot > tr > th,
   .table > tfoot > tr > td {
-    vertical-align: top;
     padding: 30px 20px;
   }
   .table > thead > tr > td,
@@ -11419,24 +11455,6 @@ button.close {
   .table > tbody .no-hover:hover,
   .table > tfoot .no-hover:hover {
     background-color: transparent;
-  }
-  .col-pic {
-    width: 11.5%;
-  }
-  .col-title {
-    width: 29.5%;
-  }
-  .col-price {
-    width: 17.5%;
-  }
-  .col-quantity {
-    width: 17.5%;
-  }
-  .col-total {
-    width: 14%;
-  }
-  .col-close {
-    width: 10%;
   }
   .shop-link {
     margin-right: 0;
@@ -11505,6 +11523,10 @@ button.close {
   font-size: 18px;
 }
 
+.f-weight-300 {
+  font-weight: 300;
+}
+
 .img-shadow {
   box-shadow: 14.3px 7.3px 75.2px 4.8px rgba(14, 26, 52, 0.28);
 }
@@ -11527,6 +11549,14 @@ button.close {
 
 .line-height-2 {
   line-height: 2;
+}
+
+.vertical-middle {
+  vertical-align: middle !important;
+}
+
+.mt-0 {
+  margin-top: 0;
 }
 
 .mt-10 {
@@ -11563,6 +11593,10 @@ button.close {
 
 .ml-10 {
   margin-left: 10px !important;
+}
+
+.ml-60 {
+  margin-left: 60px !important;
 }
 
 .ml-70 {
@@ -11619,6 +11653,38 @@ button.close {
 
 img {
   max-width: 100%;
+}
+
+.col-pic {
+  width: 11.5%;
+}
+
+.col-title {
+  width: 29.5%;
+}
+
+.col-price {
+  width: 17.5%;
+}
+
+.col-quantity {
+  width: 17.5%;
+}
+
+.col-total {
+  width: 14%;
+}
+
+.col-close {
+  width: 10%;
+}
+
+.col-method {
+  width: 40%;
+}
+
+.col-half {
+  width: 50%;
 }
 
 .general-container-xs {
@@ -11721,7 +11787,7 @@ img {
   width: 100%;
   max-width: 200px;
   text-align: left;
-  margin: 0 auto 30px;
+  margin: 0 auto 50px;
 }
 
 .general-text-align {
@@ -11787,6 +11853,7 @@ img {
   }
   .general-summary-table {
     margin-left: 0;
+    margin-bottom: 30px;
   }
   .general-order-wrap {
     margin-bottom: 35px;

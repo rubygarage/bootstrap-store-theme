@@ -57,7 +57,7 @@
 <a href="#">Log out</a></li></ul></li>
 <li>
 <a href="#">My account</a></li></ul></div></div></div></header>
-<main class="container">
+<main class="container mb-res-50">
 <h1 class="general-title-margin">Checkout</h1>
 <ul class="steps list-inline">
 <li class="step active">
@@ -79,83 +79,101 @@
 <li class="step">
 <span class="step-number">5</span>
 <span class="step-text hidden-xs">Complete</span></li></ul>
-<form class="res-mb-100">
-<div class="row">
-<div class="col-md-5">
-<h3 class="general-subtitle">Billing Address</h3>
-<p class="general-info-text">all fields are required</p></div>
-<div class="col-md-5 col-md-offset-1">
-<h3 class="general-subtitle">Shipping Address</h3></div></div>
-<div class="row">
-<div class="col-md-5 mb-40">
-<div class="form-group has-error">
-<label for="firstName" class="control-label input-label">First Name</label>
-<input id="firstName" type="name" placeholder="First Name" class="form-control"/>
-<span class="help-block">Please enter your first name</span></div>
-<div class="form-group">
-<label for="lastName" class="control-label input-label">Last Name</label>
-<input id="lastName" type="name" placeholder="Last Name" class="form-control"/></div>
-<div class="form-group">
-<label for="address" class="control-label input-label">Address</label>
-<input id="address" type="address" placeholder="Address" class="form-control"/></div>
-<div class="form-group">
-<label for="city" class="control-label input-label">City</label>
-<input id="city" type="address" placeholder="City" class="form-control"/></div>
-<div class="form-group">
-<label for="zip" class="control-label input-label">Zip</label>
-<input id="zip" type="address" placeholder="Zip" class="form-control"/></div>
-<div class="form-group">
-<label for="сountry" class="control-label input-label">Country</label>
-<input id="country" type="address" placeholder="Select a country" class="form-control"/></div>
-<div class="form-group">
-<label for="phone" class="control-label input-label">Phone</label>
-<input id="phone" type="phone" placeholder="Example +355 66 123 4567" class="form-control"/></div></div>
-<div class="col-md-5 col-md-offset-1 mb-60">
-<div class="form-group has-error">
-<label for="firstName" class="control-label input-label">First Name</label>
-<input id="firstName" type="name" placeholder="First Name" class="form-control"/>
-<span class="help-block">Please enter your first name</span></div>
-<div class="form-group">
-<label for="lastName" class="control-label input-label">Last Name</label>
-<input id="lastName" type="name" placeholder="Last Name" class="form-control"/></div>
-<div class="form-group">
-<label for="address" class="control-label input-label">Address</label>
-<input id="address" type="address" placeholder="Address" class="form-control"/></div>
-<div class="form-group">
-<label for="city" class="control-label input-label">City</label>
-<input id="city" type="address" placeholder="City" class="form-control"/></div>
-<div class="form-group">
-<label for="zip" class="control-label input-label">Zip</label>
-<input id="zip" type="address" placeholder="Zip" class="form-control"/></div>
-<div class="form-group">
-<label for="сountry" class="control-label input-label">Country</label>
-<select id="country" type="address" placeholder="Select a country" class="form-control">
-<option>London</option>
-<option>London</option>
-<option>London</option></select></div>
-<div class="form-group">
-<label for="phone" class="control-label input-label">Phone</label>
-<input id="phone" type="phone" placeholder="Example +355 66 123 4567" class="form-control"/></div>
-<div class="form-group checkbox">
-<label class="checkbox-label">
-<input type="checkbox" hidden="true" class="checkbox-input"/>
-<span class="checkbox-icon">
-<i class="fa fa-check"></i></span>
-<span class="checkbox-text">Use Billing Adress</span></label></div></div></div>
-<div class="general-text-align mb-60">
+<h3 class="general-subtitle">Shipping Method</h3>
+<div class="visible-xs">
+<div class="general-cart-item divider-lg-bottom mb-25">
+<table class="table">
+<tr>
+<td class="col-half">
+<span class="in-grey-600">Method</span></td>
+<td class="col-half">
+<div class="form-group radio mt-0 mb-0">
+<label class="radio-label">
+<input type="radio" hidden="true" class="radio-input"/>
+<span class="radio-icon"></span>
+<span class="radio-text">Delivery Next Day!</span></label></div></td></tr>
+<tr>
+<td>
+<span class="in-grey-600">Days</span></td>
+<td>
+<span class="font-16 f-weight-300">3 to 7 days</span></td></tr>
+<tr>
+<td>
+<span class="in-grey-600">Price</span></td>
+<td>
+<span class="font-16 in-gold-500">€5.00</span></td></tr></table></div>
+<div class="general-cart-item divider-lg-bottom mb-25">
+<table class="table">
+<tr>
+<td class="col-half">
+<span class="in-grey-600">Method</span></td>
+<td class="col-half">
+<div class="form-group radio mt-0 mb-0">
+<label class="radio-label">
+<input type="radio" hidden="true" class="radio-input"/>
+<span class="radio-icon"></span>
+<span class="radio-text">Delivery Next Day!</span></label></div></td></tr>
+<tr>
+<td>
+<span class="in-grey-600">Days</span></td>
+<td>
+<span class="font-16 f-weight-300">3 to 7 days</span></td></tr>
+<tr>
+<td>
+<span class="in-grey-600">Price</span></td>
+<td>
+<span class="font-16 in-gold-500">€5.00</span></td></tr></table></div></div>
+<div class="hidden-xs mb-res-50">
+<table class="table table-hover">
+<tr class="no-hover">
+<th class="col-method">
+<span class="in-grey-600 ml-60">Method</span></th>
+<th class="col-">
+<span class="in-grey-600">Days</span></th>
+<th class="col-">
+<span class="in-grey-600">Price</span></th></tr>
+<tr>
+<td>
+<div class="form-group radio mt-0 mb-0">
+<label class="radio-label">
+<input type="radio" hidden="true" class="radio-input"/>
+<span class="radio-icon"></span>
+<span class="radio-text">Delivery Next Day!</span></label></div></td>
+<td>
+<span>3 to 7 days</span></td>
+<td>
+<span class="font-16 in-gold-500">€28.50</span></td></tr>
+<tr>
+<td>
+<div class="form-group radio mt-0 mb-0">
+<label class="radio-label">
+<input type="radio" hidden="true" class="radio-input"/>
+<span class="radio-icon"></span>
+<span class="radio-text">Delivery Next Day!</span></label></div></td>
+<td>
+<span>3 to 7 days</span></td>
+<td>
+<span class="font-16 in-gold-500">€28.50</span></td></tr></table></div>
+<div class="general-text-align">
 <p class="in-gold-500 font-18">Order Summary</p>
 <table class="general-summary-table">
 <tr>
 <td>
-<p class="font-16">Item Total:</p></td>
+<p class="font-16">Subtotal:</p></td>
 <td>
 <p class="font-16">€117.69</p></td></tr>
 <tr>
 <td>
-<p class="font-16">Order Total:</p></td>
+<p class="font-16">Coupon:</p></td>
 <td>
-<p class="font-16">€117.69</p></td></tr></table>
-<button class="btn disabled mb-20">Save and Continue</button></div></form></main>
+<p class="font-16">€0.00</p></td></tr>
+<tr>
+<td>
+<strong class="font-18">Order Total:</strong></td>
+<td>
+<strong class="font-18">€117.69</strong></td></tr></table></div>
+<div class="text-center">
+<button class="btn btn-default mb-80">Save and Continue</button></div></main>
 <footer class="navbar-inverse">
 <div class="container">
 <div class="row">

@@ -137,14 +137,12 @@
   padding-bottom: 20px;
 }
 .table {
-  border-bottom: 1px solid $grey-200;
   > thead,
   > tbody,
   > tfoot {
     > tr {
       > th,
       > td {
-        vertical-align: middle;
         padding-left: 0;
       }
     }
@@ -415,8 +413,8 @@
 }
 .checkbox label {
   min-height: 24px;
-  padding-left: 0;
   font-weight: 300;
+  padding-left: 0;
 }
 .checkbox-icon {
   $size: 24px;
@@ -433,6 +431,44 @@
 .checkbox-input:checked + .checkbox-icon {
   background-color: $gold-500;
   border-color: transparent;
+}
+.radio label {
+  min-height: 24px;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 0;
+}
+.radio-icon {
+  $size: 24px;
+  width: $size;
+  height: $size;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid $grey-350;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $grey-900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+.radio-input:checked + .radio-icon {
+  background-color: transparent;
+  border-color: $grey-900;
+  &:after {
+    opacity: 1;
+  }
 }
 
 
@@ -456,7 +492,6 @@
         }
         > th,
         > td {
-          vertical-align: top;
           padding: 30px 20px;
         }
         > td {
@@ -467,24 +502,6 @@
         background-color: transparent;
       }
     }
-  }
-  .col-pic {
-    width: 11.5%;
-  }
-  .col-title {
-    width: 29.5%;
-  }
-  .col-price {
-    width: 17.5%;
-  }
-  .col-quantity {
-    width: 17.5%;
-  }
-  .col-total {
-    width: 14%;
-  }
-  .col-close {
-    width: 10%;
   }
   .shop-link {
     margin-right: 0;

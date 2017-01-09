@@ -16,6 +16,9 @@
 .font-18 {
   font-size: 18px;
 }
+.f-weight-300 {
+  font-weight: 300;
+}
 .img-shadow {
   box-shadow: $carousel-image-shadow;
 }
@@ -34,6 +37,12 @@
 .line-height-2 {
   line-height: 2;
 }
+.vertical-middle {
+  vertical-align: middle !important;
+}
+.mt-0 {
+  margin-top: 0;
+}
 .mt-10 {
   margin-top: 10px;
 }
@@ -43,7 +52,7 @@
     margin-right: #{$size}px !important;
   }
 }
-@each $size in (10, 70) {
+@each $size in (10, 60, 70) {
   .ml-#{$size} {
     margin-left: #{$size}px !important;
   }
@@ -56,6 +65,30 @@
 
 img {
   max-width: 100%;
+}
+.col-pic {
+  width: 11.5%;
+}
+.col-title {
+  width: 29.5%;
+}
+.col-price {
+  width: 17.5%;
+}
+.col-quantity {
+  width: 17.5%;
+}
+.col-total {
+  width: 14%;
+}
+.col-close {
+  width: 10%;
+}
+.col-method {
+  width: 40%;
+}
+.col-half {
+  width: 50%;
 }
 .general-container-xs {
   padding-right: 10px;
@@ -140,7 +173,7 @@ img {
   width: 100%;
   max-width: 200px;
   text-align: left;
-  margin: 0 auto 30px;
+  margin: 0 auto 50px;
 }
 .general-text-align {
   text-align: center;
@@ -201,6 +234,7 @@ img {
   }
   .general-summary-table {
     margin-left: 0;
+    margin-bottom: 30px;
   }
   .general-order-wrap {
     margin-bottom: 35px;
