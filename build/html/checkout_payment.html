@@ -80,80 +80,25 @@
 <span class="step-number">5</span>
 <span class="step-text hidden-xs">Complete</span></li></ul>
 <h3 class="general-subtitle">Credit Card</h3>
-<div class="visible-xs">
-<div class="general-cart-item divider-lg-bottom mb-25">
-<table class="table">
-<tr>
-<td class="col-half">
-<span class="in-grey-600">Method</span></td>
-<td class="col-half">
-<div class="form-group radio mt-0 mb-0">
-<label class="radio-label">
-<input type="radio" hidden="true" class="radio-input"/>
-<span class="radio-icon"></span>
-<span class="radio-text">Delivery Next Day!</span></label></div></td></tr>
-<tr>
-<td>
-<span class="in-grey-600">Days</span></td>
-<td>
-<span class="font-16 f-weight-300">3 to 7 days</span></td></tr>
-<tr>
-<td>
-<span class="in-grey-600">Price</span></td>
-<td>
-<span class="font-16 in-gold-500">€5.00</span></td></tr></table></div>
-<div class="general-cart-item divider-lg-bottom mb-25">
-<table class="table">
-<tr>
-<td class="col-half">
-<span class="in-grey-600">Method</span></td>
-<td class="col-half">
-<div class="form-group radio mt-0 mb-0">
-<label class="radio-label">
-<input type="radio" hidden="true" class="radio-input"/>
-<span class="radio-icon"></span>
-<span class="radio-text">Delivery Next Day!</span></label></div></td></tr>
-<tr>
-<td>
-<span class="in-grey-600">Days</span></td>
-<td>
-<span class="font-16 f-weight-300">3 to 7 days</span></td></tr>
-<tr>
-<td>
-<span class="in-grey-600">Price</span></td>
-<td>
-<span class="font-16 in-gold-500">€5.00</span></td></tr></table></div></div>
-<div class="hidden-xs mb-res-50">
-<table class="table table-hover">
-<tr class="no-hover">
-<th class="col-method">
-<span class="in-grey-600 ml-60">Method</span></th>
-<th class="col-">
-<span class="in-grey-600">Days</span></th>
-<th class="col-">
-<span class="in-grey-600">Price</span></th></tr>
-<tr>
-<td>
-<div class="form-group radio mt-0 mb-0">
-<label class="radio-label">
-<input type="radio" hidden="true" class="radio-input"/>
-<span class="radio-icon"></span>
-<span class="radio-text">Delivery Next Day!</span></label></div></td>
-<td>
-<span>3 to 7 days</span></td>
-<td>
-<span class="font-16 in-gold-500">€28.50</span></td></tr>
-<tr>
-<td>
-<div class="form-group radio mt-0 mb-0">
-<label class="radio-label">
-<input type="radio" hidden="true" class="radio-input"/>
-<span class="radio-icon"></span>
-<span class="radio-text">Delivery Next Day!</span></label></div></td>
-<td>
-<span>3 to 7 days</span></td>
-<td>
-<span class="font-16 in-gold-500">€28.50</span></td></tr></table></div>
+<form class="max-600 mb-80">
+<div class="form-group has-error">
+<label for="cardNumber" class="control-label input-label">Card Number</label>
+<input id="cardNumber" type="number" name="cardnumber" placeholder="Card Number" class="form-control"/>
+<span class="help-block">Please enter a valid credit card number</span></div>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+<label for="cardName" class="control-label input-label">Name on Card</label>
+<input id="cardName" type="text" name="ccname" placeholder="Name on Card" class="form-control"/></div></div>
+<div class="col-sm-3">
+<div class="form-group">
+<label for="firstName" class="control-label input-label">MM / YY</label>
+<input id="firstName" name="exp-date" type="text" placeholder="MM / YY" class="form-control"/></div></div>
+<div class="col-sm-3">
+<div class="form-group relative">
+<label for="firstName" class="control-label input-label">CVV</label>
+<input id="firstName" name="cvc" type="number" placeholder="CVV" class="form-control"/>
+<i class="fa fa-question-circle general-form-help"></i></div></div></div></form>
 <div class="general-text-align">
 <p class="in-gold-500 font-18">Order Summary</p>
 <table class="general-summary-table">

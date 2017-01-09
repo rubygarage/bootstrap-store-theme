@@ -31,6 +31,9 @@
 .max-240 {
   max-width: 240px;
 }
+.max-600 {
+  max-width: 600px;
+}
 .width-240 {
   width: 240px;
 }
@@ -39,6 +42,9 @@
 }
 .vertical-middle {
   vertical-align: middle !important;
+}
+.relative {
+  position: relative;
 }
 .mt-0 {
   margin-top: 0;
@@ -193,6 +199,14 @@ img {
   font-size: $font-size-base;
   color: $grey-600;
   font-weight: 300;
+}
+.general-form-help {
+  font-size: 18px;
+  color: $grey-600;
+  position: absolute;
+  top: 35px;
+  right: 8px;
+  cursor: pointer;
 }
 
 @media (min-width: $grid-float-breakpoint) {

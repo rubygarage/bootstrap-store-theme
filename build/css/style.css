@@ -11543,6 +11543,10 @@ button.close {
   max-width: 240px;
 }
 
+.max-600 {
+  max-width: 600px;
+}
+
 .width-240 {
   width: 240px;
 }
@@ -11553,6 +11557,10 @@ button.close {
 
 .vertical-middle {
   vertical-align: middle !important;
+}
+
+.relative {
+  position: relative;
 }
 
 .mt-0 {
@@ -11812,6 +11820,15 @@ img {
   font-size: 14px;
   color: #8c8c8c;
   font-weight: 300;
+}
+
+.general-form-help {
+  font-size: 18px;
+  color: #8c8c8c;
+  position: absolute;
+  top: 35px;
+  right: 8px;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
