@@ -57,10 +57,10 @@
                     %a{href: "#"} Log out
               %li
                 %a{href: "#"} My account
-    %main.container.res-mb-100
+    %main.container.general-main-wrap
       %h1.general-title-margin Cart
       .visible-xs
-        .general-cart-item
+        .general-cart-item.divider-lg
           %button.close.general-cart-close{type: "button", 'aria-label': "Close"}
             %span{'aria-hidden': "true"} &times;
           .general-img-wrap-table
@@ -87,7 +87,7 @@
                 %span.in-grey-600 SubTotal
               %td
                 %span.font-16.in-gold-500 €32.90
-        .general-cart-item
+        .general-cart-item.divider-lg.mb-30
           %button.close.general-cart-close{type: "button", 'aria-label': "Close"}
             %span{'aria-hidden': "true"} &times;
           .general-img-wrap-table
@@ -177,9 +177,9 @@
                 %button.btn.btn-primary.mr-5.mb-15.visible-xs-inline-block Apply Coupon
                 %button.btn.btn-primary.mb-15.res-block Update cart
           .col-sm-8
-            .res-mr-200.general-text-align
+            .res-mr-200.text-center.general-text-right
               %p.in-gold-500.font-18 Order Summary
-              %table.general-summary-table
+              %table.general-summary-table.general-text-right
                 %tr
                   %td
                     %p.font-16 Subtotal:

@@ -19,6 +19,9 @@
 .f-weight-300 {
   font-weight: 300;
 }
+.fw-300 {
+  font-weight: 300;
+}
 .img-shadow {
   box-shadow: $carousel-image-shadow;
 }
@@ -58,7 +61,7 @@
     margin-right: #{$size}px !important;
   }
 }
-@each $size in (10, 60, 70) {
+@each $size in (10, 30, 60, 70) {
   .ml-#{$size} {
     margin-left: #{$size}px !important;
   }
@@ -95,6 +98,9 @@ img {
 }
 .col-half {
   width: 50%;
+}
+.general-main-wrap {
+  margin-bottom: 60px;
 }
 .general-container-xs {
   padding-right: 10px;
@@ -168,8 +174,9 @@ img {
   margin: 0 auto 25px;
 }
 .general-cart-item {
+  padding-top: 30px;
   padding-bottom: 5px;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
 }
 .general-cart-close {
   font-size: 28px;
@@ -186,7 +193,6 @@ img {
 }
 .general-order-wrap {
   padding-top: 15px;
-  margin-bottom: 60px;
 }
 .general-input-group {
   margin-bottom: 35px;
@@ -208,8 +214,21 @@ img {
   right: 8px;
   cursor: pointer;
 }
+.general-address {
+  font-size: 16px;
+  color: $grey-900;
+  font-weight: 300;
+  line-height: 2;
+}
+.general-edit {
+  font-size: 13px;
+  color: $grey-600;
+}
 
 @media (min-width: $grid-float-breakpoint) {
+  .general-main-wrap {
+    margin-bottom: 100px;
+  }
   .general-caption {
     padding-top: 20px;
     padding-left: 20px;
@@ -250,6 +269,10 @@ img {
     margin-left: 0;
     margin-bottom: 30px;
   }
+  .general-summary-table {
+    margin-right: 0;
+    margin-left: auto;
+  }
   .general-order-wrap {
     margin-bottom: 35px;
     border-bottom: 1px solid $grey-200;
@@ -260,17 +283,14 @@ img {
   .general-text-align {
     text-align: left;
   }
-  .mb-res-50 {
-    margin-bottom: 50px;
+  .general-text-right {
+    text-align: right;
   }
   .mt-res-0 {
     margin-top: 0;
   }
-  .res-mr-200 {
-    margin-right: 200px;
-  }
-  .res-mb-100 {
-    margin-bottom: 100px;
+  .mb-res-50 {
+    margin-bottom: 50px;
   }
   .res-block {
     display: block;
@@ -278,6 +298,9 @@ img {
 }
 
 @media (min-width: $screen-md-min) {
+  .res-mr-200 {
+    margin-right: 200px;
+  }
   .general-img-wrap {
     max-width: 250px;
     padding-top: 20px;

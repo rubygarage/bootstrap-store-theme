@@ -491,6 +491,10 @@
         > th:first-child  {
           padding-left: 0;
         }
+        > th:last-child,
+        > td:last-child  {
+          text-align: right;
+        }
         > th,
         > td {
           padding: 30px 20px;
