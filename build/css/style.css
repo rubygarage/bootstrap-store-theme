@@ -11911,6 +11911,13 @@ img {
   margin: 0 auto 20px;
 }
 
+.general-password-text {
+  font-size: 16px;
+  color: #8c8c8c;
+  font-weight: 300;
+  margin: 0 20px 25px;
+}
+
 @media (min-width: 768px) {
   .general-main-wrap {
     margin-bottom: 100px;

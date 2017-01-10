@@ -255,6 +255,12 @@ img {
   max-width: 370px;
   margin: 0 auto 20px;
 }
+.general-password-text {
+  font-size: 16px;
+  color: $grey-600;
+  font-weight: 300;
+  margin: 0 20px 25px;
+}
 
 @media (min-width: $grid-float-breakpoint) {
   .general-main-wrap {
