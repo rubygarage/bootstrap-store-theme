@@ -11428,6 +11428,20 @@ button.close {
   opacity: 1;
 }
 
+.tab-item {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.tab-link {
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+.tab-link:hover, .tab-link:focus {
+  color: #1e1e1c;
+}
+
 @media (min-width: 768px) {
   .navbar-nav {
     float: right;
@@ -11918,6 +11932,10 @@ img {
   margin: 0 20px 25px;
 }
 
+.general-settings-btn {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .general-main-wrap {
     margin-bottom: 100px;
@@ -11962,7 +11980,7 @@ img {
     margin-left: 0;
     margin-bottom: 30px;
   }
-  .general-summary-table {
+  .general-summary-table-right {
     margin-right: 0;
     margin-left: auto;
   }
@@ -11978,6 +11996,16 @@ img {
   }
   .general-text-right {
     text-align: right;
+  }
+  .general-settings-btn {
+    float: left;
+    margin-right: 40px;
+  }
+  .general-settings-checkbox {
+    float: left;
+  }
+  .general-form-md {
+    max-width: 470px;
   }
   .mt-res-0 {
     margin-top: 0;

@@ -474,6 +474,18 @@
     opacity: 1;
   }
 }
+.tab-item {
+  float: left;
+  margin-bottom: 10px;
+}
+.tab-link {
+  font-size: 14px;
+  color: $grey-600;
+  &:hover,
+  &:focus {
+    color: $grey-900;
+  }
+}
 
 
 

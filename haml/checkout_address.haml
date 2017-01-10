@@ -80,14 +80,18 @@
           %span.step-number 5
           %span.step-text.hidden-xs Complete
       %form.res-mb-100
-        .row
-          .col-md-5
-            %h3.general-subtitle Billing Address
-            %p.general-info-text all fields are required
-          .col-md-5.col-md-offset-1
-            %h3.general-subtitle Shipping Address
+        .hidden-xs.hidden-sm
+          .row
+            .col-md-5
+              %h3.general-subtitle Billing Address
+              %p.general-info-text all fields are required
+            .col-md-5.col-md-offset-1
+              %h3.general-subtitle Shipping Address
         .row
           .col-md-5.mb-40
+            .visible-xs.visible-sm
+              %h3.general-subtitle Billing Address
+              %p.general-info-text all fields are required
             .form-group.has-error
               %label.control-label.input-label{for: "firstName"} First Name
               %input#firstName.form-control{name:"fname", type: "text", placeholder: "First Name"}
@@ -111,6 +115,8 @@
               %label.control-label.input-label{for: "phone"} Phone
               %input#phone.form-control{name: "phone", type: "tel", placeholder: "Example +355 66 123 4567"}
           .col-md-5.col-md-offset-1.mb-60
+            .visible-xs.visible-sm
+              %h3.general-subtitle Shipping Address
             .form-group.has-error
               %label.control-label.input-label{for: "firstName"} First Name
               %input#firstName.form-control{name:"fname", type: "text", placeholder: "First Name"}

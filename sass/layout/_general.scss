@@ -261,6 +261,12 @@ img {
   font-weight: 300;
   margin: 0 20px 25px;
 }
+.general-settings-btn {
+  text-align: center;
+}
+.general-form-md {
+
+}
 
 @media (min-width: $grid-float-breakpoint) {
   .general-main-wrap {
@@ -306,7 +312,7 @@ img {
     margin-left: 0;
     margin-bottom: 30px;
   }
-  .general-summary-table {
+  .general-summary-table-right {
     margin-right: 0;
     margin-left: auto;
   }
@@ -322,6 +328,16 @@ img {
   }
   .general-text-right {
     text-align: right;
+  }
+  .general-settings-btn {
+    float: left;
+    margin-right: 40px;
+  }
+  .general-settings-checkbox {
+    float: left;
+  }
+  .general-form-md {
+    max-width: 470px;
   }
   .mt-res-0 {
     margin-top: 0;
