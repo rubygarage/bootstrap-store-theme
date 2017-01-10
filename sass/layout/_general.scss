@@ -228,6 +228,33 @@ img {
   color: $gold-500;
   font-weight: 600;
 }
+.general-sign-text {
+  color: $grey-700;
+  font-weight: 300;
+}
+.general-login-title {
+  font-size: 18px;
+  color: $grey-900;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.general-login-fb {
+  font-size: 24px;
+  color: $grey-900;
+  display: inline-block;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.general-login-text {
+  color: $grey-600;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.general-form{
+  max-width: 370px;
+  margin: 0 auto 20px;
+}
 
 @media (min-width: $grid-float-breakpoint) {
   .general-main-wrap {
