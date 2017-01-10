@@ -11347,13 +11347,20 @@ button.close {
   padding-left: 0;
 }
 
-.active .step-number {
+.active .step-number,
+.done .step-number {
   color: white;
   background-color: #c59c71;
 }
 
-.active .step-text {
+.active .step-text,
+.done .step-text {
   color: #1e1e1c;
+}
+
+.active .step-icon,
+.done .step-icon {
+  font-size: 12px;
 }
 
 .checkbox label {
@@ -11663,6 +11670,10 @@ button.close {
   margin-bottom: 40px !important;
 }
 
+.mb-55 {
+  margin-bottom: 55px !important;
+}
+
 .mb-60 {
   margin-bottom: 60px !important;
 }
@@ -11860,6 +11871,12 @@ img {
 .general-edit {
   font-size: 13px;
   color: #8c8c8c;
+}
+
+.general-order-number {
+  font-size: 18px;
+  color: #c59c71;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {

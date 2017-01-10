@@ -402,13 +402,17 @@
   padding-right: 0;
   padding-left: 0;
 }
-.active {
+.active,
+.done {
   .step-number {
     color: white;
     background-color: $gold-500;
   }
   .step-text {
     color: $grey-900;
+  }
+  .step-icon {
+    font-size: 12px;
   }
 }
 .checkbox label {
