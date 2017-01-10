@@ -11528,6 +11528,10 @@ button.close {
   }
 }
 
+.pt-0 {
+  padding-top: 0px !important;
+}
+
 .pt-10 {
   padding-top: 10px;
 }
@@ -11634,6 +11638,10 @@ button.close {
 
 .ml-10 {
   margin-left: 10px !important;
+}
+
+.ml-20 {
+  margin-left: 20px !important;
 }
 
 .ml-30 {
@@ -11936,6 +11944,12 @@ img {
   text-align: center;
 }
 
+.general-order-number {
+  font-size: 16px;
+  color: #c59c71;
+  font-weight: 300;
+}
+
 @media (min-width: 768px) {
   .general-main-wrap {
     margin-bottom: 100px;
@@ -12006,6 +12020,10 @@ img {
   }
   .general-form-md {
     max-width: 470px;
+  }
+  .general-order-dropdown {
+    width: 240px;
+    float: right;
   }
   .mt-res-0 {
     margin-top: 0;

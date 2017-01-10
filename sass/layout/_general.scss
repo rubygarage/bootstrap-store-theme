@@ -1,3 +1,6 @@
+.pt-0 {
+  padding-top: 0px !important;
+}
 .pt-10 {
   padding-top: 10px;
 }
@@ -61,7 +64,7 @@
     margin-right: #{$size}px !important;
   }
 }
-@each $size in (10, 30, 60, 70) {
+@each $size in (10, 20, 30, 60, 70) {
   .ml-#{$size} {
     margin-left: #{$size}px !important;
   }
@@ -264,9 +267,12 @@ img {
 .general-settings-btn {
   text-align: center;
 }
-.general-form-md {
-
+.general-order-number {
+  font-size: 16px;
+  color: $gold-500;
+  font-weight: 300;
 }
+
 
 @media (min-width: $grid-float-breakpoint) {
   .general-main-wrap {
@@ -338,6 +344,10 @@ img {
   }
   .general-form-md {
     max-width: 470px;
+  }
+  .general-order-dropdown {
+    width: 240px;
+    float: right;
   }
   .mt-res-0 {
     margin-top: 0;
