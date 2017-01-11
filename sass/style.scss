@@ -1,9 +1,7 @@
-@import "base/typography";
-@import "utils/helpers";
-
-@import "../font-awesome/scss/font-awesome";
-
 @import "custom/variables";
 @import "bootstrap";
 @import "custom/theme";
-@import "layout/general";
+@import "bookstore/general";
+@import "bookstore/utils/helpers";
+@import "variables";
+@import "overrides";

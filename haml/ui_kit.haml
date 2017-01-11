@@ -4,6 +4,7 @@
     %meta{charset: "UTF-8"}
     %meta{name: "viewport", content: "width=device-width"}
     %title Bookstore
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans", rel: "stylesheet"}
     %link{href: "../css/style.css", rel: "stylesheet"}
   %body
     %header.navbar.navbar-default
@@ -109,7 +110,7 @@
         .col-sm-4
           .general-thumb-wrap
             .thumbnail.general-thumbnail
-              %img.img-shadow{src: "https://d31wxntiwn0x96.cloudfront.net/rzgade/productimages/1276.jpg?width=400&height=400&etag=%22a2ebd1488b087bf0e6db43ee8bae0634%22", alt: "design-book"}
+              %img.img-shadow.general-thumbnail-img{src: "https://d31wxntiwn0x96.cloudfront.net/rzgade/productimages/1276.jpg?width=400&height=400&etag=%22a2ebd1488b087bf0e6db43ee8bae0634%22", alt: "design-book"}
               .thumb-hover
                 .general-thumb-link-wrap
                   %a.thumb-hover-link{href: "#"}
@@ -124,7 +125,7 @@
         .col-sm-4
           .general-thumb-wrap
             .thumbnail.general-thumbnail.disabled
-              %img.img-shadow{src: "https://d31wxntiwn0x96.cloudfront.net/rzgade/productimages/1276.jpg?width=400&height=400&etag=%22a2ebd1488b087bf0e6db43ee8bae0634%22", alt: "design-book"}
+              %img.img-shadow.general-thumbnail-img{src: "https://d31wxntiwn0x96.cloudfront.net/rzgade/productimages/1276.jpg?width=400&height=400&etag=%22a2ebd1488b087bf0e6db43ee8bae0634%22", alt: "design-book"}
               .thumb-hover
                 .general-thumb-link-wrap
                   %a.thumb-hover-link{href: "#"}
@@ -165,5 +166,6 @@
               %li
                 %a.nav-link{href: "#"}
                   %i.fa.fa-instagram{'aria-hidden': "true"}
+    %script{src: "https://use.fontawesome.com/67602d7308.js"}
     %script{src: "../../javascripts/jquery.js"}
     %script{src: "../../javascripts/bootstrap.js"}
