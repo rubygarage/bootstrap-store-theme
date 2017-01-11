@@ -11562,7 +11562,7 @@ button.close {
   box-shadow: 0 5px 27px 3px rgba(14, 26, 52, 0.3);
 }
 
-.line-heaght-40 {
+.line-height-40 {
   line-height: 40px;
 }
 
@@ -11763,7 +11763,6 @@ img {
 }
 
 .general-thumbnail {
-  height: 240px;
   padding: 27% 19%;
 }
 
