@@ -134,7 +134,7 @@
 }
 .navbar-inverse {
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .table {
   > thead,
@@ -262,9 +262,13 @@
 }
 .quantity-input {
   max-width: 40px;
+  text-align: center;
   padding: 8px 10px;
   margin-left: 12px;
   margin-right: 12px;
+}
+.logo-max {
+  max-width: unset;
 }
 .logo-size {
   width: 55px;
@@ -286,26 +290,6 @@
     color: $gold-500;
     text-decoration: none;
   }
-}
-.message-wrap {
-  padding: 30px 0 25px;
-}
-.message-verified {
-  font-size: $font-size-small;
-  color: $grey-350;
-  float: right;
-  margin-left: 20px;
-  margin-bottom: 10px;
-}
-.message-name {
-  font-size: $font-size-base;
-  color: $gold-500;
-  margin-bottom: 10px;
-}
-.message-date {
-  font-size: $font-size-base;
-  color: $grey-600;
-  float: right;
 }
 .rate-star {
   font-size: 17px;
@@ -384,7 +368,7 @@
 }
 .steps .step {
   position: relative;
-  margin: 0 5px 10px;
+  margin: 0 10px 10px;
   padding-right: 0;
   padding-left: 0;
   &:last-child {
@@ -395,12 +379,18 @@
   }
 }
 .steps .step-divider {
-  width: 4%;
-  height: 2px;
+  position: relative;
   vertical-align: middle;
-  background-color: $grey-200;
-  padding-right: 0;
-  padding-left: 0;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 2px;
+    display: block;
+    background-color: $grey-200;
+  }
 }
 .active,
 .done {
@@ -504,23 +494,17 @@
     > tbody,
     > tfoot {
       > tr {
-        > th:first-child  {
-          padding-left: 0;
-        }
         > th:last-child,
         > td:last-child  {
           text-align: right;
         }
         > th,
         > td {
-          padding: 30px 20px;
+          padding: 20px;
         }
         > td {
           border-bottom: 1px solid $grey-200;
         }
-      }
-      .no-hover:hover {
-        background-color: transparent;
       }
     }
   }
@@ -558,6 +542,9 @@
       margin-right: 0;
     }
   }
+  .tab-item:first-child .tab-link {
+    padding-left: 0;
+  }
 }
 
 @media (min-width: $screen-md-min) {
@@ -567,9 +554,10 @@
   .steps {
     .step {
       margin-left: 10px;
+      margin-right: 65px;
     }
-    .step-divider {
-      width: 6%;
+    .step-divider:after {
+      width: 80px;
     }
   }
 }

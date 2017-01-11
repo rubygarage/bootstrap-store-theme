@@ -11040,7 +11040,7 @@ button.close {
 
 .navbar-inverse {
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .table > thead > tr > th,
@@ -11183,9 +11183,14 @@ button.close {
 
 .quantity-input {
   max-width: 40px;
+  text-align: center;
   padding: 8px 10px;
   margin-left: 12px;
   margin-right: 12px;
+}
+
+.logo-max {
+  max-width: unset;
 }
 
 .logo-size {
@@ -11211,30 +11216,6 @@ button.close {
 .collapse-link:hover {
   color: #c59c71;
   text-decoration: none;
-}
-
-.message-wrap {
-  padding: 30px 0 25px;
-}
-
-.message-verified {
-  font-size: 12px;
-  color: #c3c3c3;
-  float: right;
-  margin-left: 20px;
-  margin-bottom: 10px;
-}
-
-.message-name {
-  font-size: 14px;
-  color: #c59c71;
-  margin-bottom: 10px;
-}
-
-.message-date {
-  font-size: 14px;
-  color: #8c8c8c;
-  float: right;
 }
 
 .rate-star {
@@ -11325,7 +11306,7 @@ button.close {
 
 .steps .step {
   position: relative;
-  margin: 0 5px 10px;
+  margin: 0 10px 10px;
   padding-right: 0;
   padding-left: 0;
 }
@@ -11339,12 +11320,19 @@ button.close {
 }
 
 .steps .step-divider {
-  width: 4%;
-  height: 2px;
+  position: relative;
   vertical-align: middle;
+}
+
+.steps .step-divider:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 2px;
+  display: block;
   background-color: #eeeeee;
-  padding-right: 0;
-  padding-left: 0;
 }
 
 .active .step-number,
@@ -11454,11 +11442,6 @@ button.close {
     table-layout: fixed;
     border-bottom-color: transparent;
   }
-  .table > thead > tr > th:first-child,
-  .table > tbody > tr > th:first-child,
-  .table > tfoot > tr > th:first-child {
-    padding-left: 0;
-  }
   .table > thead > tr > th:last-child,
   .table > thead > tr > td:last-child,
   .table > tbody > tr > th:last-child,
@@ -11473,17 +11456,12 @@ button.close {
   .table > tbody > tr > td,
   .table > tfoot > tr > th,
   .table > tfoot > tr > td {
-    padding: 30px 20px;
+    padding: 20px;
   }
   .table > thead > tr > td,
   .table > tbody > tr > td,
   .table > tfoot > tr > td {
     border-bottom: 1px solid #eeeeee;
-  }
-  .table > thead .no-hover:hover,
-  .table > tbody .no-hover:hover,
-  .table > tfoot .no-hover:hover {
-    background-color: transparent;
   }
   .shop-link {
     margin-right: 0;
@@ -11514,6 +11492,9 @@ button.close {
     margin-left: 0;
     margin-right: 0;
   }
+  .tab-item:first-child .tab-link {
+    padding-left: 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -11522,9 +11503,10 @@ button.close {
   }
   .steps .step {
     margin-left: 10px;
+    margin-right: 65px;
   }
-  .steps .step-divider {
-    width: 6%;
+  .steps .step-divider:after {
+    width: 80px;
   }
 }
 
@@ -11536,8 +11518,16 @@ button.close {
   padding-top: 10px;
 }
 
+.pt-20 {
+  padding-top: 20px;
+}
+
 .pr-15 {
   padding-right: 15px;
+}
+
+.pl-0 {
+  padding-left: 0px !important;
 }
 
 .pl-30 {
@@ -11646,6 +11636,10 @@ button.close {
 
 .ml-30 {
   margin-left: 30px !important;
+}
+
+.ml-40 {
+  margin-left: 40px !important;
 }
 
 .ml-60 {
@@ -11769,6 +11763,7 @@ img {
 }
 
 .general-thumbnail {
+  height: 240px;
   padding: 27% 19%;
 }
 
@@ -11914,7 +11909,7 @@ img {
   margin-bottom: 40px;
 }
 
-.general-login-fb {
+.general-login-icon {
   font-size: 24px;
   color: #1e1e1c;
   display: inline-block;
@@ -11948,6 +11943,31 @@ img {
   font-size: 16px;
   color: #c59c71;
   font-weight: 300;
+}
+
+.general-message-wrap {
+  padding: 30px 0 25px;
+}
+
+.general-message-verified {
+  font-size: 12px;
+  color: #c3c3c3;
+  line-height: 21px;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.general-message-name {
+  font-size: 14px;
+  color: #c59c71;
+  margin-bottom: 10px;
+}
+
+.general-message-date {
+  font-size: 14px;
+  color: #8c8c8c;
+  float: right;
 }
 
 @media (min-width: 768px) {

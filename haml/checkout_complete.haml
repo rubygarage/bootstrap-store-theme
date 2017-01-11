@@ -144,31 +144,33 @@
                 %span.in-grey-600 SubTotal
               %td
                 %span.font-16.in-gold-500 €32.90
-      .hidden-xs
+      .hidden-xs.divider-lg.pt-20
         %table.table.table-hover
-          %tr.no-hover
-            %th
-              %span.in-grey-600 Book
-            %th.col-method
-            %th
-              %span.in-grey-600 Price
-            %th
-              %span.in-grey-600 Quantity
-            %th
-              %span.in-grey-600 Total
-          %tr
-            %td
-              .general-img-wrap-table
-                %img.cart-img-shadow.pull-left{src: "http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg", alt: "design-book"}
-            %td
-              %p.title Android Programming for Beginners
-              %p.in-grey-600.fw-300 Maximize the potential of Bootstrap with a collection of real-world site projects for better, faster, more responsive web applications
-            %td
-              %span.font-16.in-gold-500 €28.50
-            %td
-              %span.ml-30 1
-            %td
-              %span.font-16.in-gold-500 €32.90
+          %thead
+            %tr
+              %th
+                %span.in-grey-600 Book
+              %th.col-method
+              %th
+                %span.in-grey-600 Price
+              %th
+                %span.in-grey-600 Quantity
+              %th
+                %span.in-grey-600 Total
+          %tbody
+            %tr
+              %td
+                .general-img-wrap-table
+                  %img.cart-img-shadow.pull-left{src: "http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg", alt: "design-book"}
+              %td
+                %p.title Android Programming for Beginners
+                %p.in-grey-600.fw-300 Maximize the potential of Bootstrap with a collection of real-world site projects for better, faster, more responsive web applications
+              %td
+                %span.font-16.in-gold-500 €28.50
+              %td
+                %span.ml-30 1
+              %td
+                %span.font-16.in-gold-500 €32.90
       .text-center.general-text-right
         %p.in-gold-500.font-18 Order Summary
         %table.general-summary-table.general-summary-table-right.general-text-right
@@ -218,5 +220,5 @@
               %li
                 %a.nav-link{href: "#"}
                   %i.fa.fa-instagram{'aria-hidden': "true"}
-    %script{src: "../../javascripts/jquery.min.js"}
-    %script{src: "../../javascripts/bootstrap.min.js"}
+    %script{src: "../../javascripts/jquery.js"}
+    %script{src: "../../javascripts/bootstrap.js"}

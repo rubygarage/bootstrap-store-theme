@@ -125,35 +125,37 @@
                 %span.font-16.in-gold-500 €5.00
       .hidden-xs.mb-res-50
         %table.table.table-hover
-          %tr.no-hover
-            %th.col-method
-              %span.in-grey-600.ml-60 Method
-            %th
-              %span.in-grey-600 Days
-            %th
-              %span.in-grey-600 Price
-          %tr
-            %td
-              .form-group.radio.mt-0.mb-0
-                %label.radio-label
-                  %input.radio-input{type: "radio", hidden: "true"}
-                  %span.radio-icon
-                  %span.radio-text Delivery Next Day!
-            %td
-              %span 3 to 7 days
-            %td
-              %span.font-16.in-gold-500 €28.50
-          %tr
-            %td
-              .form-group.radio.mt-0.mb-0
-                %label.radio-label
-                  %input.radio-input{type: "radio", hidden: "true"}
-                  %span.radio-icon
-                  %span.radio-text Delivery Next Day!
-            %td
-              %span 3 to 7 days
-            %td
-              %span.font-16.in-gold-500 €28.50
+          %thead
+            %tr
+              %th.col-method
+                %span.in-grey-600.ml-40 Method
+              %th
+                %span.in-grey-600 Days
+              %th
+                %span.in-grey-600 Price
+          %tbody
+            %tr
+              %td
+                .form-group.radio.mt-0.mb-0
+                  %label.radio-label
+                    %input.radio-input{type: "radio", hidden: "true"}
+                    %span.radio-icon
+                    %span.radio-text Delivery Next Day!
+              %td
+                %span 3 to 7 days
+              %td
+                %span.font-16.in-gold-500 €28.50
+            %tr
+              %td
+                .form-group.radio.mt-0.mb-0
+                  %label.radio-label
+                    %input.radio-input{type: "radio", hidden: "true"}
+                    %span.radio-icon
+                    %span.radio-text Delivery Next Day!
+              %td
+                %span 3 to 7 days
+              %td
+                %span.font-16.in-gold-500 €28.50
       .general-text-align
         %p.in-gold-500.font-18 Order Summary
         %table.general-summary-table
@@ -203,5 +205,5 @@
               %li
                 %a.nav-link{href: "#"}
                   %i.fa.fa-instagram{'aria-hidden': "true"}
-    %script{src: "../../javascripts/jquery.min.js"}
-    %script{src: "../../javascripts/bootstrap.min.js"}
+    %script{src: "../../javascripts/jquery.js"}
+    %script{src: "../../javascripts/bootstrap.js"}
