@@ -23,7 +23,7 @@
   font-size: 16px;
 }
 .font-18 {
-  font-size: 18px;
+  font-size: 18px !important;
 }
 .fw-300 {
   font-weight: 300;
@@ -35,7 +35,10 @@
   box-shadow: 0 5px 27px 3px rgba(14, 26, 52, 0.3);
 }
 .line-height-40 {
-  line-height: 40px;
+  line-height: 40px !important;
+}
+.line-height-2 {
+  line-height: 2;
 }
 .max-240 {
   max-width: 240px;
@@ -45,9 +48,6 @@
 }
 .width-240 {
   width: 240px;
-}
-.line-height-2 {
-  line-height: 2;
 }
 .vertical-middle {
   vertical-align: middle !important;
