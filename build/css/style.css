@@ -8074,7 +8074,7 @@ button.close {
   color: #c59c71;
 }
 
-.thumb-icon {
+.thumb-hover-link .thumb-icon {
   font-size: 16px;
   color: white;
   line-height: 36px;
@@ -8257,7 +8257,7 @@ button.close {
 
 .steps .step {
   position: relative;
-  margin: 0 10px 10px;
+  margin: 0 6px 10px;
   padding-right: 0;
   padding-left: 0;
 }
@@ -8280,7 +8280,7 @@ button.close {
   position: absolute;
   top: 0;
   right: 0;
-  width: 15px;
+  width: 13px;
   height: 2px;
   display: block;
   background-color: #eeeeee;
@@ -8461,6 +8461,11 @@ button.close {
   }
 }
 
+html,
+body {
+  height: 100%;
+}
+
 img {
   max-width: 100%;
 }
@@ -8495,6 +8500,10 @@ img {
 
 .col-half {
   width: 50%;
+}
+
+.general-main-container {
+  min-height: calc(100vh - 268px);
 }
 
 .general-main-wrap {
@@ -8636,7 +8645,6 @@ img {
 }
 
 .general-form-help {
-  font-size: 18px;
   color: #8c8c8c;
   position: absolute;
   top: 35px;
@@ -8871,7 +8879,7 @@ img {
 }
 
 .font-18 {
-  font-size: 18px;
+  font-size: 18px !important;
 }
 
 .fw-300 {
@@ -8887,7 +8895,11 @@ img {
 }
 
 .line-height-40 {
-  line-height: 40px;
+  line-height: 40px !important;
+}
+
+.line-height-2 {
+  line-height: 2;
 }
 
 .max-240 {
@@ -8900,10 +8912,6 @@ img {
 
 .width-240 {
   width: 240px;
-}
-
-.line-height-2 {
-  line-height: 2;
 }
 
 .vertical-middle {
