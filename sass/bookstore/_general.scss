@@ -1,3 +1,9 @@
+$footer-sticky-height: 268px;
+
+html,
+body {
+  height: 100%;
+}
 img {
   max-width: 100%;
 }
@@ -24,6 +30,9 @@ img {
 }
 .col-half {
   width: 50%;
+}
+.general-main-container {
+  min-height: calc(100vh - #{$footer-sticky-height});
 }
 .general-main-wrap {
   margin-bottom: 60px;
@@ -139,7 +148,6 @@ img {
   font-weight: 300;
 }
 .general-form-help {
-  font-size: 18px;
   color: $grey-600;
   position: absolute;
   top: 35px;

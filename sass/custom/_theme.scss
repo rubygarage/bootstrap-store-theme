@@ -210,11 +210,11 @@
       color: $gold-500;
     }
   }
-}
-.thumb-icon {
-  font-size: 16px;
-  color: white;
-  line-height: 36px;
+  .thumb-icon {
+    font-size: 16px;
+    color: white;
+    line-height: 36px;
+  }
 }
 .title {
   font-size: $font-size-large;
@@ -368,7 +368,7 @@
 }
 .steps .step {
   position: relative;
-  margin: 0 10px 10px;
+  margin: 0 6px 10px;
   padding-right: 0;
   padding-left: 0;
   &:last-child {
@@ -386,7 +386,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 15px;
+    width: 13px;
     height: 2px;
     display: block;
     background-color: $grey-200;
