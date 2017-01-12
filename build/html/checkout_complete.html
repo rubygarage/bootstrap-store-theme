@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>Bookstore</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+<link href="../css/style.css" rel="stylesheet"/></head>
+<body>
+<header class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button type="button" data-toggle="collapse" data-target="#navbar" class="navbar-toggle pull-left">
+<span class="sr-only"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button>
+<a class="navbar-brand">Bookstore</a>
+<a href="#" class="shop-link pull-right visible-xs">
+<span class="shop-icon">
+<span class="shop-quantity">3</span></span></a></div>
+<a href="#" class="shop-link pull-right hidden-xs">
+<span class="shop-icon">
+<span class="shop-quantity">3</span></span></a>
+<div id="navbar" aria-expanded="false" class="navbar-collapse collapse pl-30">
+<div class="visible-xs">
+<button type="button" aria-label="Close" class="close">
+<span aria-hidden="true">&times;</span></button>
+<ul class="nav navbar-nav">
+<li>
+<a href="#">Home</a></li>
+<li>
+<a type="button" data-toggle="collapse" href="#menu" aria-expanded="false" aria-controls="menu">Shop</a>
+<ul id="menu" aria-expanded="false" class="collapse list-unstyled pl-30 mb-10">
+<li>
+<a href="#" class="collapse-link">Mobile development</a></li>
+<li>
+<a href="#" class="collapse-link">Photo</a></li>
+<li>
+<a href="#" class="collapse-link">Web design</a></li></ul></li>
+<li>
+<a href="#">My account</a></li></ul></div>
+<div class="hidden-xs">
+<ul class="nav navbar-nav">
+<li>
+<a href="#">Home</a></li>
+<li class="dropdown">
+<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Shop</a>
+<ul class="dropdown-menu">
+<li>
+<a href="#">Mobile development</a></li>
+<li>
+<a href="#">Photo</a></li>
+<li>
+<a href="#">Web design</a></li>
+<li role="separator" class="divider"></li>
+<li>
+<a href="#">Log out</a></li></ul></li>
+<li>
+<a href="#">My account</a></li></ul></div></div></div></header>
+<main class="container general-main-wrap">
+<h1 class="general-title-margin">Checkout</h1>
+<ul class="steps list-inline">
+<li class="step done">
+<span class="step-number">
+<i class="fa fa-check step-icon"></i></span>
+<span class="step-text hidden-xs">Address</span></li>
+<li class="step-divider"></li>
+<li class="step">
+<span class="step-number">2</span>
+<span class="step-text hidden-xs">Delivery</span></li>
+<li class="step-divider"></li>
+<li class="step">
+<span class="step-number">3</span>
+<span class="step-text hidden-xs">Payment</span></li>
+<li class="step-divider"></li>
+<li class="step">
+<span class="step-number">4</span>
+<span class="step-text hidden-xs">Confirm</span></li>
+<li class="step-divider"></li>
+<li class="step active">
+<span class="step-number">5</span>
+<span class="step-text hidden-xs">Complete</span></li></ul>
+<div class="text-center mb-40">
+<h3 class="general-subtitle">Thank You for your Order!</h3>
+<p class="fw-300">An order confirmation has been has been sent to John Doe0411@gmail.com</p></div>
+<div class="row mb-20">
+<div class="col-sm-6">
+<div class="visible-xs">
+<p class="general-order-number mb-0">Order #R25314582</p>
+<p class="general-address mb-30">October 29, 2016</p></div>
+<p class="general-address">John Doe
+<span class="general-edit">edit</span>
+<br/>44 Fifth Ave v231
+<br/>New York NY 1001
+<br/>United States
+<br/>Phone +16507599755</p></div>
+<div class="col-sm-6 hidden-xs text-right">
+<p class="general-order-number mb-0">Order #R25314582</p>
+<p class="general-address mb-30">October 29, 2016</p></div></div>
+<div class="visible-xs">
+<div class="general-cart-item divider-lg">
+<div class="general-img-wrap-table">
+<img src="http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg" alt="design-book" class="cart-img-shadow"/></div>
+<p class="title">Android Programming for Beginners</p>
+<P class="in-grey-600 fw-300">A recipe-based book to help you efficiently create amazing PHP-based applications with Laravel 5.x</P>
+<table class="table">
+<tr>
+<td>
+<span class="in-grey-600">Price</span></td>
+<td>
+<span class="font-16 in-gold-500">€28.50</span></td></tr>
+<tr>
+<td class="vertical-middle">
+<span class="in-grey-600">Quantity</span></td>
+<td>
+<span>1</span></td></tr>
+<tr>
+<td>
+<span class="in-grey-600">SubTotal</span></td>
+<td>
+<span class="font-16 in-gold-500">€32.90</span></td></tr></table></div>
+<div class="general-cart-item divider-lg mb-55">
+<div class="general-img-wrap-table">
+<img src="http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg" alt="design-book" class="cart-img-shadow"/></div>
+<p class="title">Android Programming for Beginners</p>
+<table class="table">
+<tr>
+<td>
+<span class="in-grey-600">Price</span></td>
+<td>
+<span class="font-16 in-gold-500">€28.50</span></td></tr>
+<tr>
+<td class="vertical-middle">
+<span class="in-grey-600">Quantity</span></td>
+<td>
+<span>1</span></td></tr>
+<tr>
+<td>
+<span class="in-grey-600">SubTotal</span></td>
+<td>
+<span class="font-16 in-gold-500">€32.90</span></td></tr></table></div></div>
+<div class="hidden-xs divider-lg pt-20">
+<table class="table table-hover">
+<thead>
+<tr>
+<th>
+<span class="in-grey-600">Book</span></th>
+<th class="col-method"></th>
+<th>
+<span class="in-grey-600">Price</span></th>
+<th>
+<span class="in-grey-600">Quantity</span></th>
+<th>
+<span class="in-grey-600">Total</span></th></tr></thead>
+<tbody>
+<tr>
+<td>
+<div class="general-img-wrap-table">
+<img src="http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg" alt="design-book" class="cart-img-shadow pull-left"/></div></td>
+<td>
+<p class="title">Android Programming for Beginners</p>
+<p class="in-grey-600 fw-300">Maximize the potential of Bootstrap with a collection of real-world site projects for better, faster, more responsive web applications</p></td>
+<td>
+<span class="font-16 in-gold-500">€28.50</span></td>
+<td>
+<span class="ml-30">1</span></td>
+<td>
+<span class="font-16 in-gold-500">€32.90</span></td></tr></tbody></table></div>
+<div class="text-center general-text-right">
+<p class="in-gold-500 font-18">Order Summary</p>
+<table class="general-summary-table general-summary-table-right general-text-right">
+<tr>
+<td>
+<p class="font-16">Subtotal:</p></td>
+<td>
+<p class="font-16">€117.69</p></td></tr>
+<tr>
+<td>
+<p class="font-16">Coupon:</p></td>
+<td>
+<p class="font-16">€0.00</p></td></tr>
+<tr>
+<td>
+<strong class="font-18">Order Total:</strong></td>
+<td>
+<strong class="font-18">€117.69</strong></td></tr></table></div>
+<div class="text-center">
+<button class="btn btn-default mb-20">Back to Store</button></div></main>
+<footer class="navbar-inverse">
+<div class="container">
+<div class="row">
+<div class="col-sm-9">
+<ul class="list-inline general-align mb-25">
+<li>
+<a href="#" class="nav-link">Home</a></li>
+<li>
+<a href="#" class="nav-link">Shop</a></li>
+<li>
+<a href="#" class="nav-link">Orders</a></li>
+<li>
+<a href="#" class="nav-link">Settings</a></li></ul></div>
+<div class="col-sm-3">
+<p class="general-nav-mail">support@bookstore.com</p>
+<p class="general-nav-number">(555)-555-5555</p>
+<ul class="list-inline general-align">
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-facebook"></i></a></li>
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-twitter"></i></a></li>
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-google-plus"></i></a></li>
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-instagram"></i></a></li></ul></div></div></div></footer>
+<script src="https://use.fontawesome.com/67602d7308.js"></script>
+<script src="../../javascripts/jquery.js"></script>
+<script src="../../javascripts/bootstrap.js"></script></body></html>

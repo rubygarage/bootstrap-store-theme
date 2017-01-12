@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>Bookstore</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+<link href="../css/style.css" rel="stylesheet"/></head>
+<body>
+<header class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button type="button" data-toggle="collapse" data-target="#navbar" class="navbar-toggle pull-left">
+<span class="sr-only"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button>
+<a class="navbar-brand">Bookstore</a>
+<a href="#" class="shop-link pull-right visible-xs">
+<span class="shop-icon">
+<span class="shop-quantity">3</span></span></a></div>
+<a href="#" class="shop-link pull-right hidden-xs">
+<span class="shop-icon">
+<span class="shop-quantity">3</span></span></a>
+<div id="navbar" aria-expanded="false" class="navbar-collapse collapse pl-30">
+<div class="visible-xs">
+<button type="button" aria-label="Close" class="close">
+<span aria-hidden="true">&times;</span></button>
+<ul class="nav navbar-nav">
+<li>
+<a href="#">Home</a></li>
+<li>
+<a type="button" data-toggle="collapse" href="#menu" aria-expanded="false" aria-controls="menu">Shop</a>
+<ul id="menu" aria-expanded="false" class="collapse list-unstyled pl-30 mb-10">
+<li>
+<a href="#" class="collapse-link">Mobile development</a></li>
+<li>
+<a href="#" class="collapse-link">Photo</a></li>
+<li>
+<a href="#" class="collapse-link">Web design</a></li></ul></li>
+<li>
+<a href="#">My account</a></li></ul></div>
+<div class="hidden-xs">
+<ul class="nav navbar-nav">
+<li>
+<a href="#">Home</a></li>
+<li class="dropdown">
+<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Shop</a>
+<ul class="dropdown-menu">
+<li>
+<a href="#">Mobile development</a></li>
+<li>
+<a href="#">Photo</a></li>
+<li>
+<a href="#">Web design</a></li>
+<li role="separator" class="divider"></li>
+<li>
+<a href="#">Log out</a></li></ul></li>
+<li>
+<a href="#">My account</a></li></ul></div></div></div></header>
+<main class="container">
+<h1 class="general-title-margin">Settings</h1>
+<ul role="tablist" class="nav clearfix mb-20">
+<li role="presentation" class="tab-item active">
+<a href="#address" aria-controls="address" role="tab" data-toggle="tab" class="tab-link">Address</a></li>
+<li role="presentation" class="tab-item">
+<a href="#privacy" aria-controls="privacy" role="tab" data-toggle="tab" class="tab-link">Privacy</a></li></ul>
+<div class="tab-content">
+<div id="address" role="tabpanel" class="tab-pane fade in active general-main-wrap">
+<form>
+<div class="hidden-xs hidden-sm">
+<div class="row">
+<div class="col-md-5">
+<h3 class="general-subtitle mt-0">Billing Address</h3></div>
+<div class="col-md-5 col-md-offset-1">
+<h3 class="general-subtitle mt-0">Shipping Address</h3></div></div></div>
+<div class="row">
+<div class="col-md-5 mb-40">
+<div class="visible-xs visible-sm">
+<h3 class="general-subtitle mt-0">Billing Address</h3></div>
+<div class="form-group has-error">
+<label for="firstName" class="control-label input-label">First Name</label>
+<input id="firstName" name="fname" type="text" placeholder="First Name" class="form-control"/>
+<span class="help-block">Please enter your first name</span></div>
+<div class="form-group">
+<label for="lastName" class="control-label input-label">Last Name</label>
+<input id="lastName" name="lname" type="text" placeholder="Last Name" class="form-control"/></div>
+<div class="form-group">
+<label for="address" class="control-label input-label">Address</label>
+<input id="address" name="address" type="text" placeholder="Address" class="form-control"/></div>
+<div class="form-group">
+<label for="city" class="control-label input-label">City</label>
+<input id="city" name="city" type="text" placeholder="City" class="form-control"/></div>
+<div class="form-group">
+<label for="zip" class="control-label input-label">Zip</label>
+<input id="zip" name="zip" type="text" placeholder="Zip" class="form-control"/></div>
+<div class="form-group">
+<label for="сountry" class="control-label input-label">Country</label>
+<input id="country" name="country" type="text" placeholder="Select a country" class="form-control"/></div>
+<div class="form-group mb-60">
+<label for="phone" class="control-label input-label">Phone</label>
+<input id="phone" name="phone" type="tel" placeholder="Example +355 66 123 4567" class="form-control"/></div>
+<div class="text-center general-text-align">
+<button class="btn disabled">Save</button></div></div>
+<div class="col-md-5 col-md-offset-1 mb-25">
+<div class="visible-xs visible-sm">
+<h3 class="general-subtitle mt-0">Shipping Address</h3></div>
+<div class="form-group has-error">
+<label for="firstName" class="control-label input-label">First Name</label>
+<input id="firstName" name="fname" type="text" placeholder="First Name" class="form-control"/>
+<span class="help-block">Please enter your first name</span></div>
+<div class="form-group">
+<label for="lastName" class="control-label input-label">Last Name</label>
+<input id="lastName" name="lname" type="text" placeholder="Last Name" class="form-control"/></div>
+<div class="form-group">
+<label for="address" class="control-label input-label">Address</label>
+<input id="address" name="address" type="text" placeholder="Address" class="form-control"/></div>
+<div class="form-group">
+<label for="city" class="control-label input-label">City</label>
+<input id="city" name="city" type="text" placeholder="City" class="form-control"/></div>
+<div class="form-group">
+<label for="zip" class="control-label input-label">Zip</label>
+<input id="zip" name="zip" type="text" placeholder="Zip" class="form-control"/></div>
+<div class="form-group">
+<label for="сountry" class="control-label input-label">Country</label>
+<select id="country" name="country" placeholder="Select a country" class="form-control">
+<option>London</option>
+<option>London</option>
+<option>London</option></select></div>
+<div class="form-group mb-55">
+<label for="phone" class="control-label input-label">Phone</label>
+<input id="phone" name="phone" type="tel" placeholder="Example +355 66 123 4567" class="form-control"/></div>
+<div class="text-center general-text-align">
+<button class="btn disabled">Save</button></div></div></div></form></div>
+<div id="privacy" role="tabpanel" class="tab-pane fade">
+<div class="row mb-60">
+<div class="col-sm-5">
+<p class="in-gold-500 font-18 mb-25">Email</p>
+<form class="general-form-md">
+<div class="form-group mb-35">
+<label for="email" class="control-label input-label">Enter Email</label>
+<input id="email" name="email" type="email" placeholder="Enter your email" class="form-control"/></div>
+<div class="general-text-align">
+<button class="btn btn-default mb-35">Save</button></div></form></div>
+<div class="col-sm-5 col-sm-offset-1">
+<p class="in-gold-500 font-18 mb-25">Password</p>
+<form class="general-form-md divider-lg-bottom pb-25">
+<div class="form-group mb-30">
+<label for="oldPassword" class="control-label input-label">Old Password</label>
+<input id="oldPassword" name="password" type="password" placeholder="Old Password" class="form-control"/></div>
+<div class="form-group mb-30">
+<label for="password" class="control-label input-label">New Password</label>
+<input id="password" name="password" type="password" placeholder="New Password" class="form-control"/></div>
+<div class="form-group mb-40">
+<label for="confirmPassword" class="control-label input-label">Confirm Password</label>
+<input id="confirmPassword" name="password" type="password" placeholder="Confirm Password" class="form-control"/></div>
+<div class="general-text-align">
+<button class="btn disabled mb-10">Save</button></div></form></div>
+<div class="col-sm-12">
+<p class="in-gold-500 font-18 mb-25">Remove Account</p>
+<form>
+<div class="general-settings-btn">
+<button class="btn disabled mb-20">Please Remove My Account</button></div>
+<div class="form-group checkbox general-settings-checkbox">
+<label class="checkbox-label">
+<input type="checkbox" hidden="true" class="checkbox-input"/>
+<span class="checkbox-icon">
+<i class="fa fa-check"></i></span>
+<span class="checkbox-text">I understand that all data will be lost</span></label></div></form></div></div></div></div></main>
+<footer class="navbar-inverse">
+<div class="container">
+<div class="row">
+<div class="col-sm-9">
+<ul class="list-inline general-align mb-25">
+<li>
+<a href="#" class="nav-link">Home</a></li>
+<li>
+<a href="#" class="nav-link">Shop</a></li>
+<li>
+<a href="#" class="nav-link">Orders</a></li>
+<li>
+<a href="#" class="nav-link">Settings</a></li></ul></div>
+<div class="col-sm-3">
+<p class="general-nav-mail">support@bookstore.com</p>
+<p class="general-nav-number">(555)-555-5555</p>
+<ul class="list-inline general-align">
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-facebook"></i></a></li>
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-twitter"></i></a></li>
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-google-plus"></i></a></li>
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-instagram"></i></a></li></ul></div></div></div></footer>
+<script src="https://use.fontawesome.com/67602d7308.js"></script>
+<script src="../../javascripts/jquery.js"></script>
+<script src="../../javascripts/bootstrap.js"></script></body></html>

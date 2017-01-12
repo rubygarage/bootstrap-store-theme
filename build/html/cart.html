@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>Bookstore</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+<link href="../css/style.css" rel="stylesheet"/></head>
+<body>
+<header class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button type="button" data-toggle="collapse" data-target="#navbar" class="navbar-toggle pull-left">
+<span class="sr-only"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button>
+<a class="navbar-brand">Bookstore</a>
+<a href="#" class="shop-link pull-right visible-xs">
+<span class="shop-icon">
+<span class="shop-quantity">3</span></span></a></div>
+<a href="#" class="shop-link pull-right hidden-xs">
+<span class="shop-icon">
+<span class="shop-quantity">3</span></span></a>
+<div id="navbar" aria-expanded="false" class="navbar-collapse collapse pl-30">
+<div class="visible-xs">
+<button type="button" aria-label="Close" class="close">
+<span aria-hidden="true">&times;</span></button>
+<ul class="nav navbar-nav">
+<li>
+<a href="#">Home</a></li>
+<li>
+<a type="button" data-toggle="collapse" href="#menu" aria-expanded="false" aria-controls="menu">Shop</a>
+<ul id="menu" aria-expanded="false" class="collapse list-unstyled pl-30 mb-10">
+<li>
+<a href="#" class="collapse-link">Mobile development</a></li>
+<li>
+<a href="#" class="collapse-link">Photo</a></li>
+<li>
+<a href="#" class="collapse-link">Web design</a></li></ul></li>
+<li>
+<a href="#">My account</a></li></ul></div>
+<div class="hidden-xs">
+<ul class="nav navbar-nav">
+<li>
+<a href="#">Home</a></li>
+<li class="dropdown">
+<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Shop</a>
+<ul class="dropdown-menu">
+<li>
+<a href="#">Mobile development</a></li>
+<li>
+<a href="#">Photo</a></li>
+<li>
+<a href="#">Web design</a></li>
+<li role="separator" class="divider"></li>
+<li>
+<a href="#">Log out</a></li></ul></li>
+<li>
+<a href="#">My account</a></li></ul></div></div></div></header>
+<main class="container general-main-wrap">
+<h1 class="general-title-margin">Cart</h1>
+<div class="visible-xs">
+<div class="general-cart-item divider-lg-bottom">
+<button type="button" aria-label="Close" class="close general-cart-close">
+<span aria-hidden="true">&times;</span></button>
+<div class="general-img-wrap-table">
+<img src="http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg" alt="design-book" class="cart-img-shadow"/></div>
+<p class="title">Android Programming for Beginners</p>
+<table class="table">
+<tr>
+<td>
+<span class="in-grey-600">Price</span></td>
+<td>
+<span class="font-16 in-gold-500">€28.50</span></td></tr>
+<tr>
+<td class="vertical-middle">
+<span class="in-grey-600">Quantity</span></td>
+<td>
+<div class="input-group">
+<a href="#" class="input-link">
+<i class="fa fa-minus line-heaght-40"></i></a>
+<input type="text" class="form-control quantity-input"/>
+<a href="#" class="input-link">
+<i class="fa fa-plus line-heaght-40"></i></a></div></td></tr>
+<tr>
+<td>
+<span class="in-grey-600">SubTotal</span></td>
+<td>
+<span class="font-16 in-gold-500">€32.90</span></td></tr></table></div>
+<div class="general-cart-item divider-lg-bottom mb-30">
+<button type="button" aria-label="Close" class="close general-cart-close">
+<span aria-hidden="true">&times;</span></button>
+<div class="general-img-wrap-table">
+<img src="http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg" alt="design-book" class="cart-img-shadow"/></div>
+<p class="title">Android Programming for Beginners</p>
+<table class="table">
+<tr>
+<td>
+<span class="in-grey-600">Price</span></td>
+<td>
+<span class="font-16 in-gold-500">€28.50</span></td></tr>
+<tr>
+<td class="vertical-middle">
+<span class="in-grey-600">Quantity</span></td>
+<td>
+<div class="input-group">
+<a href="#" class="input-link">
+<i class="fa fa-minus line-heaght-40"></i></a>
+<input type="text" class="form-control quantity-input"/>
+<a href="#" class="input-link">
+<i class="fa fa-plus line-heaght-40"></i></a></div></td></tr>
+<tr>
+<td>
+<span class="in-grey-600">SubTotal</span></td>
+<td>
+<span class="font-16 in-gold-500">€32.90</span></td></tr></table></div></div>
+<div class="hidden-xs">
+<table class="table table-hover">
+<tr class="no-hover">
+<th class="col-pic pl-0">
+<span class="in-grey-600">Product</span></th>
+<th class="col-title"></th>
+<th class="col-price">
+<span class="in-grey-600">Price</span></th>
+<th class="col-quantity">
+<span class="in-grey-600">Quantity</span></th>
+<th class="col-total">
+<span class="in-grey-600">SubTotal</span></th>
+<th class="col-close"></th></tr>
+<tr>
+<td>
+<div class="general-img-wrap-table">
+<img src="http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg" alt="design-book" class="cart-img-shadow pull-left"/></div></td>
+<td>
+<p class="title">Android Programming for Beginners</p></td>
+<td>
+<span class="font-16 in-gold-500">€28.50</span></td>
+<td>
+<div class="input-group">
+<a href="#" class="input-link">
+<i class="fa fa-minus line-heaght-40"></i></a>
+<input type="text" class="form-control quantity-input"/>
+<a href="#" class="input-link">
+<i class="fa fa-plus line-heaght-40"></i></a></div></td>
+<td>
+<span class="font-16 in-gold-500">€32.90</span></td>
+<td>
+<button type="button" aria-label="Close" class="close general-cart-close">
+<span aria-hidden="true">&times;</span></button></td></tr>
+<tr>
+<td>
+<div class="general-img-wrap-table">
+<img src="http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg" alt="design-book" class="cart-img-shadow pull-left"/></div></td>
+<td>
+<p class="title">Android Programming for Beginners</p></td>
+<td>
+<span class="font-16 in-gold-500">€28.50</span></td>
+<td>
+<div class="input-group">
+<a href="#" class="input-link">
+<i class="fa fa-minus line-heaght-40"></i></a>
+<input type="text" class="form-control quantity-input"/>
+<a href="#" class="input-link">
+<i class="fa fa-plus line-heaght-40"></i></a></div></td>
+<td>
+<span class="font-16 in-gold-500">€32.90</span></td>
+<td>
+<button type="button" aria-label="Close" class="close general-cart-close">
+<span aria-hidden="true">&times;</span></button></td></tr></table></div>
+<div class="general-order-wrap">
+<div class="row">
+<div class="col-sm-4">
+<div class="input-group general-input-group">
+<label class="input-label">Enter Your Coupon Code</label>
+<input type="text" placeholder="Enter Your Coupon Code " class="form-control mb-30"/>
+<div>
+<button class="btn btn-primary mr-5 mb-15 visible-xs-inline-block">Apply Coupon</button>
+<button class="btn btn-primary mb-15 res-block">Update cart</button></div></div></div>
+<div class="col-sm-8">
+<div class="res-mr-200 text-center general-text-right">
+<p class="in-gold-500 font-18">Order Summary</p>
+<table class="general-summary-table general-summary-table-right general-text-right">
+<tr>
+<td>
+<p class="font-16">Subtotal:</p></td>
+<td>
+<p class="font-16">€117.69</p></td></tr>
+<tr>
+<td>
+<p class="font-16">Coupon:</p></td>
+<td>
+<p class="font-16">€0.00</p></td></tr>
+<tr>
+<td>
+<strong class="font-18">Order Total:</strong></td>
+<td>
+<strong class="font-18">€117.69</strong></td></tr></table>
+<button class="btn btn-default mb-20 visible-xs-inline-block">Checkout</button></div></div></div></div>
+<button class="btn btn-default mb-20 hidden-xs center-block">Checkout</button></main>
+<footer class="navbar-inverse">
+<div class="container">
+<div class="row">
+<div class="col-sm-9">
+<ul class="list-inline general-align mb-25">
+<li>
+<a href="#" class="nav-link">Home</a></li>
+<li>
+<a href="#" class="nav-link">Shop</a></li>
+<li>
+<a href="#" class="nav-link">Orders</a></li>
+<li>
+<a href="#" class="nav-link">Settings</a></li></ul></div>
+<div class="col-sm-3">
+<p class="general-nav-mail">support@bookstore.com</p>
+<p class="general-nav-number">(555)-555-5555</p>
+<ul class="list-inline general-align">
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-facebook"></i></a></li>
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-twitter"></i></a></li>
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-google-plus"></i></a></li>
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-instagram"></i></a></li></ul></div></div></div></footer>
+<script src="https://use.fontawesome.com/67602d7308.js"></script>
+<script src="../../javascripts/jquery.js"></script>
+<script src="../../javascripts/bootstrap.js"></script></body></html>

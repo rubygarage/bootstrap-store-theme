@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>Bookstore</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+<link href="../css/style.css" rel="stylesheet"/></head>
+<body>
+<header class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button type="button" data-toggle="collapse" data-target="#navbar" class="navbar-toggle pull-left">
+<span class="sr-only"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button>
+<a class="navbar-brand">Bookstore</a>
+<a href="#" class="shop-link pull-right visible-xs">
+<span class="shop-icon">
+<span class="shop-quantity">3</span></span></a></div>
+<a href="#" class="shop-link pull-right hidden-xs">
+<span class="shop-icon">
+<span class="shop-quantity">3</span></span></a>
+<div id="navbar" aria-expanded="false" class="navbar-collapse collapse pl-30">
+<div class="visible-xs">
+<button type="button" aria-label="Close" class="close">
+<span aria-hidden="true">&times;</span></button>
+<ul class="nav navbar-nav">
+<li>
+<a href="#">Home</a></li>
+<li>
+<a type="button" data-toggle="collapse" href="#menu" aria-expanded="false" aria-controls="menu">Shop</a>
+<ul id="menu" aria-expanded="false" class="collapse list-unstyled pl-30 mb-10">
+<li>
+<a href="#" class="collapse-link">Mobile development</a></li>
+<li>
+<a href="#" class="collapse-link">Photo</a></li>
+<li>
+<a href="#" class="collapse-link">Web design</a></li></ul></li>
+<li>
+<a href="#">My account</a></li></ul></div>
+<div class="hidden-xs">
+<ul class="nav navbar-nav">
+<li>
+<a href="#">Home</a></li>
+<li class="dropdown">
+<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Shop</a>
+<ul class="dropdown-menu">
+<li>
+<a href="#">Mobile development</a></li>
+<li>
+<a href="#">Photo</a></li>
+<li>
+<a href="#">Web design</a></li>
+<li role="separator" class="divider"></li>
+<li>
+<a href="#">Log out</a></li></ul></li>
+<li>
+<a href="#">My account</a></li></ul></div></div></div></header>
+<main class="container">
+<div class="mb-30">
+<div class="form-group radio">
+<label class="radio-label">
+<input type="radio" hidden="true" class="radio-input"/>
+<span class="radio-icon"></span>
+<span class="radio-text">Delivery Next Day!</span></label></div>
+<div class="form-group checkbox">
+<label class="checkbox-label">
+<input type="checkbox" hidden="true" class="checkbox-input"/>
+<span class="checkbox-icon">
+<i class="fa fa-check"></i></span>
+<span class="checkbox-text">Use Billing Adress</span></label></div></div>
+<div class="mb-30">
+<button class="btn btn-default">Log in</button>
+<button class="btn btn-primary">Log in</button>
+<button class="btn disabled">Log in</button></div>
+<div class="mb-30">
+<div class="input-group general-position">
+<a href="#" class="input-link">
+<i class="fa fa-minus line-height-40"></i></a>
+<input type="text" class="form-control quantity-input"/>
+<a href="#" class="input-link">
+<i class="fa fa-plus line-height-40"></i></a></div></div>
+<div class="mb-30">
+<div class="form-group has-error">
+<label for="firstName" class="control-label input-label">First Name</label>
+<input id="firstName" name="fname" type="text" placeholder="First Name" class="form-control"/>
+<span class="help-block">Please enter your first name</span></div>
+<div class="form-group">
+<label for="lastName" class="control-label input-label">Last Name</label>
+<input id="lastName" name="lname" type="text" placeholder="Last Name" class="form-control"/></div></div>
+<div class="mb-30">
+<div class="dropdowns">
+<p class="lead small mb-10">Sort by</p>
+<div class="dropdown width-240">
+<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle lead small">Newest first
+<i class="fa fa-angle-down dropdown-icon pull-right"></i></a>
+<ul class="dropdown-menu">
+<li>
+<a href="#">Newest first</a></li>
+<li>
+<a href="#">Popular first</a></li>
+<li>
+<a href="#">Price: Low to hight</a></li>
+<li>
+<a href="#">Price: Low to hight</a></li></ul></div></div></div>
+<div class="row">
+<div class="col-sm-4">
+<div class="general-thumb-wrap">
+<div class="thumbnail general-thumbnail">
+<img src="https://d31wxntiwn0x96.cloudfront.net/rzgade/productimages/1276.jpg?width=400&amp;height=400&amp;etag=%22a2ebd1488b087bf0e6db43ee8bae0634%22" alt="design-book" class="img-shadow general-thumbnail-img"/>
+<div class="thumb-hover">
+<div class="general-thumb-link-wrap">
+<a href="#" class="thumb-hover-link">
+<i aria-hidden="true" class="fa fa-eye thumb-icon"></i></a>
+<a href="#" class="thumb-hover-link">
+<i class="fa fa-shopping-cart thumb-icon"></i></a></div></div></div></div>
+<div class="general-thumb-info">
+<p class="title">Android Programming for Beginners</p>
+<p class="font-16 in-gold-500">€28.50</p>
+<span class="divider-sm"></span>
+<p class="lead small">Bass Jobsen, David Cochran, Ian Whitley</p></div></div>
+<div class="col-sm-4">
+<div class="general-thumb-wrap">
+<div class="thumbnail general-thumbnail disabled">
+<img src="https://d31wxntiwn0x96.cloudfront.net/rzgade/productimages/1276.jpg?width=400&amp;height=400&amp;etag=%22a2ebd1488b087bf0e6db43ee8bae0634%22" alt="design-book" class="img-shadow general-thumbnail-img"/>
+<div class="thumb-hover">
+<div class="general-thumb-link-wrap">
+<a href="#" class="thumb-hover-link">
+<i aria-hidden="true" class="fa fa-eye thumb-icon"></i></a>
+<a href="#" class="thumb-hover-link">
+<i class="fa fa-shopping-cart thumb-icon"></i></a></div></div></div></div>
+<div class="general-thumb-info">
+<p class="title">Android Programming for Beginners</p>
+<p class="font-16 in-gold-500">€28.50</p>
+<span class="divider-sm"></span>
+<p class="lead small">Bass Jobsen, David Cochran, Ian Whitley</p></div></div></div></main>
+<footer class="navbar-inverse">
+<div class="container">
+<div class="row">
+<div class="col-sm-9">
+<ul class="list-inline general-align mb-25">
+<li>
+<a href="#" class="nav-link">Home</a></li>
+<li>
+<a href="#" class="nav-link">Shop</a></li>
+<li>
+<a href="#" class="nav-link">Orders</a></li>
+<li>
+<a href="#" class="nav-link">Settings</a></li></ul></div>
+<div class="col-sm-3">
+<p class="general-nav-mail">support@bookstore.com</p>
+<p class="general-nav-number">(555)-555-5555</p>
+<ul class="list-inline general-align">
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-facebook"></i></a></li>
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-twitter"></i></a></li>
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-google-plus"></i></a></li>
+<li>
+<a href="#" class="nav-link">
+<i aria-hidden="true" class="fa fa-instagram"></i></a></li></ul></div></div></div></footer>
+<script src="https://use.fontawesome.com/67602d7308.js"></script>
+<script src="../../javascripts/jquery.js"></script>
+<script src="../../javascripts/bootstrap.js"></script></body></html>
