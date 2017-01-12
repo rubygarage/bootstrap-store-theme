@@ -4,13 +4,13 @@
     %meta{charset: "UTF-8"}
     %meta{name: "viewport", content: "width=device-width"}
     %title Bookstore
-    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans", rel: "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600", rel: "stylesheet"}
     %link{href: "../css/style.css", rel: "stylesheet"}
   %body
     %header.navbar.navbar-default
       .container
         .navbar-header
-          %button.navbar-toggle.pull-left{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
+          %button.navbar-toggle.pull-left.ml-15{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
             %span.sr-only
             %span.icon-bar
             %span.icon-bar
@@ -61,12 +61,12 @@
     %main.container
       .mb-30
         .form-group.radio
-          %label.radio-label
+          %label.font-16.font-weight-light.pl-0
             %input.radio-input{type: "radio", hidden: "true"}
             %span.radio-icon
             %span.radio-text Delivery Next Day!
         .form-group.checkbox
-          %label.checkbox-label
+          %label.font-weight-light.pl-0
             %input.checkbox-input{type: "checkbox", hidden: "true"}
             %span.checkbox-icon
               %i.fa.fa-check
@@ -84,28 +84,27 @@
             %i.fa.fa-plus.line-height-40
       .mb-30
         .form-group.has-error
-          %label.control-label.input-label{for: "firstName"} First Name
+          %label.control-label.font-weight-light{for: "firstName"} First Name
           %input#firstName.form-control{name:"fname", type: "text", placeholder: "First Name"}
           %span.help-block Please enter your first name
         .form-group
-          %label.control-label.input-label{for: "lastName"} Last Name
+          %label.control-label.font-weight-light{for: "lastName"} Last Name
           %input#lastName.form-control{name:"lname", type: "text", placeholder: "Last Name"}
       .mb-30
-        .dropdowns
-          %p.lead.small.mb-10 Sort by
-          .dropdown.width-240
-            %a.dropdown-toggle.lead.small{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
-              Newest first
-              %i.fa.fa-angle-down.dropdown-icon.pull-right
-            %ul.dropdown-menu
-              %li
-                %a{href: "#"} Newest first
-              %li
-                %a{href: "#"} Popular first
-              %li
-                %a{href: "#"} Price: Low to hight
-              %li
-                %a{href: "#"} Price: Low to hight
+        %p.in-grey-600.small.mb-10 Sort by
+        .dropdown.width-240
+          %a.dropdown-toggle.dropdown-btn{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
+            Newest first
+            %i.fa.fa-angle-down.dropdown-icon
+          %ul.dropdown-menu
+            %li
+              %a{href: "#"} Newest first
+            %li
+              %a{href: "#"} Popular first
+            %li
+              %a{href: "#"} Price: Low to hight
+            %li
+              %a{href: "#"} Price: Low to hight
       .row
         .col-sm-4
           .general-thumb-wrap
@@ -118,10 +117,10 @@
                   %a.thumb-hover-link{href: "#"}
                     %i.fa.fa-shopping-cart.thumb-icon
           .general-thumb-info
-            %p.title Android Programming for Beginners
+            %p.general-title Android Programming for Beginners
             %p.font-16.in-gold-500 €28.50
             %span.divider-sm
-            %p.lead.small Bass Jobsen, David Cochran, Ian Whitley
+            %p.in-grey-600.small Bass Jobsen, David Cochran, Ian Whitley
         .col-sm-4
           .general-thumb-wrap
             .thumbnail.general-thumbnail.disabled
@@ -133,11 +132,11 @@
                   %a.thumb-hover-link{href: "#"}
                     %i.fa.fa-shopping-cart.thumb-icon
           .general-thumb-info
-            %p.title Android Programming for Beginners
+            %p.general-title Android Programming for Beginners
             %p.font-16.in-gold-500 €28.50
             %span.divider-sm
-            %p.lead.small Bass Jobsen, David Cochran, Ian Whitley
-    %footer.navbar-inverse
+            %p.in-grey-600.small Bass Jobsen, David Cochran, Ian Whitley
+    %footer.navbar.navbar-inverse.mb-0
       .container
         .row
           .col-sm-9

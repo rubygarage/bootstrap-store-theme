@@ -4,13 +4,13 @@
     %meta{charset: "UTF-8"}
     %meta{name: "viewport", content: "width=device-width"}
     %title Bookstore
-    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans", rel: "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600", rel: "stylesheet"}
     %link{href: "../css/style.css", rel: "stylesheet"}
   %body
     %header.navbar.navbar-default
       .container
         .navbar-header
-          %button.navbar-toggle.pull-left{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
+          %button.navbar-toggle.pull-left.ml-15{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
             %span.sr-only
             %span.icon-bar
             %span.icon-bar
@@ -66,7 +66,7 @@
             %span{'aria-hidden': "true"} &times;
           .general-img-wrap-table
             %img.cart-img-shadow{src: "http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg", alt: "design-book"}
-          %p.title Android Programming for Beginners
+          %p.general-title Android Programming for Beginners
           %table.table
             %tr
               %td
@@ -93,7 +93,7 @@
             %span{'aria-hidden': "true"} &times;
           .general-img-wrap-table
             %img.cart-img-shadow{src: "http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg", alt: "design-book"}
-          %p.title Android Programming for Beginners
+          %p.general-title Android Programming for Beginners
           %table.table
             %tr
               %td
@@ -133,7 +133,7 @@
               .general-img-wrap-table
                 %img.cart-img-shadow.pull-left{src: "http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg", alt: "design-book"}
             %td
-              %p.title Android Programming for Beginners
+              %p.general-title Android Programming for Beginners
             %td
               %span.font-16.in-gold-500 €28.50
             %td
@@ -153,7 +153,7 @@
               .general-img-wrap-table
                 %img.cart-img-shadow.pull-left{src: "http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg", alt: "design-book"}
             %td
-              %p.title Android Programming for Beginners
+              %p.general-title Android Programming for Beginners
             %td
               %span.font-16.in-gold-500 €28.50
             %td
@@ -172,7 +172,7 @@
         .row
           .col-sm-4
             .input-group.general-input-group
-              %label.input-label Enter Your Coupon Code
+              %label.font-weight-light Enter Your Coupon Code
               %input.form-control.mb-30{type: "text", placeholder: "Enter Your Coupon Code "}
               %div
                 %button.btn.btn-primary.mr-5.mb-15.visible-xs-inline-block Apply Coupon
@@ -198,7 +198,7 @@
                     %strong.font-18 €117.69
               %button.btn.btn-default.mb-20.visible-xs-inline-block Checkout
       %button.btn.btn-default.mb-20.hidden-xs.center-block Checkout
-    %footer.navbar-inverse
+    %footer.navbar.navbar-inverse.mb-0
       .container
         .row
           .col-sm-9

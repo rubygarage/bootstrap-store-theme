@@ -4,13 +4,13 @@
     %meta{charset: "UTF-8"}
     %meta{name: "viewport", content: "width=device-width"}
     %title Bookstore
-    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans", rel: "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600", rel: "stylesheet"}
     %link{href: "../css/style.css", rel: "stylesheet"}
   %body
     %header.navbar.navbar-default
       .container
         .navbar-header
-          %button.navbar-toggle.pull-left{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
+          %button.navbar-toggle.pull-left.ml-15{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
             %span.sr-only
             %span.icon-bar
             %span.icon-bar
@@ -83,21 +83,21 @@
       %h3.general-subtitle Credit Card
       %form.max-600.mb-80
         .form-group.has-error
-          %label.control-label.input-label{for: "cardNumber"} Card Number
+          %label.control-label.font-weight-light{for: "cardNumber"} Card Number
           %input#cardNumber.form-control{type: "number", name: "cardnumber", placeholder: "Card Number"}
           %span.help-block Please enter a valid credit card number
         .row
           .col-sm-6
             .form-group
-              %label.control-label.input-label{for: "cardName"} Name on Card
+              %label.control-label.font-weight-light{for: "cardName"} Name on Card
               %input#cardName.form-control{type: "text", name: "ccname", placeholder: "Name on Card"}
           .col-sm-3
             .form-group
-              %label.control-label.input-label{for: "firstName"} MM / YY
+              %label.control-label.font-weight-light{for: "firstName"} MM / YY
               %input#firstName.form-control{name: "exp-date", type: "text", placeholder: "MM / YY"}
           .col-sm-3
             .form-group.relative
-              %label.control-label.input-label{for: "firstName"} CVV
+              %label.control-label.font-weight-light{for: "firstName"} CVV
               %input#firstName.form-control{name: "cvc", type: "number", placeholder: "CVV"}
               %i.fa.fa-question-circle.general-form-help.font-18
       .general-text-align
@@ -120,7 +120,7 @@
               %strong.font-18 €117.69
       .text-center
         %button.btn.btn-default.mb-80 Save and Continue
-    %footer.navbar-inverse
+    %footer.navbar.navbar-inverse.mb-0
       .container
         .row
           .col-sm-9

@@ -1,4 +1,4 @@
-$footer-sticky-height: 268px;
+$footer-sticky-height: 170px;
 
 html,
 body {
@@ -37,10 +37,6 @@ img {
 .general-main-wrap {
   margin-bottom: 60px;
 }
-.general-container-xs {
-  padding-right: 10px;
-  padding-left: 10px;
-}
 .general-img-wrap {
   max-width: 175px;
   padding-top: 70px;
@@ -55,6 +51,7 @@ img {
 }
 .general-thumbnail {
   padding: 70% 0;
+  position: relative;
 }
 .general-thumbnail .general-thumbnail-img {
   max-width: 60%;
@@ -71,13 +68,13 @@ img {
   white-space: nowrap;
 }
 .general-nav-mail {
-  font-size: $font-size-small;
+  font-size: 12px;
   color: $gold-500;
   text-align: center;
   margin-bottom: 15px;
 }
 .general-nav-number {
-  font-size: $font-size-small;
+  font-size: 12px;
   color: white;
   text-align: center;
   margin-bottom: 25px;
@@ -110,6 +107,13 @@ img {
 .general-position {
   margin-top: 10px;
   margin-bottom: 30px;
+}
+.general-item-info {
+  font-size: 14px;
+  color: $grey-600;
+  word-break: break-word;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 .general-img-wrap-table {
   max-width: 140px;
@@ -210,11 +214,8 @@ img {
   color: $gold-500;
   font-weight: 300;
 }
-.general-message-wrap {
-  padding: 30px 0 25px;
-}
 .general-message-verified {
-  font-size: $font-size-small;
+  font-size: 12px;
   color: $grey-350;
   line-height: 21px;
   float: right;
@@ -224,12 +225,17 @@ img {
 .general-message-name {
   font-size: $font-size-base;
   color: $gold-500;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 .general-message-date {
   font-size: $font-size-base;
   color: $grey-600;
   float: right;
+}
+.general-title {
+  font-size: $font-size-large;
+  word-break: break-word;
 }
 
 
@@ -307,6 +313,11 @@ img {
   .general-order-dropdown {
     width: 240px;
     float: right;
+  }
+  .general-carousel-indicators {
+    width: 7%;
+    left: 90%;
+    margin-left: 0;
   }
   .mt-res-0 {
     margin-top: 0;

@@ -4,13 +4,13 @@
     %meta{charset: "UTF-8"}
     %meta{name: "viewport", content: "width=device-width"}
     %title Bookstore
-    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans", rel: "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600", rel: "stylesheet"}
     %link{href: "../css/style.css", rel: "stylesheet"}
   %body
     %header.navbar.navbar-default
       .container
         .navbar-header
-          %button.navbar-toggle.pull-left{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
+          %button.navbar-toggle.pull-left.ml-15{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
             %span.sr-only
             %span.icon-bar
             %span.icon-bar
@@ -76,7 +76,7 @@
                 %img{src: "https://www.smashingmagazine.com/wp-content/uploads/2015/09/smashing-book-5-2-large.jpg"}
         .col-sm-6
           %h1.mt-res-0 Real-Life Responsive Web Design
-          %p.lead.small Vitaly Friedman, Daniel Mall,Vitaly Friedman
+          %p.in-grey-600.small Vitaly Friedman, Daniel Mall,Vitaly Friedman
           .row
             .col-xs-12.col-md-4
               %p.h1.in-gold-500.mt-10 €32.90
@@ -89,34 +89,36 @@
                   %i.fa.fa-plus.line-height-40
             .col-xs-7.col-md-5
               %button.btn.btn-default.pull-right.general-position Add to Cart
-          .general-info-wrap.divider-lg
+          .pt-20.divider-lg
             %p Description
-            %p.lead.small.line-height-2
+            %p.in-grey-600.small.line-height-2
               Smashing Book 5: Real-Life Responsive Web Design is our brand new, upcoming book with smart front-end techniques and design patterns derived from real-life responsive projects. With 13 chapters on responsive workflow, SVG, Flexbox, Web fonts, responsive images, responsive email, content strategy, debugging ...
               %a.in-gold-500.ml-10{href: "#"} Read More
-          .general-info-wrap.divider-lg
+          .pt-20.divider-lg
             .clearfix
-              %p.pull-left Year of publication
-              %p.lead.small.pull-right 2016
-          .general-info-wrap.divider-lg
+              %p.general-item-info.pull-right 2016
+              %p.break-word Year of publication
+          .pt-20.divider-lg
             .clearfix
-              %p.pull-left Dimensions
-              %p.lead.small.pull-right H:6.4\" x W: 0.9\" x D: 5.0
-          .general-info-wrap.divider-lg
+              %p.general-item-info.pull-right H:6.4\" x W: 0.9\" x D: 5.0
+              %p.break-word Dimensions
+          .pt-20.divider-lg
             .clearfix
-              %p.pull-left Materials
-              %p.lead.small.pull-right Hardcove, glossy paper
+              %p.general-item-info.pull-right Hardcove, glossy paper
+              %p.break-word Materials
       .mb-80
         %h3.in-gold-500.mb-25 Reviews (3)
-        .general-message-wrap.divider-lg
-          .clearfix
-            %img.img-circle.logo-size.inlide-block.pull-left{src: "https://www.smashingmagazine.com/wp-content/uploads/2015/09/smashing-book-5-2-large.jpg"}
-            .ml-70
+        %ul.media-list
+          %li.media.divider-lg
+            .media-left
+              %a{href: "#"}
+                %img.img-circle.logo-size.media-object.max-unset{src: "https://www.smashingmagazine.com/wp-content/uploads/2015/09/smashing-book-5-2-large.jpg"}
+            .media-body
               %div
-                .general-message-date.hidden-xs 11/11/16
-                .max-240
-                  .general-message-verified Verified Reviewer
-                  .general-message-name Rita J. Lewis
+                %p.general-message-date.hidden-xs 11/11/16
+                %h4.media-heading.max-240.general-message-name
+                  %span.general-message-verified Verified Reviewer
+                  Rita J. Lewis
               .mb-15
                 %i.fa.fa-star.rate-star
                 %i.fa.fa-star.rate-star
@@ -124,23 +126,24 @@
                 %i.fa.fa-star.rate-star
                 %i.fa.fa-star.rate-star
               %p Thank you BookStore, I was very pleased to receive my order for the Moleskine diary so soon after placing the order.
-        .general-message-wrap.divider-lg
-          .clearfix
-            %span.img-circle.logo-size.inlide-block.pull-left.logo-empty M
-            .ml-70
+          %li.media.divider-lg
+            .media-left
+              %a{href: "#"}
+                %span.img-circle.logo-size.logo-empty.media-object M
+            .media-body
               %div
-                .general-message-date.hidden-xs 11/11/16
-                .max-240
-                  .general-message-verified.pull-right Verified Reviewer
-                  .general-message-name May J. Novoa
+                %p.general-message-date.hidden-xs 11/11/16
+                %h4.media-heading.max-240.general-message-name
+                  %span.general-message-verified Verified Reviewer
+                  Rita J. Lewis
               .mb-15
                 %i.fa.fa-star.rate-star
                 %i.fa.fa-star.rate-star
                 %i.fa.fa-star.rate-star
                 %i.fa.fa-star.rate-star
                 %i.fa.fa-star.rate-star.rate-empty
-              %p If ‘Get a better job’ had landed on my desk a year ago, I might have been dismissive of it. Instead I was prepared to be open-minded. There have been many occasions where I turned to career books with practical activities to look for some inspiration when developing education activities for learners or assessment.
-    %footer.navbar-inverse
+              %p Thank you BookStore, I was very pleased to receive my order for the Moleskine diary so soon after placing the order.
+    %footer.navbar.navbar-inverse.mb-0
       .container
         .row
           .col-sm-9

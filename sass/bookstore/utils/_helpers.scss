@@ -25,9 +25,6 @@
 .font-18 {
   font-size: 18px !important;
 }
-.fw-300 {
-  font-weight: 300;
-}
 .img-shadow {
   box-shadow: 14.3px 7.3px 75.2px 4.8px rgba(14, 26, 52, 0.28);
 }
@@ -39,6 +36,9 @@
 }
 .line-height-2 {
   line-height: 2;
+}
+.max-unset {
+  max-width: unset;
 }
 .max-240 {
   max-width: 240px;
@@ -55,6 +55,9 @@
 .relative {
   position: relative;
 }
+.break-word {
+  word-break: break-word;
+}
 .mt-0 {
   margin-top: 0;
 }
@@ -67,7 +70,7 @@
     margin-right: #{$size}px !important;
   }
 }
-@each $size in (10, 20, 30, 40, 60, 70) {
+@each $size in (10, 15, 20, 30, 40, 60, 70) {
   .ml-#{$size} {
     margin-left: #{$size}px !important;
   }

@@ -2,42 +2,47 @@
 
 @import "variables";
 
+.font-weight-light {
+  font-weight: 300 !important;
+}
+
+.navbar-inverse {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .navbar-default {
-  box-shadow: 0 5px 18px 2px rgba(1, 1, 1, 0.1);
+  box-shadow: $navbar-custom-shadow;
 }
 .navbar-brand {
   font-size: $font-size-base;
 }
-.navbar-toggle {
-  margin-left: 15px;
-  .icon-bar:nth-child(3) {
-    width: 17px;
-  }
+.navbar-toggle .icon-bar:nth-child(3) {
+  width: $navbar-toggle-icon-bar-sm;
 }
 .navbar-nav .open .dropdown-menu {
-  left: -65px;
+  left: $dropdown-menu-position-left;
 }
-.dropdowns {
-  .dropdown-toggle {
-    width: 100%;
-    border: 1px solid $grey-200;
-    display: inline-block;
-    padding: 10px 15px;
-    &:hover,
-    &:focus {
-      text-decoration: none;
-      color: $grey-600;
-    }
+.dropdown-btn {
+  width: 100%;
+  font-size: 14px;
+  color: $grey-600;
+  border: 1px solid $grey-200;
+  display: inline-block;
+  padding: 10px 15px;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $grey-600;
   }
   .dropdown-icon {
     font-size: 18px;
     color: $grey-600;
-  }
-  .dropdown-menu {
-    width: 100%;
+    line-height: 21px;
+    float: right;
   }
 }
 .dropdown-menu {
+  width: 100%;
   min-width: 210px;
   > li > a {
     font-weight: 300;
@@ -52,12 +57,27 @@
   background-color: $grey-200;
 }
 .carousel-control {
-  background-image: unset !important;
+  &.left,
+  &.right {
+    background-image: unset;
+  }
   .icon-prev {
     left: 25%;
   }
   .icon-next {
     right: 25%;
+  }
+}
+.carousel-indicators li {
+  width: $carousel-indicator-size;
+  height: $carousel-indicator-size;
+  background-color: $grey-600;
+  margin-right: 4px;
+  margin-left: 4px;
+  &.active {
+    width: $carousel-indicator-size;
+    height: $carousel-indicator-size;
+    margin: 1px 4px;
   }
 }
 .lead {
@@ -94,28 +114,8 @@
     opacity: 0.6;
   }
 }
-.carousel-indicators li {
-  width: 6px;
-  height: 6px;
-  background-color: $grey-600;
-  margin-right: 4px;
-  margin-left: 4px;
-  &.active {
-    width: 6px;
-    height: 6px;
-    margin: 1px 4px;
-  }
-}
 .item {
   padding: 15px 12px 0;
-}
-.jumbotron p {
-  color: $grey-600;
-}
-.thumbnail {
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
 }
 .thumbnail:hover,
 .thumbnail:focus,
@@ -132,9 +132,37 @@
     display: none;
   }
 }
-.navbar-inverse {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.thumb-hover {
+  background-color: $thumbnail-hover-bg;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: $thumbnail-hover-transition;
+}
+.thumb-hover-link {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border: 2px solid rgba($grey-200, 0.4);
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  &:hover {
+    background-color: $grey-200;
+    .thumb-icon {
+      color: $gold-500;
+    }
+  }
+  .thumb-icon {
+    font-size: 16px;
+    color: white;
+    line-height: 36px;
+  }
 }
 .table {
   > thead,
@@ -184,42 +212,6 @@
   font-size: $font-size-small;
   color: white;
 }
-.thumb-hover {
-  background-color: $thumbnail-hover-bg;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: $thumbnail-hover-transition;
-}
-.thumb-hover-link {
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  border: 2px solid rgba($grey-200, 0.4);
-  cursor: pointer;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  &:hover {
-    background-color: $grey-200;
-    .thumb-icon {
-      color: $gold-500;
-    }
-  }
-  .thumb-icon {
-    font-size: 16px;
-    color: white;
-    line-height: 36px;
-  }
-}
-.title {
-  font-size: $font-size-large;
-  word-break: break-word;
-}
 .divider-sm {
   width: 30px;
   height: 2px;
@@ -266,9 +258,6 @@
   padding: 8px 10px;
   margin-left: 12px;
   margin-right: 12px;
-}
-.logo-max {
-  max-width: unset;
 }
 .logo-size {
   width: 55px;
@@ -343,11 +332,6 @@
   margin-left: 10px;
   margin-bottom: 10px;
 }
-.input-label {
-  font-size: $font-size-base;
-  color: $grey-900;
-  font-weight: 300;
-}
 .step-number {
   width: 35px;
   height: 35px;
@@ -405,18 +389,12 @@
     font-size: 12px;
   }
 }
-.checkbox label {
-  min-height: 24px;
-  font-weight: 300;
-  padding-left: 0;
-}
 .checkbox-icon {
-  $size: 24px;
-  width: $size;
-  height: $size;
+  width: $line-height-size-base;
+  height: $line-height-size-base;
   font-size: 10px;
   color: white;
-  line-height: $size;
+  line-height: $line-height-size-base;
   text-align: center;
   display: inline-block;
   border: 1px solid $grey-350;
@@ -426,16 +404,9 @@
   background-color: $gold-500;
   border-color: transparent;
 }
-.radio label {
-  min-height: 24px;
-  font-size: 16px;
-  font-weight: 300;
-  padding-left: 0;
-}
 .radio-icon {
-  $size: 24px;
-  width: $size;
-  height: $size;
+  width: $line-height-size-base;
+  height: $line-height-size-base;
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -464,20 +435,14 @@
     opacity: 1;
   }
 }
-.tab-item {
-  float: left;
-  margin-bottom: 10px;
-}
-.tab-link {
-  font-size: 14px;
+.nav-tabs > li > a {
   color: $grey-600;
-  &:hover,
-  &:focus {
-    color: $grey-900;
-  }
 }
-
-
+.media {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 0;
+}
 
 @media (min-width: $grid-float-breakpoint) {
   .navbar-nav {
@@ -486,6 +451,9 @@
   h1,
   .h1 {
     font-size: $font-size-h1-large;
+  }
+  .lead {
+    font-size: 18px;
   }
   .table {
     table-layout: fixed;
@@ -512,7 +480,7 @@
     margin-right: 0;
   }
   .navbar-nav .open .dropdown-menu {
-    box-shadow: 0 5px 18px 2px rgba(1, 1, 1, 0.03);
+    box-shadow: $dropdown-open-menu-shadow;
   }
   .item {
     padding-left: 35px;
@@ -521,11 +489,6 @@
   .carousel {
     margin-left: 0;
     margin-right: 0;
-  }
-  .carousel-indicators {
-    width: 7%;
-    left: 90%;
-    margin-left: 0;
   }
   .carousel-control {
     .icon-prev {
@@ -542,7 +505,7 @@
       margin-right: 0;
     }
   }
-  .tab-item:first-child .tab-link {
+  .nav-tabs li:first-child a {
     padding-left: 0;
   }
 }
