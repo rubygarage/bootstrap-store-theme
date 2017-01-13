@@ -4,13 +4,13 @@
     %meta{charset: "UTF-8"}
     %meta{name: "viewport", content: "width=device-width"}
     %title Bookstore
-    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans", rel: "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600", rel: "stylesheet"}
     %link{href: "../css/style.css", rel: "stylesheet"}
   %body
     %header.navbar.navbar-default
       .container
         .navbar-header
-          %button.navbar-toggle.pull-left{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
+          %button.navbar-toggle.pull-left.ml-15{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
             %span.sr-only
             %span.icon-bar
             %span.icon-bar
@@ -94,57 +94,57 @@
               %h3.general-subtitle Billing Address
               %p.general-info-text all fields are required
             .form-group.has-error
-              %label.control-label.input-label{for: "firstName"} First Name
+              %label.control-label.font-weight-light{for: "firstName"} First Name
               %input#firstName.form-control{name:"fname", type: "text", placeholder: "First Name"}
               %span.help-block Please enter your first name
             .form-group
-              %label.control-label.input-label{for: "lastName"} Last Name
+              %label.control-label.font-weight-light{for: "lastName"} Last Name
               %input#lastName.form-control{name:"lname", type: "text", placeholder: "Last Name"}
             .form-group
-              %label.control-label.input-label{for: "address"} Address
+              %label.control-label.font-weight-light{for: "address"} Address
               %input#address.form-control{name: "address", type: "text", placeholder: "Address"}
             .form-group
-              %label.control-label.input-label{for: "city"} City
+              %label.control-label.font-weight-light{for: "city"} City
               %input#city.form-control{name: "city", type: "text", placeholder: "City"}
             .form-group
-              %label.control-label.input-label{for: "zip"} Zip
+              %label.control-label.font-weight-light{for: "zip"} Zip
               %input#zip.form-control{name: "zip", type: "text", placeholder: "Zip"}
             .form-group
-              %label.control-label.input-label{for: "сountry"} Country
+              %label.control-label.font-weight-light{for: "сountry"} Country
               %input#country.form-control{name: "country", type: "text", placeholder: "Select a country"}
             .form-group
-              %label.control-label.input-label{for: "phone"} Phone
+              %label.control-label.font-weight-light{for: "phone"} Phone
               %input#phone.form-control{name: "phone", type: "tel", placeholder: "Example +355 66 123 4567"}
           .col-md-5.col-md-offset-1.mb-60
             .visible-xs.visible-sm
               %h3.general-subtitle Shipping Address
             .form-group.has-error
-              %label.control-label.input-label{for: "firstName"} First Name
+              %label.control-label.font-weight-light{for: "firstName"} First Name
               %input#firstName.form-control{name:"fname", type: "text", placeholder: "First Name"}
               %span.help-block Please enter your first name
             .form-group
-              %label.control-label.input-label{for: "lastName"} Last Name
+              %label.control-label.font-weight-light{for: "lastName"} Last Name
               %input#lastName.form-control{name:"lname", type: "text", placeholder: "Last Name"}
             .form-group
-              %label.control-label.input-label{for: "address"} Address
+              %label.control-label.font-weight-light{for: "address"} Address
               %input#address.form-control{name: "address", type: "text", placeholder: "Address"}
             .form-group
-              %label.control-label.input-label{for: "city"} City
+              %label.control-label.font-weight-light{for: "city"} City
               %input#city.form-control{name: "city", type: "text", placeholder: "City"}
             .form-group
-              %label.control-label.input-label{for: "zip"} Zip
+              %label.control-label.font-weight-light{for: "zip"} Zip
               %input#zip.form-control{name: "zip", type: "text", placeholder: "Zip"}
             .form-group
-              %label.control-label.input-label{for: "сountry"} Country
+              %label.control-label.font-weight-light{for: "сountry"} Country
               %select#country.form-control{name: "country", placeholder: "Select a country"}
                 %option London
                 %option London
                 %option London
             .form-group
-              %label.control-label.input-label{for: "phone"} Phone
+              %label.control-label.font-weight-light{for: "phone"} Phone
               %input#phone.form-control{name: "phone", type: "tel", placeholder: "Example +355 66 123 4567"}
             .form-group.checkbox
-              %label.checkbox-label
+              %label.font-weight-light.pl-0
                 %input.checkbox-input{type: "checkbox", hidden: "true"}
                 %span.checkbox-icon
                   %i.fa.fa-check
@@ -163,7 +163,7 @@
               %td
                 %p.font-16 €117.69
           %button.btn.disabled.center-block.mb-20 Save and Continue
-    %footer.navbar-inverse
+    %footer.navbar.navbar-inverse.mb-0
       .container
         .row
           .col-sm-9

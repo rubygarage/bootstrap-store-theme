@@ -4,14 +4,14 @@
     %meta{charset: "UTF-8"}
     %meta{name: "viewport", content: "width=device-width"}
     %title Bookstore
-    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans", rel: "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600", rel: "stylesheet"}
     %link{href: "../css/style.css", rel: "stylesheet"}
   %body
     .general-main-container
       %header.navbar.navbar-default
         .container
           .navbar-header
-            %button.navbar-toggle.pull-left{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
+            %button.navbar-toggle.pull-left.ml-15{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
               %span.sr-only
               %span.icon-bar
               %span.icon-bar
@@ -61,11 +61,11 @@
                   %a{href: "#"} My account
       %main.container.general-main-wrap
         %h1.mt-0.mb-25 My Orders
-        %p.lead.small.mb-10.visible-xs Sort by
-        .dropdowns.dropdown.general-order-dropdown
-          %a.dropdown-toggle.lead.small{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
+        %p.in-grey-600.small.mb-10.visible-xs Sort by
+        .dropdown.general-order-dropdown.mb-20
+          %a.dropdown-toggle.dropdown-btn{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
             Waiting for processing
-            %i.fa.fa-angle-down.dropdown-icon.pull-right
+            %i.fa.fa-angle-down.dropdown-icon
           %ul.dropdown-menu
             %li
               %a{href: "#"} Newest first
@@ -87,12 +87,12 @@
                 %td
                   %span.in-grey-600 Completed at
                 %td
-                  %span.in-grey-900.font-16.fw-300 2016-11-14
+                  %span.in-grey-900.font-16.font-weight-light 2016-11-14
               %tr
                 %td
                   %span.in-grey-600 Status
                 %td
-                  %span.font-16.in-grey-900.fw-300 In Progress
+                  %span.font-16.in-grey-900.font-weight-light In Progress
               %tr
                 %td
                   %span.in-grey-600 Total
@@ -109,12 +109,12 @@
                 %td
                   %span.in-grey-600 Completed at
                 %td
-                  %span.in-grey-900.font-16.fw-300 2016-11-14
+                  %span.in-grey-900.font-16.font-weight-light 2016-11-14
               %tr
                 %td
                   %span.in-grey-600 Status
                 %td
-                  %span.font-16.fw-300.text-success Delivered
+                  %span.font-16.font-weight-light.text-success Delivered
               %tr
                 %td
                   %span.in-grey-600 Total
@@ -137,21 +137,21 @@
                 %td
                   %span.general-order-number R25314582
                 %td
-                  %span.in-grey-900.font-16.fw-300 2016-11-14
+                  %span.in-grey-900.font-16.font-weight-light 2016-11-14
                 %td
-                  %span.font-16.in-grey-900.fw-300 In Progress
+                  %span.font-16.in-grey-900.font-weight-light In Progress
                 %td
                   %strong.font-16 €32.90
               %tr
                 %td
                   %span.general-order-number R25314582
                 %td
-                  %span.in-grey-900.font-16.fw-300 2016-11-14
+                  %span.in-grey-900.font-16.font-weight-light 2016-11-14
                 %td
-                  %span.font-16.fw-300.text-success Delivered
+                  %span.font-16.font-weight-light.text-success Delivered
                 %td
                   %strong.font-16 €32.90
-    %footer.navbar-inverse
+    %footer.navbar.navbar-inverse.mb-0
       .container
         .row
           .col-sm-9

@@ -4,13 +4,13 @@
     %meta{charset: "UTF-8"}
     %meta{name: "viewport", content: "width=device-width"}
     %title Bookstore
-    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans", rel: "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600", rel: "stylesheet"}
     %link{href: "../css/style.css", rel: "stylesheet"}
   %body
     %header.navbar.navbar-default
       .container
         .navbar-header
-          %button.navbar-toggle.pull-left{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
+          %button.navbar-toggle.pull-left.ml-15{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
             %span.sr-only
             %span.icon-bar
             %span.icon-bar
@@ -66,17 +66,17 @@
         %p.general-login-text or
       %form.general-form
         .form-group.mb-30
-          %label.control-label.input-label{for: "email"} Enter Email
+          %label.control-label.font-weight-light{for: "email"} Enter Email
           %input#email.form-control{name:"email", type: "email", placeholder: "Enter Email"}
         .form-group.mb-30
-          %label.control-label.input-label{for: "password"} Password
+          %label.control-label.font-weight-light{for: "password"} Password
           %input#password.form-control{name:"password", type: "password", placeholder: "Password"}
           %a.help-block.in-gold-500{href: "#"} Forgot password?
         .form-group.mb-30
-          %label.control-label.input-label{for: "confirm"} Confirm Password
+          %label.control-label.font-weight-light{for: "confirm"} Confirm Password
           %input#confirm.form-control{name:"confirm", type: "password", placeholder: "Confirm Password"}
         .form-group.checkbox.text-center.mb-30
-          %label.checkbox-label
+          %label.font-weight-light.pl-0
             %input.checkbox-input{type: "checkbox", hidden: "true"}
             %span.checkbox-icon
               %i.fa.fa-check
@@ -86,7 +86,7 @@
       %p.general-sign-text.text-center
         Don’t have an Account?
         %a.in-gold-500{href: "#"} Sign Up
-    %footer.navbar-inverse
+    %footer.navbar.navbar-inverse.mb-0
       .container
         .row
           .col-sm-9

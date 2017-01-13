@@ -4,13 +4,13 @@
     %meta{charset: "UTF-8"}
     %meta{name: "viewport", content: "width=device-width"}
     %title Bookstore
-    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans", rel: "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600", rel: "stylesheet"}
     %link{href: "../css/style.css", rel: "stylesheet"}
   %body
     %header.navbar.navbar-default
       .container
         .navbar-header
-          %button.navbar-toggle.pull-left{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
+          %button.navbar-toggle.pull-left.ml-15{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
             %span.sr-only
             %span.icon-bar
             %span.icon-bar
@@ -89,7 +89,7 @@
                 %span.in-grey-600 Method
               %td.col-half
                 .form-group.radio.mt-0.mb-0
-                  %label.radio-label
+                  %label.font-16.font-weight-light.pl-0
                     %input.radio-input{type: "radio", hidden: "true"}
                     %span.radio-icon
                     %span.radio-text Delivery Next Day!
@@ -97,7 +97,7 @@
               %td
                 %span.in-grey-600 Days
               %td
-                %span.font-16.fw-300 3 to 7 days
+                %span.font-16.font-weight-light 3 to 7 days
             %tr
               %td
                 %span.in-grey-600 Price
@@ -110,7 +110,7 @@
                 %span.in-grey-600 Method
               %td.col-half
                 .form-group.radio.mt-0.mb-0
-                  %label.radio-label
+                  %label.font-16.font-weight-light.pl-0
                     %input.radio-input{type: "radio", hidden: "true"}
                     %span.radio-icon
                     %span.radio-text Delivery Next Day!
@@ -118,7 +118,7 @@
               %td
                 %span.in-grey-600 Days
               %td
-                %span.font-16.fw-300 3 to 7 days
+                %span.font-16.font-weight-light 3 to 7 days
             %tr
               %td
                 %span.in-grey-600 Price
@@ -138,7 +138,7 @@
             %tr
               %td
                 .form-group.radio.mt-0.mb-0
-                  %label.radio-label
+                  %label.font-16.font-weight-light.pl-0
                     %input.radio-input{type: "radio", hidden: "true"}
                     %span.radio-icon
                     %span.radio-text Delivery Next Day!
@@ -149,7 +149,7 @@
             %tr
               %td
                 .form-group.radio.mt-0.mb-0
-                  %label.radio-label
+                  %label.font-16.font-weight-light.pl-0
                     %input.radio-input{type: "radio", hidden: "true"}
                     %span.radio-icon
                     %span.radio-text Delivery Next Day!
@@ -177,7 +177,7 @@
               %strong.font-18 €117.69
       .text-center
         %button.btn.btn-default.mb-20 Save and Continue
-    %footer.navbar-inverse
+    %footer.navbar.navbar-inverse.mb-0
       .container
         .row
           .col-sm-9

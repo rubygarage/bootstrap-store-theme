@@ -4,13 +4,13 @@
     %meta{charset: "UTF-8"}
     %meta{name: "viewport", content: "width=device-width"}
     %title Bookstore
-    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans", rel: "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600", rel: "stylesheet"}
     %link{href: "../css/style.css", rel: "stylesheet"}
   %body
     %header.navbar.navbar-default
       .container
         .navbar-header
-          %button.navbar-toggle.pull-left{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
+          %button.navbar-toggle.pull-left.ml-15{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
             %span.sr-only
             %span.icon-bar
             %span.icon-bar
@@ -83,7 +83,7 @@
           %span.step-text.hidden-xs Complete
       .text-center.mb-40
         %h3.general-subtitle Thank You for your Order!
-        %p.fw-300 An order confirmation has been has been sent to John Doe0411@gmail.com
+        %p.font-weight-light An order confirmation has been has been sent to John Doe0411@gmail.com
       .row.mb-20
         .col-sm-6
           .visible-xs
@@ -107,8 +107,8 @@
         .general-cart-item.divider-lg
           .general-img-wrap-table
             %img.cart-img-shadow{src: "http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg", alt: "design-book"}
-          %p.title Android Programming for Beginners
-          %P.in-grey-600.fw-300 A recipe-based book to help you efficiently create amazing PHP-based applications with Laravel 5.x
+          %p.general-title Android Programming for Beginners
+          %P.in-grey-600.font-weight-light A recipe-based book to help you efficiently create amazing PHP-based applications with Laravel 5.x
           %table.table
             %tr
               %td
@@ -128,7 +128,7 @@
         .general-cart-item.divider-lg.mb-55
           .general-img-wrap-table
             %img.cart-img-shadow{src: "http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg", alt: "design-book"}
-          %p.title Android Programming for Beginners
+          %p.general-title Android Programming for Beginners
           %table.table
             %tr
               %td
@@ -164,8 +164,8 @@
                 .general-img-wrap-table
                   %img.cart-img-shadow.pull-left{src: "http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg", alt: "design-book"}
               %td
-                %p.title Android Programming for Beginners
-                %p.in-grey-600.fw-300 Maximize the potential of Bootstrap with a collection of real-world site projects for better, faster, more responsive web applications
+                %p.general-title Android Programming for Beginners
+                %p.in-grey-600.font-weight-light Maximize the potential of Bootstrap with a collection of real-world site projects for better, faster, more responsive web applications
               %td
                 %span.font-16.in-gold-500 €28.50
               %td
@@ -192,7 +192,7 @@
               %strong.font-18 €117.69
       .text-center
         %button.btn.btn-default.mb-20 Back to Store
-    %footer.navbar-inverse
+    %footer.navbar.navbar-inverse.mb-0
       .container
         .row
           .col-sm-9

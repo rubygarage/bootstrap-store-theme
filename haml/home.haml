@@ -4,13 +4,13 @@
     %meta{charset: "UTF-8"}
     %meta{name: "viewport", content: "width=device-width"}
     %title Bookstore
-    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans", rel: "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600", rel: "stylesheet"}
     %link{href: "../css/style.css", rel: "stylesheet"}
   %body
     %header.navbar.navbar-default
       .container
         .navbar-header
-          %button.navbar-toggle.pull-left{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
+          %button.navbar-toggle.pull-left.ml-15{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
             %span.sr-only
             %span.icon-bar
             %span.icon-bar
@@ -60,7 +60,7 @@
                 %a{href: "#"} My account
     %main.container
       #slider.carousel.slide{'data-ride': "carousel"}
-        %ol.carousel-indicators
+        %ol.carousel-indicators.general-carousel-indicators
           %li.active{'data-target': "#slider", 'data-slide-to': "0"}
           %li{'data-target': "#slider", 'data-slide-to': "1"}
         .carousel-inner{role: "listbox"}
@@ -73,8 +73,8 @@
                 .mb-60
                   %h1 Real-Life Responsive Web Design
                   %p.lead Smart front-end techniques and design patterns derived from real-life responsive projects
-                  %p.lead.small Vitaly Friedman, Daniel Mall,Vitaly Friedman
-                  .general-align
+                  %p.in-grey-600.small Vitaly Friedman, Daniel Mall,Vitaly Friedman
+                  .general-align.pt-20
                     %button.disabled.btn Buy Now
           .item
             .row
@@ -85,8 +85,8 @@
                 .mb-60
                   %h1 Real-Life Responsive Web Design
                   %p.lead Smart front-end techniques and design patterns derived from real-life responsive projects
-                  %p.lead.small Vitaly Friedman, Daniel Mall,Vitaly Friedman
-                  .general-align
+                  %p.in-grey-600.small Vitaly Friedman, Daniel Mall,Vitaly Friedman
+                  .general-align.pt-20
                     %button.btn.btn-primary Buy Now
         %a.left.carousel-control{href: "#slider", role: "button", 'data-slide': "prev"}
           %span.icon-prev{'aria-hidden': "true"}
@@ -98,7 +98,7 @@
       .jumbotron.text-center.mb-0
         %h2.h1 Welcome to our amazing Bookstore!
         .mb-res-50
-          %p We pore through hundreds of new books each month and select the five best we can find to share with our members.
+          %p.in-grey-600 We pore through hundreds of new books each month and select the five best we can find to share with our members.
         %button.btn.btn-default Get Started
       .mb-35
         %h3 Best Sellers
@@ -116,9 +116,9 @@
             .mb-35
               .clearfix
                 %p.pull-right.font-16.in-gold-500 €28.50
-                %p.title.mr-55 Android Programming for Beginners
+                %p.general-title.mr-55 Android Programming for Beginners
               %span.divider-sm
-              %p.lead.small John Horton
+              %p.in-grey-600.small John Horton
           .col-sm-6.col-md-3
             .general-thumb-wrap
               .thumbnail.general-thumbnail.disabled
@@ -132,9 +132,9 @@
             .mb-35
               .clearfix
                 %p.pull-right.font-16.in-gold-500 €28.50
-                %p.title.mr-55 Android Programming for Beginners
+                %p.general-title.mr-55 Android Programming for Beginners
               %span.divider-sm
-              %p.lead.small John Horton
+              %p.in-grey-600.small John Horton
           .col-sm-6.col-md-3
             .general-thumb-wrap
               .thumbnail.general-thumbnail
@@ -148,9 +148,9 @@
             .mb-35
               .clearfix
                 %p.pull-right.font-16.in-gold-500 €28.50
-                %p.title.mr-55 Android Programming for Beginners
+                %p.general-title.mr-55 Android Programming for Beginners
               %span.divider-sm
-              %p.lead.small John Horton
+              %p.in-grey-600.small John Horton
           .col-sm-6.col-md-3
             .general-thumb-wrap
               .thumbnail.general-thumbnail
@@ -164,10 +164,10 @@
             .mb-35
               .clearfix
                 %p.pull-right.font-16.in-gold-500 €28.50
-                %p.title.mr-55 Android Programming for Beginners
+                %p.general-title.mr-55 Android Programming for Beginners
               %span.divider-sm
-              %p.lead.small John Horton
-    %footer.navbar-inverse
+              %p.in-grey-600.small John Horton
+    %footer.navbar.navbar-inverse.mb-0
       .container
         .row
           .col-sm-9

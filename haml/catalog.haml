@@ -4,13 +4,13 @@
     %meta{charset: "UTF-8"}
     %meta{name: "viewport", content: "width=device-width"}
     %title Bookstore
-    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans", rel: "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600", rel: "stylesheet"}
     %link{href: "../css/style.css", rel: "stylesheet"}
   %body
     %header.navbar.navbar-default
       .container
         .navbar-header
-          %button.navbar-toggle.pull-left{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
+          %button.navbar-toggle.pull-left.ml-15{type: "button", 'data-toggle': "collapse", 'data-target': "#navbar"}
             %span.sr-only
             %span.icon-bar
             %span.icon-bar
@@ -61,11 +61,11 @@
     %main.container
       %h1.general-title-margin Сatalog
       .hidden-xs.clearfix
-        .dropdowns.pull-right
+        .pull-right
           .dropdown.width-240
-            %a.dropdown-toggle.lead.small{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
+            %a.dropdown-toggle.dropdown-btn{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
               Newest first
-              %i.fa.fa-angle-down.dropdown-icon.pull-right
+              %i.fa.fa-angle-down.dropdown-icon
             %ul.dropdown-menu
               %li
                 %a{href: "#"} Newest first
@@ -92,12 +92,12 @@
             %a.filter-link{href: "#"}
               Web Design
               %span.badge.general-badge 135
-      .dropdowns.mb-25.visible-xs
-        %p.lead.small.mb-10 Filter by category
-        .dropdown
-          %a.dropdown-toggle.lead.small{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
+      .mb-40.visible-xs
+        %p.in-grey-600.small.mb-10 Filter by category
+        .dropdown.mb-20
+          %a.dropdown-toggle.dropdown-btn{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
             Newest first
-            %i.fa.fa-angle-down.dropdown-icon.pull-right
+            %i.fa.fa-angle-down.dropdown-icon
           %ul.dropdown-menu
             %li
               %a{href: "#"} Newest first
@@ -107,11 +107,11 @@
               %a{href: "#"} Price: Low to hight
             %li
               %a{href: "#"} Price: Low to hight
-        %p.lead.small.mb-10 Sort by
+        %p.in-grey-600.small.mb-10 Sort by
         .dropdown
-          %a.dropdown-toggle.lead.small{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
+          %a.dropdown-toggle.dropdown-btn{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
             Newest first
-            %i.fa.fa-angle-down.dropdown-icon.pull-right
+            %i.fa.fa-angle-down.dropdown-icon
           %ul.dropdown-menu
             %li
               %a{href: "#"} Newest first
@@ -134,10 +134,10 @@
                     %a.thumb-hover-link{href: "#"}
                       %i.fa.fa-shopping-cart.thumb-icon
             .general-thumb-info
-              %p.title Android Programming for Beginners
+              %p.general-title Android Programming for Beginners
               %p.font-16.in-gold-500 €28.50
               %span.divider-sm
-              %p.lead.small John Horton
+              %p.in-grey-600.small John Horton
           .col-xs-6.col-sm-3
             .general-thumb-wrap
               .thumbnail.general-thumbnail
@@ -149,10 +149,10 @@
                     %a.thumb-hover-link{href: "#"}
                       %i.fa.fa-shopping-cart.thumb-icon
             .general-thumb-info
-              %p.title Android Programming for Beginners
+              %p.general-title Android Programming for Beginners
               %p.font-16.in-gold-500 €28.50
               %span.divider-sm
-              %p.lead.small Bass Jobsen, David Cochran, Ian Whitley
+              %p.in-grey-600.small Bass Jobsen, David Cochran, Ian Whitley
           .col-xs-6.col-sm-3
             .general-thumb-wrap
               .thumbnail.general-thumbnail
@@ -164,10 +164,10 @@
                     %a.thumb-hover-link{href: "#"}
                       %i.fa.fa-shopping-cart.thumb-icon
             .general-thumb-info
-              %p.title Android Programming for Beginners
+              %p.general-title Android Programming for Beginners
               %p.font-16.in-gold-500 €28.50
               %span.divider-sm
-              %p.lead.small Bass Jobsen, David Cochran, Ian Whitley
+              %p.in-grey-600.small Bass Jobsen, David Cochran, Ian Whitley
           .col-xs-6.col-sm-3
             .general-thumb-wrap
               .thumbnail.general-thumbnail
@@ -179,10 +179,10 @@
                     %a.thumb-hover-link{href: "#"}
                       %i.fa.fa-shopping-cart.thumb-icon
             .general-thumb-info
-              %p.title Android Programming for Beginners
+              %p.general-title Android Programming for Beginners
               %p.font-16.in-gold-500 €28.50
               %span.divider-sm
-              %p.lead.small Bass Jobsen, David Cochran, Ian Whitley
+              %p.in-grey-600.small Bass Jobsen, David Cochran, Ian Whitley
         .row.mb-25
           .col-xs-6.col-sm-3
             .general-thumb-wrap
@@ -195,10 +195,10 @@
                     %a.thumb-hover-link{href: "#"}
                       %i.fa.fa-shopping-cart.thumb-icon
             .general-thumb-info
-              %p.title Android Programming for Beginners
+              %p.general-title Android Programming for Beginners
               %p.font-16.in-gold-500 €28.50
               %span.divider-sm
-              %p.lead.small John Horton
+              %p.in-grey-600.small John Horton
           .col-xs-6.col-sm-3
             .general-thumb-wrap
               .thumbnail.general-thumbnail.disabled
@@ -210,10 +210,10 @@
                     %a.thumb-hover-link{href: "#"}
                       %i.fa.fa-shopping-cart.thumb-icon
             .general-thumb-info
-              %p.title Android Programming for Beginners
+              %p.general-title Android Programming for Beginners
               %p.font-16.in-gold-500 €28.50
               %span.divider-sm
-              %p.lead.small Bass Jobsen, David Cochran, Ian Whitley
+              %p.in-grey-600.small Bass Jobsen, David Cochran, Ian Whitley
           .col-xs-6.col-sm-3
             .general-thumb-wrap
               .thumbnail.general-thumbnail
@@ -225,10 +225,10 @@
                     %a.thumb-hover-link{href: "#"}
                       %i.fa.fa-shopping-cart.thumb-icon
             .general-thumb-info
-              %p.title Android Programming for Beginners
+              %p.general-title Android Programming for Beginners
               %p.font-16.in-gold-500 €28.50
               %span.divider-sm
-              %p.lead.small Bass Jobsen, David Cochran, Ian Whitley
+              %p.in-grey-600.small Bass Jobsen, David Cochran, Ian Whitley
           .col-xs-6.col-sm-3
             .general-thumb-wrap
               .thumbnail.general-thumbnail
@@ -240,13 +240,13 @@
                     %a.thumb-hover-link{href: "#"}
                       %i.fa.fa-shopping-cart.thumb-icon
             .general-thumb-info
-              %p.title Android Programming for Beginners
+              %p.general-title Android Programming for Beginners
               %p.font-16.in-gold-500 €28.50
               %span.divider-sm
-              %p.lead.small Bass Jobsen, David Cochran, Ian Whitley
+              %p.in-grey-600.small Bass Jobsen, David Cochran, Ian Whitley
         .text-center
           %button.btn.btn-primary View More
-    %footer.navbar-inverse
+    %footer.navbar.navbar-inverse.mb-0
       .container
         .row
           .col-sm-9
