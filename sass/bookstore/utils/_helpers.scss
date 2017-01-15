@@ -40,12 +40,6 @@
 .max-unset {
   max-width: unset;
 }
-.max-240 {
-  max-width: 240px;
-}
-.max-600 {
-  max-width: 600px;
-}
 .width-240 {
   width: 240px;
 }
@@ -65,18 +59,18 @@
   margin-top: 10px;
 }
 
-@each $size in (5, 10, 15, 20, 35, 55, 240) {
-  .mr-#{$size} {
-    margin-right: #{$size}px !important;
-  }
-}
-@each $size in (10, 15, 20, 30, 40, 60, 70) {
-  .ml-#{$size} {
-    margin-left: #{$size}px !important;
-  }
-}
-@each $size in (0, 5, 10, 15, 20, 25, 30, 35, 40, 55, 60, 80, 120) {
-  .mb-#{$size} {
-    margin-bottom: #{$size}px !important;
-  }
-}
+// @each $size in (5, 10, 15, 20, 35, 55, 240) {
+//   .mr-#{$size} {
+//     margin-right: #{$size}px !important;
+//   }
+// }
+// @each $size in (10, 15, 20, 30, 40, 60, 70) {
+//   .ml-#{$size} {
+//     margin-left: #{$size}px !important;
+//   }
+// }
+// @each $size in (0, 5, 10, 15, 20, 25, 30, 35, 40, 55, 60, 80, 120) {
+//   .mb-#{$size} {
+//     margin-bottom: #{$size}px !important;
+//   }
+// }

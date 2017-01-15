@@ -3,8 +3,9 @@
   %head
     %meta{charset: "UTF-8"}
     %meta{name: "viewport", content: "width=device-width"}
-    %title Bookstore
+    %title Bootstrap Theme Example
     %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600", rel: "stylesheet"}
+    %link{rel: "stylesheet", href: "http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css"}
     %link{href: "../css/style.css", rel: "stylesheet"}
   %body
     %header.navbar.navbar-default
@@ -59,69 +60,14 @@
               %li
                 %a{href: "#"} My account
     %main.container
-      .mb-30
-        .form-group.radio
-          %label.font-16.font-weight-light.pl-0
-            %input.radio-input{type: "radio", hidden: "true"}
-            %span.radio-icon
-            %span.radio-text Delivery Next Day!
-        .form-group.checkbox
-          %label.font-weight-light.pl-0
-            %input.checkbox-input{type: "checkbox", hidden: "true"}
-            %span.checkbox-icon
-              %i.fa.fa-check
-            %span.checkbox-text Use Billing Adress
-      .mb-30
-        %button.btn.btn-default Log in
-        %button.btn.btn-primary Log in
-        %button.btn.disabled Log in
-      .mb-30.max-600
-        .form-group.has-error
-          %label.control-label.font-weight-light{for: "firstName"} First Name
-          %input#firstName.form-control{name:"fname", type: "text", placeholder: "First Name"}
-          %span.help-block Please enter your first name
-        .form-group
-          %label.control-label.font-weight-light{for: "lastName"} Last Name
-          %input#lastName.form-control{name:"lname", type: "text", placeholder: "Last Name"}
-      .mb-30
-        %p.in-grey-600.small.mb-10 Sort by
-        .dropdown.width-240
-          %a.dropdown-toggle.dropdown-btn{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
-            Newest first
-            %i.fa.fa-angle-down.dropdown-icon
-          %ul.dropdown-menu
-            %li
-              %a{href: "#"} Newest first
-            %li
-              %a{href: "#"} Popular first
-            %li
-              %a{href: "#"} Price: Low to hight
-            %li
-              %a{href: "#"} Price: Low to hight
-      .row.mb-60
-        .col-xs-6.col-sm-3
-          .thumbnail.relative
-            %img{src: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ352GRUKdIFLP3va0Tj7QREidI4lwUABrtUJbQehqIL02O_blo", alt: "design-book"}
-            .thumb-hover
-              .thumb-hover-link-wrap
-                %a.thumb-hover-link{href: "#"}
-                  %i.fa.fa-eye.thumb-icon{'aria-hidden': "true"}
-                %a.thumb-hover-link{href: "#"}
-                  %i.fa.fa-shopping-cart.thumb-icon
-          %div
-            %p Android Programming for Beginners
-            %p.font-16.in-gold-500 €28.50
-            %span.divider-sm
-            %p.in-grey-600.small John Horton
-        .col-xs-6.col-sm-3
-          .thumbnail.relative
-            %img{src: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ352GRUKdIFLP3va0Tj7QREidI4lwUABrtUJbQehqIL02O_blo", alt: "design-book"}
-            .thumb-hover
-              .thumb-hover-link-wrap
-                %a.thumb-hover-link{href: "#"}
-                  %i.fa.fa-eye.thumb-icon{'aria-hidden': "true"}
-                %a.thumb-hover-link{href: "#"}
-                  %i.fa.fa-shopping-cart.thumb-icon
+      %div
+        %h1 Documentation
+        %p Find out what's included in your Bootstrap theme and how to compile source files. Includes live examples and code snippets for every new component.
+      %div
+        %h2 Basic template
+        %figure
+          %pre
+            %code.html
     %footer.navbar.navbar-inverse.mb-0
       .container
         .row
@@ -154,3 +100,5 @@
     %script{src: "https://use.fontawesome.com/67602d7308.js"}
     %script{src: "../../javascripts/jquery.js"}
     %script{src: "../../javascripts/bootstrap.js"}
+    %script{src: "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"}
+    %script{src: "../../javascripts/doc.js"}
