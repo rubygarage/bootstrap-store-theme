@@ -11,63 +11,237 @@
 <header class="navbar navbar-default">
 <div class="container">
 <div class="navbar-header">
-<button type="button" data-toggle="collapse" data-target="#navbar" class="navbar-toggle pull-left ml-15">
+<button type="button" data-toggle="collapse" data-target="#navbar" class="navbar-toggle ml-15">
 <span class="sr-only"></span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span></button>
-<a class="navbar-brand">Bookstore</a>
-<a href="#" class="shop-link pull-right visible-xs">
-<span class="shop-icon">
-<span class="shop-quantity">3</span></span></a></div>
-<a href="#" class="shop-link pull-right hidden-xs">
-<span class="shop-icon">
-<span class="shop-quantity">3</span></span></a>
-<div id="navbar" aria-expanded="false" class="navbar-collapse collapse pl-30">
+<a class="navbar-brand">Dashboard</a></div>
+<div id="navbar" aria-expanded="false" class="navbar-collapse collapse">
 <div class="visible-xs">
-<button type="button" aria-label="Close" class="close">
-<span aria-hidden="true">&times;</span></button>
 <ul class="nav navbar-nav">
 <li>
 <a href="#">Home</a></li>
 <li>
-<a type="button" data-toggle="collapse" href="#menu" aria-expanded="false" aria-controls="menu">Shop</a>
-<ul id="menu" aria-expanded="false" class="collapse list-unstyled pl-30 mb-10">
-<li>
-<a href="#" class="collapse-link">Mobile development</a></li>
-<li>
-<a href="#" class="collapse-link">Photo</a></li>
-<li>
-<a href="#" class="collapse-link">Web design</a></li></ul></li>
-<li>
-<a href="#">My account</a></li></ul></div>
+<a href="#">Profile</a></li></ul></div>
 <div class="hidden-xs">
 <ul class="nav navbar-nav">
 <li>
 <a href="#">Home</a></li>
-<li class="dropdown">
-<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Shop</a>
-<ul class="dropdown-menu">
 <li>
-<a href="#">Mobile development</a></li>
-<li>
-<a href="#">Photo</a></li>
-<li>
-<a href="#">Web design</a></li>
-<li role="separator" class="divider"></li>
-<li>
-<a href="#">Log out</a></li></ul></li>
-<li>
-<a href="#">My account</a></li></ul></div></div></div></header>
+<a href="#">Profile</a></li></ul></div></div></div></header>
 <main class="container">
-<div>
+<div class="mb-60">
 <h1>Documentation</h1>
 <p>Find out what's included in your Bootstrap theme and how to compile source files. Includes live examples and code snippets for every new component.</p></div>
-<div>
+<div class="mb-60">
+<h2>Gulpfile.js</h2>
+<p>You’ll need to install both Node and Gulp before using our included
+<code>gulpfile.js</code></p>
+<p>Once node is installed, run the following npm command to install Gulp.</p>
+<p>
+<code>$ npm install gulp -g</code></p>
+<p>When you’re done, make sure you’ve installed the rest of the theme’s dependencies:</p>
+<p>
+<code>$ npm install</code></p></div>
+<div class="mb-60">
+<h2>Theme source code</h2>
+<p>The
+<code>scss/, js/,</code>and
+<code>fonts/</code>directories contain the source code for our CSS, JS, and icon fonts. Within the
+<code>scss/</code>and
+<code>js/</code>directories you’ll find two subdirectories:
+<ul>
+<li>
+<code>bootstrap/</code>, which contains 3 version of Bootstrap.</li>
+<li>
+<code>custom/</code>, which contains all of the custom components and overrides authored specifically for this theme.</li></ul>The
+<code>build/</code>folder includes everything above, built into single CSS and JS files that can easily be integrated into your project.</p></div>
+<div class="card mb-60">
+<h2>Custom builds</h2>
+<p>
+<code>scss/variables.scss</code>is home to your theme’s variables. Note that your theme’s
+<code>variables</code>file depends on and overrides an existing Bootstrap variable file (found in
+<code>scss/bootstrap/_variables.scss</code>) and custom theme variables (
+<code>sass.custom/variables.scss</code>).</p></div>
+<div class="card mb-60">
 <h2>Basic template</h2>
-<figure>
-<pre>
-<code class="html"></code></pre></figure></div></main>
+<p>The basic template is a guideline for how to structure your pages when building with a Bootstrap Theme. Included below are all the necessary bits for using the theme’s CSS and JS, as well as some friendly reminders.</p><pre>
+  <code class="html">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"/&gt;
+        &lt;meta name="viewport" content="width=device-width"/&gt;
+        &lt;title&gt;Bootstrap Theme Example&lt;/title&gt;
+        &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet"/&gt;
+        &lt;link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css"/&gt;
+        &lt;link href="../css/style.css" rel="stylesheet"/&gt;&lt;/head&gt;
+      &lt;body&gt;
+        &lt;main class="container"&gt;
+          &lt;h1&gt;Hello, world!&lt;/h1&gt;&lt;/main&gt;
+        &lt;script src="https://use.fontawesome.com/67602d7308.js"&gt;&lt;/script&gt;
+        &lt;script src="../../javascripts/jquery.js"&gt;&lt;/script&gt;
+        &lt;script src="../../javascripts/bootstrap.js"&gt;&lt;/script&gt;
+        &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"&gt;&lt;/script&gt;
+        &lt;script src="../../javascripts/doc.js"&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code>
+</pre></div>
+<div class="card mb-60">
+<h2>Buttons</h2>
+<div class="mb-30">
+<button class="btn btn-default mb-10 mr-10">Default</button>
+<button class="btn btn-primary mb-10 mr-10">Primary</button>
+<button class="btn disabled mb-10 mr-10">Disabled</button></div><pre>
+  <code class="html">
+    &lt;button class="btn-btn-default"&gt;Default&lt;/button&gt;
+    &lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+    &lt;button class="btn disabled"&gt;Disabled&lt;/button&gt;</code>
+</pre></div>
+<div class="card mb-60">
+<h2>Avatar list</h2>
+<p class="mb-30">Join a series of icons into a single horizontal grouping. Add
+<code>.logo-size</code>to img tag and
+<code>.logo-empty</code>to span to make them look as in the example.</p>
+<ul class="list-inline mb-30">
+<li>
+<img src="http://bootstrap-themes.github.io/application/assets/img/avatar-fat.jpg" class="img-circle logo-size"/></li>
+<li>
+<span class="img-circle logo-size logo-empty">N</span></li></ul><pre>
+  <code class="html">
+    &lt;ul class="list-inline"&gt;
+      &lt;li&gt;
+        &lt;img src="http://bootstrap-themes.github.io/application/assets/img/avatar-fat.jpg" class="img-circle logo-size"/&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;span class="img-circle logo-size logo-empty"&gt;N&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</code>
+</pre></div>
+<div class="card mb-60">
+<h2>Thumbnail cover</h2>
+<p class="mb-30">Join a special cover on regular thumbnail. Use
+<code>.thumb-hover-link-wrap</code>to wrap links in a current way and
+<code>.thumb-hover-link</code>to style them easily.</p>
+<div class="row">
+<div class="col-sm-3">
+<div class="thumbnail relative">
+<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ352GRUKdIFLP3va0Tj7QREidI4lwUABrtUJbQehqIL02O_blo" alt="design-book"/>
+<div class="thumb-hover">
+<div class="thumb-hover-link-wrap">
+<a href="#" class="thumb-hover-link">
+<i aria-hidden="true" class="fa fa-eye thumb-icon"></i></a>
+<a href="#" class="thumb-hover-link">
+<i class="fa fa-shopping-cart thumb-icon"></i></a></div></div></div></div></div><pre>
+  <code class="html">
+    &lt;div class="thumbnail relative"&gt;
+      &lt;img src../&gt;
+      &lt;div class="thumb-hover"&gt;
+        &lt;div class="thumb-hover-link-wrap"&gt;
+          &lt;a href="#" class="thumb-hover-link"&gt;
+            &lt;i aria-hidden="true" class="fa fa-eye thumb-icon"&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;a href="#" class="thumb-hover-link"&gt;
+            &lt;i class="fa fa-shopping-cart thumb-icon"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code>
+</pre></div>
+<div class="card mb-60">
+<h2>Card component</h2>
+<p class="mb-30">Join a special card component. Use
+<code>.card</code>to wrap and bordered, add and remove information that you need easily.</p>
+<div class="card">
+<div class="clearfix">
+<p class="in-grey-600 pull-right">Hardcove, glossy paper</p>
+<p class="break-word">Materials</p></div>
+<p class="in-grey-600 small">Smashing Book 5: Real-Life Responsive Web Design is our brand new, upcoming book with smart front-end techniques and design patterns derived from real-life responsive projects. With 13 chapters on responsive workflow, SVG, Flexbox, Web fonts, responsive images, responsive email, content strategy, debugging ...
+<a href="#" class="in-gold-500 ml-10">Read More</a></p></div><pre>
+  <code class="html">
+    &lt;div class="card"&gt;
+      ...&lt;/div&gt;</code>
+</pre></div>
+<div class="card mb-60">
+<h2>Rating component</h2>
+<p class="mb-30">Join a special rating using font-awesome icons and
+<code>.rate-star</code>to show rating and
+<code>.rate-empty</code>to show that it's empty.</p>
+<div class="mb-15">
+<i class="fa fa-star rate-star"></i>
+<i class="fa fa-star rate-star"></i>
+<i class="fa fa-star rate-star"></i>
+<i class="fa fa-star rate-star"></i>
+<i class="fa fa-star rate-star rate-empty"></i></div><pre>
+  <code class="html">
+    &lt;i class="fa fa-star rate-star"&gt;&lt;/i&gt;
+    &lt;i class="fa fa-star rate-star rate-empty"&gt;</code>
+</pre></div>
+<div class="card mb-60">
+<h2>Checkbox and radio</h2>
+<p class="mb-30">Use
+<code>.checkbox-icon</code>and
+<code>.checkbox-input</code>to style checkboxes and
+<code>.radio-icon</code>and
+<code>.radio-input</code>to style radio buttons.</p>
+<div class="mb-30">
+<div class="form-group radio">
+<label class="font-16 font-weight-light">
+<input type="radio" hidden="true" class="radio-input"/>
+<span class="radio-icon"></span>
+<span class="radio-text">radio</span></label></div>
+<div class="form-group checkbox">
+<label class="font-weight-light">
+<input type="checkbox" hidden="true" class="checkbox-input"/>
+<span class="checkbox-icon">
+<i class="fa fa-check"></i></span>
+<span class="checkbox-text">checkbox</span></label></div></div><pre>
+  <code class="html">
+    &lt;div class="form-group radio"&gt;
+      &lt;label&gt;
+        &lt;input type="radio" hidden="true" class="radio-input"/&gt;
+        &lt;span class="radio-icon"&gt;&lt;/span&gt;&lt;/label&gt;&lt;/div&gt;
+    &lt;div class="form-group checkbox"&gt;
+      &lt;label&gt;
+        &lt;input type="checkbox" hidden="true" class="checkbox-input"/&gt;
+        &lt;span class="checkbox-icon"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/label&gt;&lt;/div&gt;</code>
+</pre></div>
+<div class="card mb-60">
+<h2>Gallery images</h2>
+<p class="mb-30">Use
+<code>.images</code>to create gallery of images and use
+<code>.img-link</code>to place images inline.</p>
+<div class="mb-20">
+<div class="images clearfix">
+<a href="#" class="img-link">
+<img src="https://www.smashingmagazine.com/wp-content/uploads/2015/09/smashing-book-5-2-large.jpg" class="width-full"/></a>
+<a href="#" class="img-link">
+<img src="https://www.smashingmagazine.com/wp-content/uploads/2015/09/smashing-book-5-2-large.jpg" class="width-full"/></a>
+<a href="#" class="img-link">
+<img src="https://www.smashingmagazine.com/wp-content/uploads/2015/09/smashing-book-5-2-large.jpg" class="width-full"/></a></div></div><pre>
+  <code class="html">
+    &lt;div class="images clearfix"&gt;
+      &lt;a href="#" class="img-link"&gt;
+        &lt;img src="..."/&gt;&lt;/a&gt;
+      &lt;a href="#" class="img-link"&gt;
+        &lt;img src="..."/&gt;&lt;/a&gt;
+      &lt;a href="#" class="img-link"&gt;
+        &lt;img src="..."/&gt;&lt;/a&gt;&lt;/div&gt;</code>
+</pre></div>
+<div class="card mb-60">
+<h2>Shopping component</h2>
+<p>Join special shopping component. Use
+<code>.shop-link .shop-icon</code>and
+<code>.shop-quantity</code>to get shopping basket to look like this.</p>
+<div class="mb-20">
+<a href="#" class="shop-link">
+<span class="shop-icon">
+<span class="shop-quantity">3</span></span></a></div><pre>
+  <code class="html">
+    &lt;a href="#" class="shop-link"&gt;
+      &lt;span class="shop-icon"&gt;
+        &lt;span class="shop-quantity"&gt;3&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;</code>
+</pre></div>
+<div class="card mb-60">
+<h2>Margin helpers</h2>
+<p>Join special helpers. Use
+<code>.mr-* .ml-* .mb-*</code>and to add right, left, bottom margin to the element.</p><pre>
+  <code class="html">
+    &lt;div class="mr-10"&gt;&lt;/div&gt;
+    &lt;div class="ml-10"&gt;&lt;/div&gt;
+    &lt;div class="mb-20"&gt;&lt;/div&gt;</code>
+</pre></div></main>
 <footer class="navbar navbar-inverse mb-0">
 <div class="container">
 <div class="row">
@@ -82,8 +256,6 @@
 <li>
 <a href="#" class="nav-link">Settings</a></li></ul></div>
 <div class="col-sm-3">
-<p class="general-nav-mail">support@bookstore.com</p>
-<p class="general-nav-number">(555)-555-5555</p>
 <ul class="list-inline general-align">
 <li>
 <a href="#" class="nav-link">

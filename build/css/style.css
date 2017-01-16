@@ -7944,24 +7944,12 @@ button.close {
   font-weight: 300 !important;
 }
 
-.max-240 {
-  max-width: 240px;
-}
-
-.max-600 {
-  max-width: 600px;
-}
-
 .width-full {
   max-width: 100%;
 }
 
 .relative {
   position: relative;
-}
-
-.pl-0 {
-  padding-left: 0px !important;
 }
 
 .navbar-inverse {
@@ -8000,7 +7988,6 @@ button.close {
 }
 
 .dropdown-btn {
-  width: 100%;
   font-size: 14px;
   color: #8c8c8c;
   border: 1px solid #eeeeee;
@@ -8018,11 +8005,11 @@ button.close {
   color: #8c8c8c;
   line-height: 21px;
   float: right;
+  margin-left: 15px;
 }
 
 .dropdown-menu {
-  width: 100%;
-  min-width: 210px;
+  min-width: 240px;
 }
 
 .dropdown-menu > li > a {
@@ -8283,8 +8270,13 @@ button.close {
   font-size: 16px;
   color: white;
   text-align: center;
+  display: block;
   background-color: #c3c3c3;
   line-height: 55px;
+}
+
+.logo-empty:hover {
+  text-decoration: none;
 }
 
 .rate-star {
@@ -8420,6 +8412,11 @@ button.close {
 .active .step-icon,
 .done .step-icon {
   font-size: 12px;
+}
+
+.checkbox label,
+.radio label {
+  padding-left: 0;
 }
 
 .checkbox-icon {
@@ -8578,10 +8575,6 @@ button.close {
 html,
 body {
   height: 100%;
-}
-
-img {
-  max-width: 100%;
 }
 
 .col-pic {
@@ -9023,12 +9016,12 @@ img {
   line-height: 2;
 }
 
-.max-unset {
-  max-width: unset;
-}
-
 .width-240 {
   width: 240px;
+}
+
+.width-100 {
+  width: 100%;
 }
 
 .vertical-middle {

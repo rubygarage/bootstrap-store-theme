@@ -75,14 +75,15 @@
         %button.btn.btn-default Log in
         %button.btn.btn-primary Log in
         %button.btn.disabled Log in
-      .mb-30.max-600
-        .form-group.has-error
-          %label.control-label.font-weight-light{for: "firstName"} First Name
-          %input#firstName.form-control{name:"fname", type: "text", placeholder: "First Name"}
-          %span.help-block Please enter your first name
-        .form-group
-          %label.control-label.font-weight-light{for: "lastName"} Last Name
-          %input#lastName.form-control{name:"lname", type: "text", placeholder: "Last Name"}
+      .row.mb-30
+        .col-sm-6
+          .form-group.has-error
+            %label.control-label.font-weight-light{for: "firstName"} First Name
+            %input#firstName.form-control{name:"fname", type: "text", placeholder: "First Name"}
+            %span.help-block Please enter your first name
+          .form-group
+            %label.control-label.font-weight-light{for: "lastName"} Last Name
+            %input#lastName.form-control{name:"lname", type: "text", placeholder: "Last Name"}
       .mb-30
         %p.in-grey-600.small.mb-10 Sort by
         .dropdown.width-240

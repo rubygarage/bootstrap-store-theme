@@ -66,7 +66,7 @@
       .mb-80
         .mb-30
           %p.in-grey-600.small.mb-10 Sort by
-          .dropdown.max-240
+          .dropdown
             %a.dropdown-toggle.dropdown-btn{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
               Newest first
               %i.fa.fa-angle-down.dropdown-icon
@@ -202,7 +202,7 @@
       .row.mb-60
         .col-sm-5
           %h3.in-gold-500.mb-25.text-center Sign In to order
-          %form.max-600.center-block
+          %form.center-block
             .form-group.has-error
               %label.control-label.font-weight-light{for: "email"} Email
               %input#firstName.form-control{name:"email", type: "email", placeholder: "Email"}
@@ -213,12 +213,12 @@
             %button.btn.btn-primary.center-block.mb-25 Sign In
         .col-sm-5.col-sm-offset-1
           %h3.in-gold-500.mb-25.text-center or
-          %form.max-600.center-block
+          %form.center-block
             .form-group.mb-30
               %label.control-label.font-weight-light{for: "email"} Email
               %input#firstName.form-control{name:"email", type: "email", placeholder: "Email"}
             .form-group.checkbox.mb-30
-              %label.font-weight-light.pl-0
+              %label.font-weight-light
                 %input.checkbox-input{type: "checkbox", hidden: "true"}
                 %span.checkbox-icon
                   %i.fa.fa-check
