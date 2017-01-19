@@ -75,21 +75,15 @@
         %button.btn.btn-default Log in
         %button.btn.btn-primary Log in
         %button.btn.disabled Log in
-      .mb-30
-        .input-group.general-position
-          %a.input-link{href: "#"}
-            %i.fa.fa-minus.line-height-40
-          %input.form-control.quantity-input{type: "text"}
-          %a.input-link{href: "#"}
-            %i.fa.fa-plus.line-height-40
-      .mb-30
-        .form-group.has-error
-          %label.control-label.font-weight-light{for: "firstName"} First Name
-          %input#firstName.form-control{name:"fname", type: "text", placeholder: "First Name"}
-          %span.help-block Please enter your first name
-        .form-group
-          %label.control-label.font-weight-light{for: "lastName"} Last Name
-          %input#lastName.form-control{name:"lname", type: "text", placeholder: "Last Name"}
+      .row.mb-30
+        .col-sm-6
+          .form-group.has-error
+            %label.control-label.font-weight-light{for: "firstName"} First Name
+            %input#firstName.form-control{name:"fname", type: "text", placeholder: "First Name"}
+            %span.help-block Please enter your first name
+          .form-group
+            %label.control-label.font-weight-light{for: "lastName"} Last Name
+            %input#lastName.form-control{name:"lname", type: "text", placeholder: "Last Name"}
       .mb-30
         %p.in-grey-600.small.mb-10 Sort by
         .dropdown.width-240
@@ -105,37 +99,30 @@
               %a{href: "#"} Price: Low to hight
             %li
               %a{href: "#"} Price: Low to hight
-      .row
-        .col-sm-4
-          .general-thumb-wrap
-            .thumbnail.general-thumbnail
-              %img.img-shadow.general-thumbnail-img{src: "https://d31wxntiwn0x96.cloudfront.net/rzgade/productimages/1276.jpg?width=400&height=400&etag=%22a2ebd1488b087bf0e6db43ee8bae0634%22", alt: "design-book"}
-              .thumb-hover
-                .general-thumb-link-wrap
-                  %a.thumb-hover-link{href: "#"}
-                    %i.fa.fa-eye.thumb-icon{'aria-hidden': "true"}
-                  %a.thumb-hover-link{href: "#"}
-                    %i.fa.fa-shopping-cart.thumb-icon
-          .general-thumb-info
-            %p.general-title Android Programming for Beginners
+      .row.mb-60
+        .col-xs-6.col-sm-3
+          .thumbnail.relative
+            %img{src: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ352GRUKdIFLP3va0Tj7QREidI4lwUABrtUJbQehqIL02O_blo", alt: "design-book"}
+            .thumb-hover
+              .thumb-hover-link-wrap
+                %a.thumb-hover-link{href: "#"}
+                  %i.fa.fa-eye.thumb-icon{'aria-hidden': "true"}
+                %a.thumb-hover-link{href: "#"}
+                  %i.fa.fa-shopping-cart.thumb-icon
+          %div
+            %p Android Programming for Beginners
             %p.font-16.in-gold-500 €28.50
             %span.divider-sm
-            %p.in-grey-600.small Bass Jobsen, David Cochran, Ian Whitley
-        .col-sm-4
-          .general-thumb-wrap
-            .thumbnail.general-thumbnail.disabled
-              %img.img-shadow.general-thumbnail-img{src: "https://d31wxntiwn0x96.cloudfront.net/rzgade/productimages/1276.jpg?width=400&height=400&etag=%22a2ebd1488b087bf0e6db43ee8bae0634%22", alt: "design-book"}
-              .thumb-hover
-                .general-thumb-link-wrap
-                  %a.thumb-hover-link{href: "#"}
-                    %i.fa.fa-eye.thumb-icon{'aria-hidden': "true"}
-                  %a.thumb-hover-link{href: "#"}
-                    %i.fa.fa-shopping-cart.thumb-icon
-          .general-thumb-info
-            %p.general-title Android Programming for Beginners
-            %p.font-16.in-gold-500 €28.50
-            %span.divider-sm
-            %p.in-grey-600.small Bass Jobsen, David Cochran, Ian Whitley
+            %p.in-grey-600.small John Horton
+        .col-xs-6.col-sm-3
+          .thumbnail.relative
+            %img{src: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ352GRUKdIFLP3va0Tj7QREidI4lwUABrtUJbQehqIL02O_blo", alt: "design-book"}
+            .thumb-hover
+              .thumb-hover-link-wrap
+                %a.thumb-hover-link{href: "#"}
+                  %i.fa.fa-eye.thumb-icon{'aria-hidden': "true"}
+                %a.thumb-hover-link{href: "#"}
+                  %i.fa.fa-shopping-cart.thumb-icon
     %footer.navbar.navbar-inverse.mb-0
       .container
         .row
